@@ -18,13 +18,20 @@ gh_workflows <- function(owner, repo, ...) {
 }
 
 gh_runs <- function(owner, repo, workflow_id, ...) {
-  gh(
+  runs <- gh(
     "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
     owner = owner,
     repo = repo,
     workflow_id = workflow_id,
     per_page = 1
-  )$workflow_runs[[1]]
+  )
+
+  # Return an empty list if the workflow as never run
+  if (length(runs$workflow_runs) == 0) {
+    return(list())
+  }
+
+  runs$workflow_runs[[1]]
 }
 
 gh_url <- function(url) {
@@ -83,6 +90,8 @@ gh_repo_workflows <- function(repos) {
 
   workflows$runs <- pmap(workflows, gh_runs)
   workflows %>%
+    # Remove workflows that have never run
+    filter(purrr::map_int(runs, length) > 0) %>%
     mutate(
       event = map_chr(runs, "event"),
       html_url_run = map_chr(runs, "html_url"),
