@@ -1,0 +1,75 @@
+on:
+  push:
+    paths:
+      - '**.Rmd'
+      - '.github/workflows/*'
+  workflow_dispatch:
+  schedule:
+    # daily in the morning for America/New_York (hours in UTC)
+    - cron: '0 12 * * *'
+  repository_dispatch:
+    # for use with peter-evans/repository_dispatch@v1
+    types: ['status-update']
+
+name: Render Status
+
+jobs:
+  render:
+    name: Render Status
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # This is important to set for `git diff-tree` to work below
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.0.3'
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get install -y libcurl4-openssl-dev
+
+      - name: Install dependencies
+        run: |
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          options(repos = c(
+            RSPM = "https://packagemanager.rstudio.com/all/__linux__/bionic/latest",
+            gadenbuie = 'https://gadenbuie.r-universe.dev'
+          ))
+          pak::pkg_install(c("rmarkdown", "gh", "memoise", "purrr", "dplyr", "tidyr", "glue", "readr", "cleanrmd"))
+        shell: Rscript {0}
+
+      - name: Render Status Page
+        run: |
+          # render readme
+          rmarkdown::render("README.Rmd")
+          # render status index.html
+          rmarkdown::render(
+            "README.Rmd",
+            output_file = "index.html",
+            output_format = cleanrmd::html_document_clean(theme = "stylize"),
+            params = list(set_main_width = TRUE)
+          )
+        shell: Rscript {0}
+
+      - name: Config git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Commit status update
+        if: github.event_name != 'repository_dispatch'
+        run: |
+          git commit --all -m "[status] $(date +'%F %T %Z')" || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
+
+      - name: Commit dispatched status update
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          git commit --all -m "[status] ${{ github.event.client_payload.repo }}$(date +'%F %T %Z')" || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
