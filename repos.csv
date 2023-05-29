@@ -69,7 +69,7 @@ Important cookietemple template update 2.1.1 released!",[![](https://github.com/
 theislab,bindome,theislab/bindome,1,2,5,1,FALSE,https://github.com/theislab/bindome,1,3cb12b5e3c71749003718d8d1768e3b9790d8544,minor fixes,[![](https://github.com/theislab/bindome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/bindome/actions/runs/3619252866) [![](https://github.com/theislab/bindome/workflows/Test/badge.svg)](https://github.com/theislab/bindome/actions/runs/3619252869)
 theislab,campa,theislab/campa,3,3,4,1,FALSE,https://github.com/theislab/campa,3,NA,NA,NA
 theislab,campa_ana,theislab/campa_ana,0,3,0,0,FALSE,https://github.com/theislab/campa_ana,0,NA,NA,NA
-theislab,cellrank,theislab/cellrank,234,8,35,26,FALSE,https://github.com/theislab/cellrank,234,a058dbf61719153e0c3fbfd1de953a94afbb17b2,Fix gene trends colors (#1043),[![](https://github.com/theislab/cellrank/workflows/Test/badge.svg)](https://github.com/theislab/cellrank/actions/runs/5085353461) [![](https://github.com/theislab/cellrank/workflows/Deployment/badge.svg)](https://github.com/theislab/cellrank/actions/runs/5085353460)
+theislab,cellrank,theislab/cellrank,234,8,36,26,FALSE,https://github.com/theislab/cellrank,234,a058dbf61719153e0c3fbfd1de953a94afbb17b2,Fix gene trends colors (#1043),[![](https://github.com/theislab/cellrank/workflows/Deployment/badge.svg)](https://github.com/theislab/cellrank/actions/runs/5085353460)
 theislab,cellrank_notebooks,theislab/cellrank_notebooks,4,3,10,5,FALSE,https://github.com/theislab/cellrank_notebooks,4,NA,NA,NA
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,11,1,0,7,FALSE,https://github.com/theislab/cellrank_reproducibility,11,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,4,1,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,4,NA,NA,NA
@@ -107,7 +107,7 @@ theislab,geome,theislab/geome,6,2,0,1,FALSE,https://github.com/theislab/geome,6,
 
 Automated template update from cookiecutter-scverse",[![](https://github.com/theislab/geome/workflows/Sync%20Template/badge.svg)](https://github.com/theislab/geome/actions/runs/4904831582)
 theislab,geome,theislab/geome,6,2,0,1,FALSE,https://github.com/theislab/geome,6,93a97feeb7cc8de59f1f276c0547303ad724174d,pypi,[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/5092349090) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/5092349089)
-theislab,gh-dashboard,theislab/gh-dashboard,0,1,0,0,FALSE,https://github.com/theislab/gh-dashboard,0,6259a4a011b06ae40735c83c7c7abfef0579f43c,[status] 2023-05-27 12:06:23 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/5104166808)
+theislab,gh-dashboard,theislab/gh-dashboard,0,1,0,0,FALSE,https://github.com/theislab/gh-dashboard,0,d09581f332ebac94e5f9d53702a88300bc767c28,[status] 2023-05-28 12:06:52 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/5111653510)
 theislab,graph_abstraction,theislab/graph_abstraction,26,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
 theislab,greatpy,theislab/greatpy,8,2,3,0,FALSE,https://github.com/theislab/greatpy,8,NA,NA,NA
 theislab,gut_lineage,theislab/gut_lineage,2,2,0,2,FALSE,https://github.com/theislab/gut_lineage,2,NA,NA,NA
@@ -138,6 +138,7 @@ theislab,ipsc_ipd_analysis,theislab/ipsc_ipd_analysis,0,2,0,0,FALSE,https://gith
 theislab,kBET,theislab/kBET,124,8,7,21,FALSE,https://github.com/theislab/kBET,124,NA,NA,NA
 theislab,kbranches,theislab/kbranches,5,6,0,0,FALSE,https://github.com/theislab/kbranches,5,NA,NA,NA
 theislab,moscot,theislab/moscot,40,3,23,6,FALSE,https://github.com/theislab/moscot,40,c9873f5b1634e1aa1914fce1a83f7989c41f20fe,update docs and reference of moscot manuscript (#540),[![](https://github.com/theislab/moscot/workflows/Deployment/badge.svg)](https://github.com/theislab/moscot/actions/runs/4957548890)
+theislab,moscot,theislab/moscot,40,3,23,6,FALSE,https://github.com/theislab/moscot,40,d9dbb37216e1d488c47ee328c5fa96f667a0dfbf,Update submodules,[![](https://github.com/theislab/moscot/workflows/Lint/badge.svg)](https://github.com/theislab/moscot/actions/runs/5107138129) [![](https://github.com/theislab/moscot/workflows/Test/badge.svg)](https://github.com/theislab/moscot/actions/runs/5107108592)
 theislab,moscot-framework_reproducibility,theislab/moscot-framework_reproducibility,0,1,0,0,FALSE,https://github.com/theislab/moscot-framework_reproducibility,0,NA,NA,NA
 theislab,moscot_benchmarks,theislab/moscot_benchmarks,1,1,1,0,FALSE,https://github.com/theislab/moscot_benchmarks,1,NA,NA,NA
 theislab,moscot_notebooks,theislab/moscot_notebooks,5,0,2,2,FALSE,https://github.com/theislab/moscot_notebooks,5,1ef4a258a88b8ad56d0831738610a5891f1ba2f5,"Feature/tutorial translation problem (#39)
@@ -168,7 +169,7 @@ theislab,moscot_notebooks,theislab/moscot_notebooks,5,0,2,2,FALSE,https://github
 
 ---------
 
-Co-authored-by: nosander <nina.sander@tum.de>",[![](https://github.com/theislab/moscot_notebooks/workflows/lint/badge.svg)](https://github.com/theislab/moscot_notebooks/actions/runs/5048477316)
+Co-authored-by: nosander <nina.sander@tum.de>",[![](https://github.com/theislab/moscot_notebooks/workflows/lint/badge.svg)](https://github.com/theislab/moscot_notebooks/actions/runs/5107151615)
 theislab,moslin,theislab/moslin,9,0,0,1,FALSE,https://github.com/theislab/moslin,9,NA,NA,NA
 theislab,mouse_cross-condition_pancreatic_islet_atlas,theislab/mouse_cross-condition_pancreatic_islet_atlas,2,1,0,1,FALSE,https://github.com/theislab/mouse_cross-condition_pancreatic_islet_atlas,2,NA,NA,NA
 theislab,multicpa,theislab/multicpa,11,2,0,2,FALSE,https://github.com/theislab/multicpa,11,NA,NA,NA
@@ -190,30 +191,28 @@ theislab,organoid_dexamethason_stimulation,theislab/organoid_dexamethason_stimul
 theislab,paga,theislab/paga,158,9,21,28,FALSE,https://github.com/theislab/paga,158,NA,NA,NA
 theislab,pancreas-targeted_pharmacology,theislab/pancreas-targeted_pharmacology,0,6,0,2,FALSE,https://github.com/theislab/pancreas-targeted_pharmacology,0,NA,NA,NA
 theislab,pancreatic-endocrinogenesis,theislab/pancreatic-endocrinogenesis,2,2,0,5,FALSE,https://github.com/theislab/pancreatic-endocrinogenesis,2,NA,NA,NA
-theislab,pertpy,theislab/pertpy,26,3,20,4,FALSE,https://github.com/theislab/pertpy,26,23d8fcf8fdb34dfb98a873f2cde62e3f8e063d88,"Add pypi nox
+theislab,pertpy,theislab/pertpy,26,3,23,4,FALSE,https://github.com/theislab/pertpy,26,23d8fcf8fdb34dfb98a873f2cde62e3f8e063d88,"Add pypi nox
 
 Signed-off-by: zethson <lukas.heumos@posteo.net>",[![](https://github.com/theislab/pertpy/workflows/Labeler/badge.svg)](https://github.com/theislab/pertpy/actions/runs/4713027178)
-theislab,pertpy,theislab/pertpy,26,3,20,4,FALSE,https://github.com/theislab/pertpy,26,2c96cd655aa7ee3f576fa238d14fc71255754c8f,cookietemple sync,[![](https://github.com/theislab/pertpy/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/pertpy/actions/runs/1954811240)
-theislab,pertpy,theislab/pertpy,26,3,20,4,FALSE,https://github.com/theislab/pertpy,26,404835c82f9a3d943b85973c10130303d090839d,"Revert ""Deleted JaxscgenPlot""
+theislab,pertpy,theislab/pertpy,26,3,23,4,FALSE,https://github.com/theislab/pertpy,26,2c96cd655aa7ee3f576fa238d14fc71255754c8f,cookietemple sync,[![](https://github.com/theislab/pertpy/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/pertpy/actions/runs/1954811240)
+theislab,pertpy,theislab/pertpy,26,3,23,4,FALSE,https://github.com/theislab/pertpy,26,3ffe6680a3e38212940896e1ee0ce50dc0110d41,"[DEPENDABOT]: Bump coverage from 7.2.5 to 7.2.6
 
-This reverts commit 161fc137c5a23320a5799a22cd4d7212b550bca9.",[![](https://github.com/theislab/pertpy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/pertpy/actions/runs/4629618853)
-theislab,pertpy,theislab/pertpy,26,3,20,4,FALSE,https://github.com/theislab/pertpy,26,81118fed3d8575b57dd64549c9f07e1241415838,"[DEPENDABOT]: Bump pre-commit from 3.3.1 to 3.3.2 (#272)
-
-Bumps [pre-commit](https://github.com/pre-commit/pre-commit) from 3.3.1 to 3.3.2.
-- [Release notes](https://github.com/pre-commit/pre-commit/releases)
-- [Changelog](https://github.com/pre-commit/pre-commit/blob/main/CHANGELOG.md)
-- [Commits](https://github.com/pre-commit/pre-commit/compare/v3.3.1...v3.3.2)
+Bumps [coverage](https://github.com/nedbat/coveragepy) from 7.2.5 to 7.2.6.
+- [Release notes](https://github.com/nedbat/coveragepy/releases)
+- [Changelog](https://github.com/nedbat/coveragepy/blob/master/CHANGES.rst)
+- [Commits](https://github.com/nedbat/coveragepy/compare/7.2.5...7.2.6)
 
 ---
 updated-dependencies:
-- dependency-name: pre-commit
+- dependency-name: coverage
   dependency-type: direct:development
   update-type: version-update:semver-patch
 ...
 
-Signed-off-by: dependabot[bot] <support@github.com>
-Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",[![](https://github.com/theislab/pertpy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/pertpy/actions/runs/5046233491)
-theislab,pertpy,theislab/pertpy,26,3,20,4,FALSE,https://github.com/theislab/pertpy,26,9426e14792805f4779bc2272b91998e4fe886d45,"questions clear, no new code",[![](https://github.com/theislab/pertpy/workflows/Build%20pertpy%20Package/badge.svg)](https://github.com/theislab/pertpy/actions/runs/5058632981) [![](https://github.com/theislab/pertpy/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/pertpy/actions/runs/5058632986) [![](https://github.com/theislab/pertpy/workflows/Run%20pertpy%20Tests/badge.svg)](https://github.com/theislab/pertpy/actions/runs/5058632980)
+Signed-off-by: dependabot[bot] <support@github.com>",[![](https://github.com/theislab/pertpy/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/pertpy/actions/runs/5108118803)
+theislab,pertpy,theislab/pertpy,26,3,23,4,FALSE,https://github.com/theislab/pertpy,26,404835c82f9a3d943b85973c10130303d090839d,"Revert ""Deleted JaxscgenPlot""
+
+This reverts commit 161fc137c5a23320a5799a22cd4d7212b550bca9.",[![](https://github.com/theislab/pertpy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/pertpy/actions/runs/4629618853)
 theislab,pertpy-datasets,theislab/pertpy-datasets,1,3,0,1,FALSE,https://github.com/theislab/pertpy-datasets,1,NA,NA,NA
 theislab,pertpy-tutorials,theislab/pertpy-tutorials,2,4,1,3,FALSE,https://github.com/theislab/pertpy-tutorials,2,NA,NA,NA
 theislab,perturbation-metrics,theislab/perturbation-metrics,0,1,0,0,FALSE,https://github.com/theislab/perturbation-metrics,0,NA,NA,NA
@@ -263,14 +262,14 @@ theislab,scvelo_notebooks,theislab/scvelo_notebooks,23,1,2,12,FALSE,https://gith
 theislab,sfaira,theislab/sfaira,129,7,176,13,FALSE,https://github.com/theislab/sfaira,129,96fcf8f55c9865728c8032bec35e8d9e836e7001,Merge branch 'dev' into data/d10_1101_2022_03_10_483747,[![](https://github.com/theislab/sfaira/workflows/Build%20sfaira%20Package/badge.svg)](https://github.com/theislab/sfaira/actions/runs/4859312807)
 theislab,sfaira,theislab/sfaira,129,7,176,13,FALSE,https://github.com/theislab/sfaira,129,c50240a74530e614ab7681bf9c63b04cb815b361,"Merge pull request #589 from theislab/release
 
-Release 0.3.12",[![](https://github.com/theislab/sfaira/workflows/Check%20URLs/badge.svg)](https://github.com/theislab/sfaira/actions/runs/5101404385)
+Release 0.3.12",[![](https://github.com/theislab/sfaira/workflows/Check%20URLs/badge.svg)](https://github.com/theislab/sfaira/actions/runs/5107092652)
 theislab,sfaira,theislab/sfaira,129,7,176,13,FALSE,https://github.com/theislab/sfaira,129,d1a9e6c4c7974abe685263206671a452f8e84c6f,fix miura organ annotation,[![](https://github.com/theislab/sfaira/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/sfaira/actions/runs/4734866287)
 theislab,sfaira-portal,theislab/sfaira-portal,0,3,2,0,FALSE,https://github.com/theislab/sfaira-portal,0,a06e268a61598ca1b7244d52f2e6246f48d6541d,fix typo,[![](https://github.com/theislab/sfaira-portal/workflows/Build-site/badge.svg)](https://github.com/theislab/sfaira-portal/actions/runs/1739478412)
 theislab,sfaira-site,theislab/sfaira-site,0,3,0,0,FALSE,https://github.com/theislab/sfaira-site,0,NA,NA,NA
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,2,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,2,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,22910c7f20e48defbcb5b82c2137e97ee7ed428f,updated dependencies,[![](https://github.com/theislab/sfaira_extension/workflows/Build%20sfaira_extension%20Package/badge.svg)](https://github.com/theislab/sfaira_extension/actions/runs/886123995) [![](https://github.com/theislab/sfaira_extension/workflows/Run%20bandit/badge.svg)](https://github.com/theislab/sfaira_extension/actions/runs/642444275) [![](https://github.com/theislab/sfaira_extension/workflows/Run%20flake8%20linting/badge.svg)](https://github.com/theislab/sfaira_extension/actions/runs/642444274)
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,5,3,3,2,FALSE,https://github.com/theislab/sfaira_tutorials,5,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,376,15,39,48,FALSE,https://github.com/theislab/single-cell-best-practices,376,c06ca90930bd6c34220a7df594ed477aec1d6a19,"scATAC part (#162)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,377,15,38,48,FALSE,https://github.com/theislab/single-cell-best-practices,377,c06ca90930bd6c34220a7df594ed477aec1d6a19,"scATAC part (#162)
 
 * scATAC_pp
 
@@ -384,13 +383,13 @@ Signed-off-by: zethson <lukas.heumos@posteo.net>
 Co-authored-by: xlancelottx <christopher.lance94@gmail.com>
 Co-authored-by: zethson <lukas.heumos@posteo.net>
 Co-authored-by: Anna Schaar <anna.schaar@tum.de>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/4784044952)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,376,15,39,48,FALSE,https://github.com/theislab/single-cell-best-practices,376,ee7f3c88559e6d1e1921bbcc152d693c9dc610f6,Typo fix (#198),[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439898) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439899) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439901) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439903)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,377,15,38,48,FALSE,https://github.com/theislab/single-cell-best-practices,377,ee7f3c88559e6d1e1921bbcc152d693c9dc610f6,Typo fix (#198),[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439898) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439899) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439901) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/5084439903)
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1072,30,20,398,FALSE,https://github.com/theislab/single-cell-tutorial,1072,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,3,3,4,3,FALSE,https://github.com/theislab/singlecell_proteomics,3,NA,NA,NA
 theislab,spapros,theislab/spapros,17,2,19,4,FALSE,https://github.com/theislab/spapros,17,0e88166b1a58089893c90bc2625aa294fe0042a0,bug fix set selection,[![](https://github.com/theislab/spapros/workflows/Build%20spapros%20Package/badge.svg)](https://github.com/theislab/spapros/actions/runs/5098343856) [![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/5098343857) [![](https://github.com/theislab/spapros/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/spapros/actions/runs/5098343860) [![](https://github.com/theislab/spapros/workflows/Run%20spapros%20Tests/badge.svg)](https://github.com/theislab/spapros/actions/runs/5098343862)
 theislab,spapros,theislab/spapros,17,2,19,4,FALSE,https://github.com/theislab/spapros,17,28b974a43a8745d7cb0518b55fd68ce63b044ced,"Merge pull request #266 from theislab/development
 
-New version release",[![](https://github.com/theislab/spapros/workflows/Labeler/badge.svg)](https://github.com/theislab/spapros/actions/runs/4940143488) [![](https://github.com/theislab/spapros/workflows/cookietemple%20sync/badge.svg)](https://github.com/theislab/spapros/actions/runs/5101735573)
+New version release",[![](https://github.com/theislab/spapros/workflows/Labeler/badge.svg)](https://github.com/theislab/spapros/actions/runs/4940143488) [![](https://github.com/theislab/spapros/workflows/cookietemple%20sync/badge.svg)](https://github.com/theislab/spapros/actions/runs/5107507994)
 theislab,spapros,theislab/spapros,17,2,19,4,FALSE,https://github.com/theislab/spapros,17,32aa90e29ff70afa4c001d47e80bcbd6e4d96d19,Bump version from 0.1.2 to 0.1.3,[![](https://github.com/theislab/spapros/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/spapros/actions/runs/4940112493)
 theislab,spapros-pipeline,theislab/spapros-pipeline,6,1,0,0,FALSE,https://github.com/theislab/spapros-pipeline,6,3b02b88a6711cfeea26ea5a2023fe0fe26a0ed08,"fix formatting of README
 
