@@ -122,7 +122,7 @@ theislab,geome,theislab/geome,13,3,4,4,FALSE,https://github.com/theislab/geome,1
 theislab,geome,theislab/geome,13,3,4,4,FALSE,https://github.com/theislab/geome,13,5bf0cd07b2ea7fa224a37f69232542a9e686c5bf,"Merge pull request #31 from theislab/template-update
 
 Automated template update from cookiecutter-scverse",[![](https://github.com/theislab/geome/workflows/Sync%20Template/badge.svg)](https://github.com/theislab/geome/actions/runs/4904831582)
-theislab,gh-dashboard,theislab/gh-dashboard,1,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,1,54038a9613a3b8736b3e6a03d8983a0d7a8296f4,[status] 2024-02-15 12:12:24 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/7930234289)
+theislab,gh-dashboard,theislab/gh-dashboard,1,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,1,ed8a732ea5b2a5e631054b6e80c0842477d55fe5,[status] 2024-02-16 12:11:15 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/7941475155)
 theislab,graph_abstraction,theislab/graph_abstraction,26,8,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,5,2,0,0,FALSE,https://github.com/theislab/graphcompass,5,7c455146402592d7ba73173a72d2abc4d5f7737b,initial commit,[![](https://github.com/theislab/graphcompass/workflows/Labeler/badge.svg)](https://github.com/theislab/graphcompass/actions/runs/7630989244) [![](https://github.com/theislab/graphcompass/workflows/Release/badge.svg)](https://github.com/theislab/graphcompass/actions/runs/7630989237)
 theislab,greatpy,theislab/greatpy,8,3,4,0,FALSE,https://github.com/theislab/greatpy,8,NA,NA,NA
@@ -231,7 +231,7 @@ Co-authored-by: Philipp A <flying-sheep@web.de>",[![](https://github.com/theisla
 theislab,scarches,theislab/scarches,296,14,34,48,FALSE,https://github.com/theislab/scarches,296,NA,NA,NA
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,3,0,0,FALSE,https://github.com/theislab/scarches_notebooks,0,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,6,3,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,6,NA,NA,NA
-theislab,scgen,theislab/scgen,238,9,20,51,FALSE,https://github.com/theislab/scgen,238,d79e1f04233c30f9a4eb5b8d57718127909807d7,Merge pull request #87 from theislab/batch_corr_labels,[![](https://github.com/theislab/scgen/workflows/scgen-test/badge.svg)](https://github.com/theislab/scgen/actions/runs/6370224484)
+theislab,scgen,theislab/scgen,238,9,19,51,FALSE,https://github.com/theislab/scgen,238,d79e1f04233c30f9a4eb5b8d57718127909807d7,Merge pull request #87 from theislab/batch_corr_labels,[![](https://github.com/theislab/scgen/workflows/scgen-test/badge.svg)](https://github.com/theislab/scgen/actions/runs/6370224484)
 theislab,scgen-reproducibility,theislab/scgen-reproducibility,17,4,5,8,FALSE,https://github.com/theislab/scgen-reproducibility,17,NA,NA,NA
 theislab,scib,theislab/scib,255,16,36,57,FALSE,https://github.com/theislab/scib,NA,d42f919b5b0aac86f19937d4d4d02bf2e4d8bdbd,"Update dependencies (#396)
 
@@ -242,7 +242,7 @@ theislab,scib,theislab/scib,255,16,36,57,FALSE,https://github.com/theislab/scib,
 * set minimum python version to 3.8",[![](https://github.com/theislab/scib/workflows/Deployment/badge.svg)](https://github.com/theislab/scib/actions/runs/7468185443)
 theislab,scib-pipeline,theislab/scib-pipeline,50,7,17,27,FALSE,https://github.com/theislab/scib-pipeline,50,1180bcb35829d6d2984202268b4d1d11c511e20c,Merge branch 'fix/igraph_dependency' into rpy2_unpin,[![](https://github.com/theislab/scib-pipeline/workflows/Manual%20workflow/badge.svg)](https://github.com/theislab/scib-pipeline/actions/runs/4118363146)
 theislab,scib-reproducibility,theislab/scib-reproducibility,48,6,3,13,FALSE,https://github.com/theislab/scib-reproducibility,48,NA,NA,NA
-theislab,scvelo,theislab/scvelo,378,13,60,102,FALSE,https://github.com/theislab/scvelo,378,3f0a6124f93fd6888684eee736228c1fe3c63982,"Remove hard `scvi-tools` dependency (#1185)
+theislab,scvelo,theislab/scvelo,379,13,60,102,FALSE,https://github.com/theislab/scvelo,379,3f0a6124f93fd6888684eee736228c1fe3c63982,"Remove hard `scvi-tools` dependency (#1185)
 
 * Remove hard `scvi-tools` dependency
 
@@ -251,11 +251,11 @@ theislab,scvelo,theislab/scvelo,378,13,60,102,FALSE,https://github.com/theislab/
 * Remove `torch` dependency
 
 * Remove unused `skip_file`",[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/7898495265) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/7898495278)
-theislab,scvelo,theislab/scvelo,378,13,60,102,FALSE,https://github.com/theislab/scvelo,378,809632e03acc958a5f13d9321981af9c1cd95460,"Update `pyproject.toml` (#1166)
+theislab,scvelo,theislab/scvelo,379,13,60,102,FALSE,https://github.com/theislab/scvelo,379,809632e03acc958a5f13d9321981af9c1cd95460,"Update `pyproject.toml` (#1166)
 
 Update version number.",[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/7076589652)
 theislab,scvelo_notebooks,theislab/scvelo_notebooks,26,2,2,12,FALSE,https://github.com/theislab/scvelo_notebooks,26,NA,NA,NA
-theislab,sfaira,theislab/sfaira,131,8,166,13,FALSE,https://github.com/theislab/sfaira,131,55bcbbf2588a08e4a98b1e65324119407ec6e75c,Merge pull request #741 from theislab/release,[![](https://github.com/theislab/sfaira/workflows/Check%20URLs/badge.svg)](https://github.com/theislab/sfaira/actions/runs/7923924465)
+theislab,sfaira,theislab/sfaira,131,8,166,13,FALSE,https://github.com/theislab/sfaira,131,55bcbbf2588a08e4a98b1e65324119407ec6e75c,Merge pull request #741 from theislab/release,[![](https://github.com/theislab/sfaira/workflows/Check%20URLs/badge.svg)](https://github.com/theislab/sfaira/actions/runs/7937694040)
 theislab,sfaira,theislab/sfaira,131,8,166,13,FALSE,https://github.com/theislab/sfaira,131,5fcf932c44613e6bf4063ef3075ad6062bf5d9a1,round restored counts in some affected datasets,[![](https://github.com/theislab/sfaira/workflows/Build%20sfaira%20Package/badge.svg)](https://github.com/theislab/sfaira/actions/runs/7285672388) [![](https://github.com/theislab/sfaira/workflows/Create%20sfaira%20data-loader%20templates/badge.svg)](https://github.com/theislab/sfaira/actions/runs/7285672382) [![](https://github.com/theislab/sfaira/workflows/Run%20bandit/badge.svg)](https://github.com/theislab/sfaira/actions/runs/7285672385) [![](https://github.com/theislab/sfaira/workflows/Run%20flake8%20linting/badge.svg)](https://github.com/theislab/sfaira/actions/runs/7285672384)
 theislab,sfaira,theislab/sfaira,131,8,166,13,FALSE,https://github.com/theislab/sfaira,131,ceb14c946f699c38d18a32192b76d4639caf845e,fix download links,[![](https://github.com/theislab/sfaira/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/sfaira/actions/runs/6812817430)
 theislab,sfaira-portal,theislab/sfaira-portal,0,4,2,0,FALSE,https://github.com/theislab/sfaira-portal,0,NA,NA,NA
@@ -263,13 +263,13 @@ theislab,sfaira-site,theislab/sfaira-site,0,4,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,3,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,3,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,4,3,2,FALSE,https://github.com/theislab/sfaira_tutorials,6,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,577,16,49,126,FALSE,https://github.com/theislab/single-cell-best-practices,577,2e0a1f475d614c86bdc91c8544870e702f67c38e,"Update differential_gene_expression.ipynb (#256)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,579,16,49,126,FALSE,https://github.com/theislab/single-cell-best-practices,579,2e0a1f475d614c86bdc91c8544870e702f67c38e,"Update differential_gene_expression.ipynb (#256)
 
 Corrected typographical and grammatical errors.",[![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/7338718026)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,577,16,49,126,FALSE,https://github.com/theislab/single-cell-best-practices,577,83f34dabe86da58240a9d08e118c2f8a8dc99079,"Update raw_data_processing.md
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,579,16,49,126,FALSE,https://github.com/theislab/single-cell-best-practices,579,83f34dabe86da58240a9d08e118c2f8a8dc99079,"Update raw_data_processing.md
 
 avoid missing piscem path during index generation",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/7832920583) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/7832920585) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/7832920584)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,577,16,49,126,FALSE,https://github.com/theislab/single-cell-best-practices,577,c06ca90930bd6c34220a7df594ed477aec1d6a19,"scATAC part (#162)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,579,16,49,126,FALSE,https://github.com/theislab/single-cell-best-practices,579,c06ca90930bd6c34220a7df594ed477aec1d6a19,"scATAC part (#162)
 
 * scATAC_pp
 
