@@ -45,14 +45,14 @@ theislab,batchglm,theislab/batchglm,26,3,47,9,FALSE,https://github.com/theislab/
 theislab,bindome,theislab/bindome,1,3,5,1,FALSE,https://github.com/theislab/bindome,1,NA,NA,NA
 theislab,campa,theislab/campa,13,4,5,4,FALSE,https://github.com/theislab/campa,13,NA,NA,NA
 theislab,campa_ana,theislab/campa_ana,2,4,0,0,FALSE,https://github.com/theislab/campa_ana,2,NA,NA,NA
-theislab,cellrank,theislab/cellrank,321,8,19,40,FALSE,https://github.com/theislab/cellrank,321,08f1c901cc4ba1f6500f6fced4df8f5c076755e9,"Fix/importError #1183 (#1184)
+theislab,cellrank,theislab/cellrank,323,8,20,40,FALSE,https://github.com/theislab/cellrank,323,08f1c901cc4ba1f6500f6fced4df8f5c076755e9,"Fix/importError #1183 (#1184)
 
 * fixed importError, issue #1183
 
 * Removed 'renamed_arg'
 
 * linting",[![](https://github.com/theislab/cellrank/workflows/Deployment/badge.svg)](https://github.com/theislab/cellrank/actions/runs/8601715542)
-theislab,cellrank,theislab/cellrank,321,8,19,40,FALSE,https://github.com/theislab/cellrank,321,6074913214f087301dd49bd9ef581c20ec56e759,Fix failing test,[![](https://github.com/theislab/cellrank/workflows/Test/badge.svg)](https://github.com/theislab/cellrank/actions/runs/9539959294) [![](https://github.com/theislab/cellrank/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank/actions/runs/9540023615)
+theislab,cellrank,theislab/cellrank,323,8,20,40,FALSE,https://github.com/theislab/cellrank,323,6074913214f087301dd49bd9ef581c20ec56e759,Fix failing test,[![](https://github.com/theislab/cellrank/workflows/Test/badge.svg)](https://github.com/theislab/cellrank/actions/runs/9637498214) [![](https://github.com/theislab/cellrank/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank/actions/runs/9637563994)
 theislab,cellrank2_reproducibility,theislab/cellrank2_reproducibility,4,1,1,0,FALSE,https://github.com/theislab/cellrank2_reproducibility,4,f5c767a08bd0db4b58036afaffc91d0a649c90a5,"Add initial state identification (#59)
 
 * Add `embryoid_body/initial_state.ipynb`
@@ -67,7 +67,7 @@ theislab,cellrank2_reproducibility,theislab/cellrank2_reproducibility,4,1,1,0,FA
 theislab,cellrank_notebooks,theislab/cellrank_notebooks,6,4,1,5,FALSE,https://github.com/theislab/cellrank_notebooks,6,6777840bcc146924d208c0b9b02677da63620805,[ci skip] Fix pepy badge,[![](https://github.com/theislab/cellrank_notebooks/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank_notebooks/actions/runs/6686677756)
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,13,2,0,8,FALSE,https://github.com/theislab/cellrank_reproducibility,13,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,4,2,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,4,NA,NA,NA
-theislab,chemCPA,theislab/chemCPA,88,5,9,22,FALSE,https://github.com/theislab/chemCPA,88,NA,NA,NA
+theislab,chemCPA,theislab/chemCPA,88,5,9,23,FALSE,https://github.com/theislab/chemCPA,88,NA,NA,NA
 theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,0,2,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,0,NA,NA,NA
 theislab,consensus-clustering-evaluation,theislab/consensus-clustering-evaluation,0,4,0,0,FALSE,https://github.com/theislab/consensus-clustering-evaluation,0,NA,NA,NA
 theislab,countae,theislab/countae,1,4,0,0,FALSE,https://github.com/theislab/countae,1,NA,NA,NA
@@ -121,7 +121,7 @@ obs_names and var_names added to fields",[![](https://github.com/theislab/geome/
 theislab,geome,theislab/geome,16,3,3,4,FALSE,https://github.com/theislab/geome,16,5bf0cd07b2ea7fa224a37f69232542a9e686c5bf,"Merge pull request #31 from theislab/template-update
 
 Automated template update from cookiecutter-scverse",[![](https://github.com/theislab/geome/workflows/Sync%20Template/badge.svg)](https://github.com/theislab/geome/actions/runs/4904831582)
-theislab,gh-dashboard,theislab/gh-dashboard,1,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,1,63867ac9ef8a42792ac281b5021cac711ab1ba73,[status] 2024-06-22 12:11:21 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/9633238345)
+theislab,gh-dashboard,theislab/gh-dashboard,1,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,1,98a9a1abc5ea59bff78a86d78f84d51fa760e9e2,[status] 2024-06-23 12:12:17 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/9644939401)
 theislab,graph_abstraction,theislab/graph_abstraction,26,8,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,15,2,0,0,FALSE,https://github.com/theislab/graphcompass,15,7c455146402592d7ba73173a72d2abc4d5f7737b,initial commit,[![](https://github.com/theislab/graphcompass/workflows/Labeler/badge.svg)](https://github.com/theislab/graphcompass/actions/runs/7630989244) [![](https://github.com/theislab/graphcompass/workflows/Release/badge.svg)](https://github.com/theislab/graphcompass/actions/runs/7630989237)
 theislab,greatpy,theislab/greatpy,8,3,4,0,FALSE,https://github.com/theislab/greatpy,8,NA,NA,NA
@@ -156,7 +156,7 @@ Co-authored-by: Dominik Klein <dominik.klein@helmoltz-munich.de>",[![](https://g
 theislab,moscot-framework_reproducibility,theislab/moscot-framework_reproducibility,1,2,1,0,FALSE,https://github.com/theislab/moscot-framework_reproducibility,1,NA,NA,NA
 theislab,moscot_benchmarks,theislab/moscot_benchmarks,2,2,1,0,FALSE,https://github.com/theislab/moscot_benchmarks,2,NA,NA,NA
 theislab,moscot_not,theislab/moscot_not,3,2,8,1,FALSE,https://github.com/theislab/moscot_not,3,NA,NA,NA
-theislab,moscot_notebooks,theislab/moscot_notebooks,6,1,4,3,FALSE,https://github.com/theislab/moscot_notebooks,6,NA,NA,NA
+theislab,moscot_notebooks,theislab/moscot_notebooks,6,1,5,3,FALSE,https://github.com/theislab/moscot_notebooks,6,NA,NA,NA
 theislab,moslin,theislab/moslin,9,1,0,1,FALSE,https://github.com/theislab/moslin,9,NA,NA,NA
 theislab,mouse_cross-condition_pancreatic_islet_atlas,theislab/mouse_cross-condition_pancreatic_islet_atlas,7,2,0,3,FALSE,https://github.com/theislab/mouse_cross-condition_pancreatic_islet_atlas,7,NA,NA,NA
 theislab,mubind,theislab/mubind,20,3,30,0,FALSE,https://github.com/theislab/mubind,20,d438de2eaa16af584c97c0ecd0edb6be45b7d5fa,evaluate examples with graph,[![](https://github.com/theislab/mubind/workflows/Python%20package/badge.svg)](https://github.com/theislab/mubind/actions/runs/9496414877)
@@ -171,7 +171,7 @@ theislab,ncem,theislab/ncem,100,6,26,13,FALSE,https://github.com/theislab/ncem,1
 update docs and python versions",[![](https://github.com/theislab/ncem/workflows/Labeler/badge.svg)](https://github.com/theislab/ncem/actions/runs/5392074704)
 theislab,ncem,theislab/ncem,100,6,26,13,FALSE,https://github.com/theislab/ncem,100,d03a0792b9ab6ea62d2715b57ce50fcf1a84967c,remove patsy dependency,[![](https://github.com/theislab/ncem/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/ncem/actions/runs/6666317399) [![](https://github.com/theislab/ncem/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/ncem/actions/runs/6666317397)
 theislab,ncem_benchmarks,theislab/ncem_benchmarks,8,4,4,2,FALSE,https://github.com/theislab/ncem_benchmarks,8,NA,NA,NA
-theislab,ncem_tutorials,theislab/ncem_tutorials,10,4,5,0,FALSE,https://github.com/theislab/ncem_tutorials,10,NA,NA,NA
+theislab,ncem_tutorials,theislab/ncem_tutorials,11,4,5,0,FALSE,https://github.com/theislab/ncem_tutorials,11,NA,NA,NA
 theislab,neural_organoid_atlas,theislab/neural_organoid_atlas,10,4,2,1,FALSE,https://github.com/theislab/neural_organoid_atlas,10,NA,NA,NA
 theislab,nicheformer,theislab/nicheformer,33,3,7,2,FALSE,https://github.com/theislab/nicheformer,33,NA,NA,NA
 theislab,organoid_dexamethason_stimulation,theislab/organoid_dexamethason_stimulation,0,3,0,1,FALSE,https://github.com/theislab/organoid_dexamethason_stimulation,0,NA,NA,NA
@@ -209,7 +209,7 @@ updates:
 - [github.com/astral-sh/ruff-pre-commit: v0.4.8 → v0.4.9](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.8...v0.4.9)
 
 Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scanpydoc/workflows/Python%20tests/badge.svg)](https://github.com/theislab/scanpydoc/actions/runs/9561280799)
-theislab,scarches,theislab/scarches,318,13,43,49,FALSE,https://github.com/theislab/scarches,318,NA,NA,NA
+theislab,scarches,theislab/scarches,319,13,43,50,FALSE,https://github.com/theislab/scarches,319,NA,NA,NA
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,3,0,0,FALSE,https://github.com/theislab/scarches_notebooks,0,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,6,3,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,6,NA,NA,NA
 theislab,scgen,theislab/scgen,250,9,21,51,FALSE,https://github.com/theislab/scgen,250,NA,NA,NA
@@ -411,10 +411,10 @@ Co-authored-by: Anna Schaar <anna.schaar@tum.de>",[![](https://github.com/theisl
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,119,7,0,11,FALSE,https://github.com/theislab/single-cell-transformer-papers,119,NA,NA,NA
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1317,30,21,442,FALSE,https://github.com/theislab/single-cell-tutorial,1317,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,5,5,6,3,FALSE,https://github.com/theislab/singlecell_proteomics,5,NA,NA,NA
-theislab,spapros,theislab/spapros,22,3,11,5,FALSE,https://github.com/theislab/spapros,22,600d1b15c41d8de27acca322c9be619779279ed6,adapter tutorials to new framework,[![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/9623196491) [![](https://github.com/theislab/spapros/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/spapros/actions/runs/9623196496)
-theislab,spapros,theislab/spapros,22,3,11,5,FALSE,https://github.com/theislab/spapros,22,e8a37c9e78039920a0792fc04f426ab062dbbf88,"Merge pull request #321 from theislab/patch_precommit
+theislab,spapros,theislab/spapros,23,3,11,5,FALSE,https://github.com/theislab/spapros,23,600d1b15c41d8de27acca322c9be619779279ed6,adapter tutorials to new framework,[![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/9623196491) [![](https://github.com/theislab/spapros/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/spapros/actions/runs/9623196496)
+theislab,spapros,theislab/spapros,23,3,11,5,FALSE,https://github.com/theislab/spapros,23,e8a37c9e78039920a0792fc04f426ab062dbbf88,"Merge pull request #321 from theislab/patch_precommit
 
-pre commit correction of readthedocs.yml",[![](https://github.com/theislab/spapros/workflows/Labeler/badge.svg)](https://github.com/theislab/spapros/actions/runs/8661094687) [![](https://github.com/theislab/spapros/workflows/cookietemple%20sync/badge.svg)](https://github.com/theislab/spapros/actions/runs/9629774579)
+pre commit correction of readthedocs.yml",[![](https://github.com/theislab/spapros/workflows/Labeler/badge.svg)](https://github.com/theislab/spapros/actions/runs/8661094687) [![](https://github.com/theislab/spapros/workflows/cookietemple%20sync/badge.svg)](https://github.com/theislab/spapros/actions/runs/9638113643)
 theislab,spapros-pipeline,theislab/spapros-pipeline,7,2,0,0,FALSE,https://github.com/theislab/spapros-pipeline,7,NA,NA,NA
 theislab,spapros-smk,theislab/spapros-smk,0,2,0,1,FALSE,https://github.com/theislab/spapros-smk,0,NA,NA,NA
 theislab,spapros_reproducibility,theislab/spapros_reproducibility,0,1,0,0,FALSE,https://github.com/theislab/spapros_reproducibility,0,NA,NA,NA
