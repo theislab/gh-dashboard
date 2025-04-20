@@ -11,7 +11,7 @@ theislab,2022_Bakhti_pancreas_Syt13,theislab/2022_Bakhti_pancreas_Syt13,0,2,0,0,
 theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancreas_cross_species,4,3,0,1,FALSE,https://github.com/theislab/2022_Tritschler_pancreas_cross_species,4,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,59,5,6,8,FALSE,https://github.com/theislab/AutoGeneS,59,NA,NA,NA
 theislab,CFGen,theislab/CFGen,12,2,0,5,FALSE,https://github.com/theislab/CFGen,12,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,12,0,52,4,FALSE,https://github.com/theislab/CellFlow,12,NA,NA,NA
+theislab,CellFlow,theislab/CellFlow,12,0,53,4,FALSE,https://github.com/theislab/CellFlow,12,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,24,7,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,24,NA,NA,NA
 theislab,DRVI,theislab/DRVI,39,1,5,3,FALSE,https://github.com/theislab/DRVI,39,71c6a0a42b6b69579eb173bdd41a8b46ac7a8db4,"Limit anndata version for incompatibility with old scvi-tools (#23)
 
@@ -234,7 +234,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,3,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,3,8,4,FALSE,https://github.com/theislab/geome,16,402a0a8cdb442fee8666416e5f163c4098fa0c07,"Merge pull request #55 from theislab/fix/toarray
 
 Fix Sparse "".A"" Not Found",[![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/10868284169)
-theislab,gh-dashboard,theislab/gh-dashboard,3,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,3,9841b03054a02a572bcf8770b3a3dd2e0a0886c9,[status] 2025-04-18 12:13:19 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/14548902183)
+theislab,gh-dashboard,theislab/gh-dashboard,3,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,3,c27d99a9cb571434072f5075efb609239155759a,[status] 2025-04-19 12:12:59 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/14559249805)
 theislab,graph_abstraction,theislab/graph_abstraction,26,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,35,2,2,1,FALSE,https://github.com/theislab/graphcompass,35,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,3,4,0,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
@@ -281,7 +281,7 @@ theislab,ncem,theislab/ncem,109,5,32,13,FALSE,https://github.com/theislab/ncem,1
 theislab,ncem_benchmarks,theislab/ncem_benchmarks,8,3,4,2,FALSE,https://github.com/theislab/ncem_benchmarks,8,NA,NA,NA
 theislab,ncem_tutorials,theislab/ncem_tutorials,13,3,6,0,FALSE,https://github.com/theislab/ncem_tutorials,13,NA,NA,NA
 theislab,neural_organoid_atlas,theislab/neural_organoid_atlas,32,6,3,5,FALSE,https://github.com/theislab/neural_organoid_atlas,32,NA,NA,NA
-theislab,nicheformer,theislab/nicheformer,89,4,18,6,FALSE,https://github.com/theislab/nicheformer,89,NA,NA,NA
+theislab,nicheformer,theislab/nicheformer,90,4,18,7,FALSE,https://github.com/theislab/nicheformer,90,NA,NA,NA
 theislab,organoid_dexamethasone_stimulation,theislab/organoid_dexamethasone_stimulation,0,2,0,1,FALSE,https://github.com/theislab/organoid_dexamethasone_stimulation,0,NA,NA,NA
 theislab,paga,theislab/paga,214,9,24,34,FALSE,https://github.com/theislab/paga,214,NA,NA,NA
 theislab,pancreas-targeted_pharmacology,theislab/pancreas-targeted_pharmacology,0,5,1,2,FALSE,https://github.com/theislab/pancreas-targeted_pharmacology,0,NA,NA,NA
@@ -366,81 +366,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,3,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,2,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,2,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,3,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,6,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,885,17,69,212,FALSE,https://github.com/theislab/single-cell-best-practices,885,65e01f1f8e93564575e3e274c06d2a68aa1f1f33,"Update `make dropdown` (key takeaways dropdown and remove anchors) (#352)
-
-* first version of key takeaways script and example file for diff gene expression
-
-* bug fixes
-
-* clean code
-
-* first steps to remove the anchors
-
-* script works without anchors for ipynb's and md's
-
-* first clean up of code
-
-* create files for air_repertoire section
-
-* create files for chromatin_accessibility  section
-
-* create files for chromatin_accessibility2  section
-
-* create files for conditions and deconvolution section
-
-* create files for introduction section + bug fixes
-
-* create files for mechanisms, multimodal integration and preprocessing visualization sections
-
-* create files for spatial, surface protein and trajectories sections + small bug fix
-
-* first clean up of code and adding first descriptions for the functions
-
-* cleaned code and described functions for insert_dropdown.py
-
-* cleaned code of keytakeaways.py
-
-* improve file structure
-
-* change .keytakeaways to .txt and add a description for the dropdowns to CONTRIBUTING.md
-
-* change numpy style to google docstring style
-
-* improve CONTRIBUTING.md
-
-* bug fix CONTRIBUTING.md
-
-* add changelog
-
-* improve typos
-
-* Update CONTRIBUTING.md
-
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Update CONTRIBUTING.md
-
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Update scripts/dropdowns/insert_dropdowns.py
-
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Update scripts/dropdowns/insert_dropdowns.py
-
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* adopt review comments (improve function descriptions, use pathlib instead of os, ...)
-
-* replace <name-notebook>.txt with <name-notebook>_keytakeaways.txt
-
-* replace os with pathlib
-
----------
-
-Co-authored-by: Luis <ge34lah@mytum.de>
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14422871306)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,885,17,69,212,FALSE,https://github.com/theislab/single-cell-best-practices,885,d4a2a83b2f956fb8e95904307b00a9e64042962e,final touch,[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14539539373) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14539539387) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14539539360)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,885,17,70,212,FALSE,https://github.com/theislab/single-cell-best-practices,885,73d70720a8cbd0a7db8af0df176e9e5a4150c0da,update precommit to v3.0.0 (#357),[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14549633333) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14549633334) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14549633340) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14549633338)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,308,13,40,38,FALSE,https://github.com/theislab/single-cell-transformer-papers,308,687ba3dbcff640cdb2520c97c1f369ce6b857bf4,Added Paper (#88),[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/13704177752)
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1467,30,21,473,FALSE,https://github.com/theislab/single-cell-tutorial,1467,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,5,4,6,3,FALSE,https://github.com/theislab/singlecell_proteomics,5,NA,NA,NA
@@ -474,6 +400,6 @@ theislab,transcription_factor_activity,theislab/transcription_factor_activity,1,
 theislab,trvaep,theislab/trvaep,9,2,0,6,FALSE,https://github.com/theislab/trvaep,9,NA,NA,NA
 theislab,txsim,theislab/txsim,3,2,40,1,FALSE,https://github.com/theislab/txsim,3,NA,NA,NA
 theislab,unbalanced_monge_maps_single_cell,theislab/unbalanced_monge_maps_single_cell,1,1,0,0,FALSE,https://github.com/theislab/unbalanced_monge_maps_single_cell,1,NA,NA,NA
-theislab,vevo_Tahoe_100m_analysis,theislab/vevo_Tahoe_100m_analysis,17,0,4,2,FALSE,https://github.com/theislab/vevo_Tahoe_100m_analysis,17,95810f30b7633d56c46c6a63b9f4145bceaf8449,add figures,[![](https://github.com/theislab/vevo_Tahoe_100m_analysis/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/vevo_Tahoe_100m_analysis/actions/runs/13719577764)
+theislab,vevo_Tahoe_100m_analysis,theislab/vevo_Tahoe_100m_analysis,18,0,4,2,FALSE,https://github.com/theislab/vevo_Tahoe_100m_analysis,18,95810f30b7633d56c46c6a63b9f4145bceaf8449,add figures,[![](https://github.com/theislab/vevo_Tahoe_100m_analysis/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/vevo_Tahoe_100m_analysis/actions/runs/13719577764)
 theislab,zebrafish_bipolarity,theislab/zebrafish_bipolarity,1,3,0,1,FALSE,https://github.com/theislab/zebrafish_bipolarity,1,NA,NA,NA
 theislab,zellkonverter,theislab/zellkonverter,171,4,14,29,FALSE,https://github.com/theislab/zellkonverter,171,c17a17220088ff880d512c392d5de4aacb9e9bb1,Bioconductor 3.22 devel,[![](https://github.com/theislab/zellkonverter/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/theislab/zellkonverter/actions/runs/14548555370)
