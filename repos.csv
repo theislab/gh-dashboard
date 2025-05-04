@@ -187,7 +187,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,3,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,3,9,4,FALSE,https://github.com/theislab/geome,16,402a0a8cdb442fee8666416e5f163c4098fa0c07,"Merge pull request #55 from theislab/fix/toarray
 
 Fix Sparse "".A"" Not Found",[![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/10868284169)
-theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,d71d9b58bedbf4c87044fb033344f9a5b281e368,[status] 2025-05-02 12:13:49 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/14810654233)
+theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,5e11d0712a998ef7fb9a3992300e6086aadda592,[status] 2025-05-03 12:14:04 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/14820995902)
 theislab,graph_abstraction,theislab/graph_abstraction,26,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,35,2,2,1,FALSE,https://github.com/theislab/graphcompass,35,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,3,4,0,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
@@ -281,7 +281,7 @@ updates:
 - [github.com/astral-sh/ruff-pre-commit: v0.11.6 → v0.11.7](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.6...v0.11.7)
 
 Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scanpydoc/workflows/Python%20tests/badge.svg)](https://github.com/theislab/scanpydoc/actions/runs/14715661142)
-theislab,scarches,theislab/scarches,362,11,58,59,FALSE,https://github.com/theislab/scarches,362,NA,NA,NA
+theislab,scarches,theislab/scarches,363,11,58,59,FALSE,https://github.com/theislab/scarches,363,NA,NA,NA
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,2,0,0,FALSE,https://github.com/theislab/scarches_notebooks,0,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,9,2,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,9,NA,NA,NA
 theislab,scgen,theislab/scgen,292,8,30,59,FALSE,https://github.com/theislab/scgen,292,NA,NA,NA
@@ -322,25 +322,63 @@ theislab,sfaira-site,theislab/sfaira-site,0,3,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,2,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,2,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,3,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,6,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,893,17,68,213,FALSE,https://github.com/theislab/single-cell-best-practices,893,619a287cc4ecd357b54eae4beddac14bf65ecca3,update links,[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14803544172) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14803544176) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14803544164)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,893,17,68,213,FALSE,https://github.com/theislab/single-cell-best-practices,893,6ba15b7d81397a0dc6251af3fef24a11c3fc1552,"Update dropdown chapter of `CONTRIBUTING.md` based on practical feedback (#360)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,893,17,66,213,FALSE,https://github.com/theislab/single-cell-best-practices,893,85b4fc9d6a5d36dfb4545401a0f4b404bfb488be,added comments to the style guide and created a first template,[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14812413267) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14812413265) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14812413270)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,893,17,66,213,FALSE,https://github.com/theislab/single-cell-best-practices,893,d72812e0a9de5cf10540f6eb44f253bf3b42a3c6,"Update of Preprocessing and Visalization section (#356)
 
-* improve dropdown paragraph based on Seo's feedback
+* update preprocessing yml
 
-* add one sentence and improve wording
+* update quality control
 
-* add changelog
+* finish quality control
+
+* update normalization chapter
+
+* update feature selection
+
+* update dimensionality reduction
+
+* update pre-commit to v3.0.0
+
+* final touch
+
+* Add changelog fragment
+
+* fix dropdown to show in pdf
+
+* change regex in quality control and rerun all the cells
+Co-authored-by: KriBaLin <kribalin@users.noreply.github.com>
+Co-authored-by: grst <mail@gregor-sturm.de>
+Co-authored-by: adc0032 <clarkad@uab.edu>
+
+* add citation to normalization chapter regarding issue #243
+
+* fix doublet detection figure in quality contol regarding issue #244
+
+* add explanation regarding issue #242 in quality control
+
+* add one more citation in normalization
+
+* A few minor changes
+
+Signed-off-by: zethson <lukas.heumos@posteo.net>
+
+* new image for doublet detection
+
+* minor fixes
+
+* more precise description in changelog fragment
 
 ---------
 
-Co-authored-by: Luis <ge34lah@mytum.de>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14651669367)
-theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,310,13,40,39,FALSE,https://github.com/theislab/single-cell-transformer-papers,310,687ba3dbcff640cdb2520c97c1f369ce6b857bf4,Added Paper (#88),[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/13704177752)
+Signed-off-by: zethson <lukas.heumos@posteo.net>
+Co-authored-by: zethson <lukas.heumos@posteo.net>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/14811291458)
+theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,310,13,40,40,FALSE,https://github.com/theislab/single-cell-transformer-papers,310,687ba3dbcff640cdb2520c97c1f369ce6b857bf4,Added Paper (#88),[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/13704177752)
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1474,30,21,473,FALSE,https://github.com/theislab/single-cell-tutorial,1474,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,5,4,6,3,FALSE,https://github.com/theislab/singlecell_proteomics,5,NA,NA,NA
-theislab,spapros,theislab/spapros,36,2,17,7,FALSE,https://github.com/theislab/spapros,36,1ec08e6809978021e7ad0d7b7ce4f5412f391f79,"Merge pull request #357 from theislab/scrinshot_probe_designer
+theislab,spapros,theislab/spapros,36,2,15,7,FALSE,https://github.com/theislab/spapros,36,1ec08e6809978021e7ad0d7b7ce4f5412f391f79,"Merge pull request #357 from theislab/scrinshot_probe_designer
 
 adapter tutorials to new framework",[![](https://github.com/theislab/spapros/workflows/Labeler/badge.svg)](https://github.com/theislab/spapros/actions/runs/11988703697) [![](https://github.com/theislab/spapros/workflows/cookietemple%20sync/badge.svg)](https://github.com/theislab/spapros/actions/runs/13599575390)
-theislab,spapros,theislab/spapros,36,2,17,7,FALSE,https://github.com/theislab/spapros,36,2f6c1ad9fdab44d29017e268ef215d18278f56b9,prints for identifying mem issues,[![](https://github.com/theislab/spapros/workflows/Build%20spapros%20Package/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589767) [![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589776) [![](https://github.com/theislab/spapros/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589778) [![](https://github.com/theislab/spapros/workflows/Run%20spapros%20Tests/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589764)
+theislab,spapros,theislab/spapros,36,2,15,7,FALSE,https://github.com/theislab/spapros,36,2f6c1ad9fdab44d29017e268ef215d18278f56b9,prints for identifying mem issues,[![](https://github.com/theislab/spapros/workflows/Build%20spapros%20Package/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589767) [![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589776) [![](https://github.com/theislab/spapros/workflows/cookietemple%20lint/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589778) [![](https://github.com/theislab/spapros/workflows/Run%20spapros%20Tests/badge.svg)](https://github.com/theislab/spapros/actions/runs/12087589764)
 theislab,spapros-pipeline,theislab/spapros-pipeline,7,1,0,0,FALSE,https://github.com/theislab/spapros-pipeline,7,fe84cf66cf6cf9b8fb441c74d4c004c20d1003cf,Update readme to refer to spapros smk repo,[![](https://github.com/theislab/spapros-pipeline/workflows/Run%20Example/badge.svg)](https://github.com/theislab/spapros-pipeline/actions/runs/11988359512)
 theislab,spapros-smk,theislab/spapros-smk,0,2,0,1,FALSE,https://github.com/theislab/spapros-smk,0,NA,NA,NA
 theislab,spapros_reproducibility,theislab/spapros_reproducibility,1,1,0,1,FALSE,https://github.com/theislab/spapros_reproducibility,1,NA,NA,NA
