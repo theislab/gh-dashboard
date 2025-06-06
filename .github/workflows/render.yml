@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
-          pak::pkg_install(c("rmarkdown", "gh", "memoise", "purrr", "dplyr", "tidyr", "glue", "readr"))
+          pak::pkg_install(c("rmarkdown", "gh", "memoise", "purrr", "dplyr", "tidyr", "glue", "readr", "cleanrmd"))
         shell: Rscript {0}
 
       - name: Render Status Page
