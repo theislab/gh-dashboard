@@ -11,7 +11,7 @@ theislab,2022_Bakhti_pancreas_Syt13,theislab/2022_Bakhti_pancreas_Syt13,0,2,0,0,
 theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancreas_cross_species,5,3,0,1,FALSE,https://github.com/theislab/2022_Tritschler_pancreas_cross_species,5,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,60,5,6,8,FALSE,https://github.com/theislab/AutoGeneS,60,NA,NA,NA
 theislab,CFGen,theislab/CFGen,17,3,0,5,FALSE,https://github.com/theislab/CFGen,17,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,57,0,59,7,FALSE,https://github.com/theislab/CellFlow,57,NA,NA,NA
+theislab,CellFlow,theislab/CellFlow,58,0,59,7,FALSE,https://github.com/theislab/CellFlow,58,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,24,7,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,24,NA,NA,NA
 theislab,DRVI,theislab/DRVI,44,1,8,3,FALSE,https://github.com/theislab/DRVI,44,NA,NA,NA
 theislab,DRVI_reproducibility,theislab/DRVI_reproducibility,3,3,0,1,FALSE,https://github.com/theislab/DRVI_reproducibility,3,NA,NA,NA
@@ -173,12 +173,12 @@ theislab,expiMap_reproducibility,theislab/expiMap_reproducibility,11,4,3,4,FALSE
 theislab,extended-single-cell-best-practices-container,theislab/extended-single-cell-best-practices-container,3,3,2,1,FALSE,https://github.com/theislab/extended-single-cell-best-practices-container,3,NA,NA,NA
 theislab,feature-attribution-sc,theislab/feature-attribution-sc,4,2,8,1,FALSE,https://github.com/theislab/feature-attribution-sc,4,NA,NA,NA
 theislab,flexible_priors,theislab/flexible_priors,2,1,0,0,FALSE,https://github.com/theislab/flexible_priors,2,NA,NA,NA
-theislab,flowVI,theislab/flowVI,6,3,0,0,FALSE,https://github.com/theislab/flowVI,6,NA,NA,NA
+theislab,flowVI,theislab/flowVI,6,3,1,0,FALSE,https://github.com/theislab/flowVI,6,NA,NA,NA
 theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,3,0,1,FALSE,https://github.com/theislab/gastrulation_analysis,10,NA,NA,NA
 theislab,geome,theislab/geome,16,3,8,4,FALSE,https://github.com/theislab/geome,16,402a0a8cdb442fee8666416e5f163c4098fa0c07,"Merge pull request #55 from theislab/fix/toarray
 
 Fix Sparse "".A"" Not Found",[![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/10868284169)
-theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,72d995285f36e84c2bbe2b18c2bfef755328e6ed,[status] 2025-06-25 12:07:13 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/15901286250)
+theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,a6edbe1b240c381eda99f145a5f553dba86abbd5,[status] 2025-06-26 12:09:13 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/15925785108)
 theislab,graph_abstraction,theislab/graph_abstraction,26,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,34,2,1,1,FALSE,https://github.com/theislab/graphcompass,34,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,3,4,0,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
@@ -231,7 +231,7 @@ theislab,organoid_dexamethasone_stimulation,theislab/organoid_dexamethasone_stim
 theislab,paga,theislab/paga,222,9,24,33,FALSE,https://github.com/theislab/paga,222,NA,NA,NA
 theislab,pancreas-targeted_pharmacology,theislab/pancreas-targeted_pharmacology,0,5,1,2,FALSE,https://github.com/theislab/pancreas-targeted_pharmacology,0,NA,NA,NA
 theislab,pancreatic-endocrinogenesis,theislab/pancreatic-endocrinogenesis,8,2,0,7,FALSE,https://github.com/theislab/pancreatic-endocrinogenesis,8,NA,NA,NA
-theislab,paperbee,theislab/paperbee,12,1,8,0,FALSE,https://github.com/theislab/paperbee,12,41c8436aff024b5a1b20812c31aad988291a6fcc,"Merge pull request #22 from theislab/Updating-version
+theislab,paperbee,theislab/paperbee,13,1,8,0,FALSE,https://github.com/theislab/paperbee,13,41c8436aff024b5a1b20812c31aad988291a6fcc,"Merge pull request #22 from theislab/Updating-version
 
 Updating version",[![](https://github.com/theislab/paperbee/workflows/Draft%20PDF/badge.svg)](https://github.com/theislab/paperbee/actions/runs/15823908712)
 theislab,pdac_analysis,theislab/pdac_analysis,0,2,0,0,FALSE,https://github.com/theislab/pdac_analysis,0,NA,NA,NA
@@ -318,7 +318,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,3,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,2,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,2,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,3,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,6,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,933,16,73,219,FALSE,https://github.com/theislab/single-cell-best-practices,933,6b6fa9c87d8a4386690149f468000a3dac213a5a,"Remove deprecated pandas2ri.activate() calls from parts 6–8 (#375)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,934,16,73,219,FALSE,https://github.com/theislab/single-cell-best-practices,934,6b6fa9c87d8a4386690149f468000a3dac213a5a,"Remove deprecated pandas2ri.activate() calls from parts 6–8 (#375)
 
 * pandas2ri.activate()_line_deletion
 
@@ -336,7 +336,7 @@ Removed the pandas2ri.activate() lines, since they are deprecated.
 
 Co-authored-by: seohyonkim <seohyon.l.kim@gmail.com>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117126) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117112) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117119) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117118)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,320,13,40,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,320,7ab9c7d8e086a5b58f41eaf0fb411f157bb6d44c,update csendes et al (#89),[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/15210556055)
-theislab,single-cell-tutorial,theislab/single-cell-tutorial,1491,30,21,477,FALSE,https://github.com/theislab/single-cell-tutorial,1491,NA,NA,NA
+theislab,single-cell-tutorial,theislab/single-cell-tutorial,1491,30,21,478,FALSE,https://github.com/theislab/single-cell-tutorial,1491,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,4,6,3,FALSE,https://github.com/theislab/singlecell_proteomics,6,NA,NA,NA
 theislab,spapros,theislab/spapros,38,2,14,7,FALSE,https://github.com/theislab/spapros,38,1ec08e6809978021e7ad0d7b7ce4f5412f391f79,"Merge pull request #357 from theislab/scrinshot_probe_designer
 
@@ -365,7 +365,9 @@ theislab,tissue_tensorflow,theislab/tissue_tensorflow,8,3,0,0,FALSE,https://gith
 theislab,trVAE,theislab/trVAE,62,5,3,12,FALSE,https://github.com/theislab/trVAE,62,NA,NA,NA
 theislab,trVAE_reproducibility,theislab/trVAE_reproducibility,7,2,2,7,FALSE,https://github.com/theislab/trVAE_reproducibility,7,NA,NA,NA
 theislab,transcription_factor_activity,theislab/transcription_factor_activity,1,1,6,1,FALSE,https://github.com/theislab/transcription_factor_activity,1,NA,NA,NA
-theislab,troutpy,theislab/troutpy,0,0,1,0,FALSE,https://github.com/theislab/troutpy,0,NA,NA,NA
+theislab,troutpy,theislab/troutpy,0,0,1,0,FALSE,https://github.com/theislab/troutpy,0,def4cec83dbc02dac76bc0f2de326722513afe27,"Merge pull request #15 from theislab/sergio_dev
+
+Adding cell scores functions",[![](https://github.com/theislab/troutpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/troutpy/actions/runs/15921265106) [![](https://github.com/theislab/troutpy/workflows/Test/badge.svg)](https://github.com/theislab/troutpy/actions/runs/15921265103)
 theislab,trvaep,theislab/trvaep,9,2,0,6,FALSE,https://github.com/theislab/trvaep,9,NA,NA,NA
 theislab,txsim,theislab/txsim,3,2,40,2,FALSE,https://github.com/theislab/txsim,3,NA,NA,NA
 theislab,unbalanced_monge_maps_single_cell,theislab/unbalanced_monge_maps_single_cell,1,1,0,0,FALSE,https://github.com/theislab/unbalanced_monge_maps_single_cell,1,NA,NA,NA
