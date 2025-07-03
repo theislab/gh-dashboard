@@ -11,7 +11,1315 @@ theislab,2022_Bakhti_pancreas_Syt13,theislab/2022_Bakhti_pancreas_Syt13,0,2,0,0,
 theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancreas_cross_species,5,3,0,1,FALSE,https://github.com/theislab/2022_Tritschler_pancreas_cross_species,5,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,61,5,6,8,FALSE,https://github.com/theislab/AutoGeneS,61,NA,NA,NA
 theislab,CFGen,theislab/CFGen,17,3,0,5,FALSE,https://github.com/theislab/CFGen,17,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,61,0,58,7,FALSE,https://github.com/theislab/CellFlow,61,NA,NA,NA
+theislab,CellFlow,theislab/CellFlow,61,0,56,7,FALSE,https://github.com/theislab/CellFlow,61,bdf8313ea9cf0c1d33e24c3e7590f575bec42094,"Optimization with Huge Speedup: Dask Dataframes Instead of Manual Dataframe Iterations (#240)
+
+* init
+
+* add tests
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* resolve comments
+
+* Squashed commit of the following:
+
+commit 56888eb22f26d2b85cc08a26b36cdc2bd4754116
+Merge: d169628 9068a93
+Author: Selman Özleyen <32667648+selmanozleyen@users.noreply.github.com>
+Date:   Fri Jun 13 12:03:07 2025 +0200
+
+    Merge pull request #235 from theislab/feature/predict_batch
+
+    Feature and Speedup: `predict_batch`
+
+commit d1696283a3aaa2a940e60141d63620df99d0149b
+Merge: f6cdf17 801adf0
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri Jun 13 11:28:18 2025 +0200
+
+    Merge pull request #239 from theislab/feature/ooc-dataloading
+
+    Feature: Out of Core Dataloading Option
+
+commit 801adf0f041ed187bcfc9a2bf9ff4d6e9b6889ae
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 15:31:53 2025 +0200
+
+    add return types
+
+commit 6d44054cda4459402fd5bc2844b3d53701e3966c
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:56:48 2025 +0200
+
+    update error message
+
+commit 3bda1283474e44ed62946f27c77bad4ba47fa195
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:56:20 2025 +0200
+
+    document better
+
+commit de3b6eefeffdb0ee97c612bd070ab10b703d7f3a
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu Jun 12 11:51:03 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 8f1857448b918063891a574ad81058f716478511
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:50:55 2025 +0200
+
+    remove unused fixture
+
+commit 8e808a9044f011d596f366e62bfbf5bb49d791d6
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu Jun 12 11:17:33 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 67e64e19b7c2e32652febd79c878b3717b4ff61d
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:17:22 2025 +0200
+
+    add tests
+
+commit ab95081d0b977ff27471d2d4fa8f8c619a8bdd2e
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 12:08:48 2025 +0200
+
+    throw error when there isn't any valid indices
+
+commit 9068a9338943a3488029cd1a0c81499536c7b7ac
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu Jun 12 09:38:43 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit d65151a50342d18a7f45592a3eb5d4043f06b523
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 11:38:34 2025 +0200
+
+    When using PredictionSampler we can't use batched mode
+
+commit bb941ea7d7cc9e136e3e9ff8ae2ba6d4bc5692b3
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 11:33:45 2025 +0200
+
+    clarify documentation that this requires same number of cells
+
+commit 7461dc34c2a8ae51a8cbf0ae1dc751598781cccf
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sun Jun 1 16:07:15 2025 +0200
+
+    Fix type error
+
+commit 04566e738f8e316b8183925a88b8044f3a6fe1b6
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Tue May 27 17:11:02 2025 +0200
+
+    Replace tree map
+
+commit 4a9bbcde362f100c4a55d2e693723de2d42f50ac
+Merge: 855c5d9 f6cdf17
+Author: LeonStadelmann <169152764+LeonStadelmann@users.noreply.github.com>
+Date:   Tue May 27 16:58:19 2025 +0200
+
+    Merge branch 'main' into feature/predict_batch
+
+commit f6cdf1717b0cd31bec693f6896c229d84a209da9
+Merge: b4b7c96 70766f5
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 27 09:10:57 2025 +0200
+
+    Merge pull request #246 from theislab/pre-commit-ci-update-config
+
+    [pre-commit.ci] pre-commit autoupdate
+
+commit b4b7c9689e47c0f52bc3fac652a829324a1792f7
+Merge: 7a69c5d b67804f
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 27 09:10:36 2025 +0200
+
+    Merge pull request #245 from theislab/feature/stochastic_to_cellflow_class
+
+    pass rng from cellflow.predict
+
+commit 70766f54e285eecf0d6a52a0f15b265dbd123fa9
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon May 26 18:56:02 2025 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+
+    updates:
+    - [github.com/biomejs/pre-commit: v2.0.0-beta.4 → v2.0.0-beta.5](https://github.com/biomejs/pre-commit/compare/v2.0.0-beta.4...v2.0.0-beta.5)
+    - [github.com/tox-dev/pyproject-fmt: v2.5.1 → v2.6.0](https://github.com/tox-dev/pyproject-fmt/compare/v2.5.1...v2.6.0)
+    - [github.com/astral-sh/ruff-pre-commit: v0.11.10 → v0.11.11](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.10...v0.11.11)
+
+commit b67804f72a528322dee6dd3bbdf0b4547210ac4d
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Mon May 26 11:03:13 2025 +0200
+
+    fix callback/
+
+commit b9bc6c28c922c0ac4ad5ef0cb7c7ff045685a72b
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Mon May 26 09:04:25 2025 +0200
+
+    pass rng from cellflow.predict
+
+commit 7a69c5dcd7617286e24fe9789a19cae63f59b79e
+Merge: ce064e3 50a3cc8
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:17:03 2025 +0200
+
+    Merge pull request #238 from theislab/pre-commit-ci-update-config
+
+    [pre-commit.ci] pre-commit autoupdate
+
+commit ce064e319bd3f584bd98782ae66a1160a02cfdcc
+Merge: 6cb5540 b6c0bdb
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:14:53 2025 +0200
+
+    Merge pull request #215 from theislab/add/solver_callback
+
+    Add solver to callback call
+
+commit 6cb55405c4fb2d308e488ecfd84b8271f26ef47d
+Merge: 0dbf90f 83db489
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:05:14 2025 +0200
+
+    Merge pull request #233 from theislab/tutorial/combosciplex
+
+    add combosciplex
+
+commit 0dbf90fe63b51fd5c7000a52ac50d92e43746146
+Merge: d8ae659 69327d9
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:04:55 2025 +0200
+
+    Merge pull request #244 from theislab/tests/find_failing2
+
+    deprecation python 3.10
+
+commit 69327d91138789d8e162088d5696f8d4319e158d
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 15:42:55 2025 +0200
+
+    enable all tests
+
+commit 83db489e9627dab7574f5f3d68f896c0447eda46
+Merge: 63c4966 d8ae659
+Author: Dominik Klein <domin.klein@gmail.com>
+Date:   Fri May 23 15:29:53 2025 +0200
+
+    Merge branch 'main' into tutorial/combosciplex
+
+commit 63c4966c7effc0d405c011cd31b87fbed8bee693
+Author: Dominik Klein <domin.klein@gmail.com>
+Date:   Fri May 23 15:22:53 2025 +0200
+
+    add combosciplex
+
+commit 855c5d9c60e22d24b7064f3fe6ab22a34f18bde6
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Fri May 23 14:59:56 2025 +0200
+
+    revert duplicate removal
+
+commit 235bc0efb30e8caa4b4ed7a0215d4edf2569fa9f
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Fri May 23 14:03:43 2025 +0200
+
+    emove duplicate
+
+commit 24ade1e09ce1444989db4724284bbae4d01ebe36
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Fri May 23 14:01:31 2025 +0200
+
+    Add testing for genot predict
+
+commit 340b6962f5bb267bf4062c69f8fbb7f740790011
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 12:23:15 2025 +0200
+
+    only enable test_cellflow_with_validation
+
+commit 9dfcd18c256371ea0a747567da4d961475aa2b11
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 11:50:27 2025 +0200
+
+    skip some tests again
+
+commit f481dac4587fbe90134431032cd185c18061ec73
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:38:10 2025 +0200
+
+    enable more tests again
+
+commit 6bb6550720e4d99e49869b66ca0241742b3dd231
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:27:57 2025 +0200
+
+    deprecate 3.10
+
+commit 8e8d2ad933b4f0860719e8d0ebbdbd3e5c0bd606
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:26:24 2025 +0200
+
+    deprecate 3.10
+
+commit 11d2f5555f858aa9ed8850e759b48226b2dd4854
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:24:35 2025 +0200
+
+    deprecate 3.10
+
+commit 459f435b9da738ac77ac1612038c4dade9a76a04
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:22:14 2025 +0200
+
+    enable some more tests
+
+commit 0b56b4c21216a5d23d2a3a56213f248deec4eef0
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:05:24 2025 +0200
+
+    skip more tests
+
+commit 2e7aac948d3bb959f0707da8c0c206b77fab9fbf
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 09:48:30 2025 +0200
+
+    skip more tests
+
+commit d8ae659dcb0fb0dd612f95888c7ed554575f7b08
+Merge: 70eec9a f3c840c
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 16:27:36 2025 +0200
+
+    Merge pull request #241 from theislab/fix/tokenattention
+
+    fix TokenAttention
+
+commit 0da9154213b5d86165f7efebd21e13fc0e84d32b
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 16:25:26 2025 +0200
+
+    skip more tests
+
+commit 7de55b3960caf69107181fb713f3d05e643cddc3
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 15:06:36 2025 +0200
+
+    skip more tests
+
+commit 6e266a2a1837cb12700395102cc8dcb682a635e1
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu May 22 11:17:07 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 7840c80034a53184c245a8939bde077c89e713c2
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 13:16:42 2025 +0200
+
+    skip gene emb tests
+
+commit f3c840c77292285afec67ae5125e554279c1daa0
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 08:41:30 2025 +0200
+
+    update scvi dependency
+
+commit fd76f07d33b186ee22675ee7651266167d4ea52f
+Author: selmanozleyen <syozleyen@gmail.com>
+Date:   Wed May 21 13:15:15 2025 +0200
+
+    add genot
+
+commit e97edd26b502e8722e637ae6bbcb06d6b67547d9
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Wed May 21 12:41:07 2025 +0200
+
+    Handle empty input
+
+commit 454734edc802c01bdce6360b25453db271152f05
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 19:31:39 2025 +0200
+
+    revert previous precommit changes
+
+commit 0884a8b1cc635170e3bf011456615b0205ce87c1
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 17:17:10 2025 +0200
+
+    fix tests
+
+commit 186bcaab55681c8ccb9f6dfecc1fb7c757d22f46
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 15:35:46 2025 +0200
+
+    fix tests
+
+commit c5c0494d67960805a33a5c7738e8670af49a63a1
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 15:30:09 2025 +0200
+
+    fix TokenAttention
+
+commit 1e585cd1a8ef161d11fddce58c4447ddd0b5e8cf
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 20 10:46:42 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 5dc4a54a2bf4c031a930d97b9014eac96e9165e6
+Author: selmanozleyen <syozleyen@gmail.com>
+Date:   Tue May 20 12:45:24 2025 +0200
+
+    support both dataloaders
+
+commit dd098fa3c18d0c7b66c322d9e6b0434e6101a43b
+Author: selmanozleyen <syozleyen@gmail.com>
+Date:   Tue May 20 11:21:35 2025 +0200
+
+    init
+
+commit 50a3cc8890506515171801cdc9a9da21c6f1537e
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon May 19 18:57:43 2025 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+
+    updates:
+    - [github.com/biomejs/pre-commit: v2.0.0-beta.3 → v2.0.0-beta.4](https://github.com/biomejs/pre-commit/compare/v2.0.0-beta.3...v2.0.0-beta.4)
+    - [github.com/astral-sh/ruff-pre-commit: v0.11.9 → v0.11.10](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.9...v0.11.10)
+
+commit 2ccb43da6fc91d882a454527348614f30b24967e
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sun May 18 12:33:32 2025 +0200
+
+    Add batched predict test
+
+commit 10edee2f5632bff17a0ad83f9277398130dc340c
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sat May 17 20:11:45 2025 +0200
+
+    Adjust docs
+
+commit b6c0bdbdee8d348d79df579dc52cad002126a404
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sat May 17 17:42:27 2025 +0200
+
+    fix docs
+
+commit 021aff0e6a9514763bfc71a83e44637f814d9b35
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu May 15 12:42:30 2025 +0200
+
+    update implementation so that two functions predict and predict batch are unified
+
+commit 6bdbf5c7b054636b1accc8bdee564977df52ad73
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 13 16:24:30 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit db6dc69b561a460d9d837549092ac0eaa4f34f6e
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Tue May 13 18:20:22 2025 +0200
+
+    needs testing
+
+commit a3c43d360982cfe037b6a62f0570222602c00752
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Tue May 13 18:00:26 2025 +0200
+
+    condition keys left to add
+
+commit 03dfb2b889b5d35391ca760d303876641b58d33f
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Tue May 13 17:50:41 2025 +0200
+
+    init
+
+commit f1e87043d9153304043d5b6e6e0c186c68fa8720
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon May 12 11:24:11 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit facf52d1c6b9e7d65761c65316df0513f2bf07f8
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Mon May 12 13:23:52 2025 +0200
+
+    Added source data parameter + stochastic test
+
+commit 04a1d2c53a1083d4d582a568e4f09c10b86520d5
+Author: Dominik Klein <domin.klein@gmail.com>
+Date:   Fri May 9 13:35:02 2025 +0200
+
+    add combosciplex
+
+commit 54e23862897da5166d405a11719d5554c199e2af
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu May 1 16:16:21 2025 +0200
+
+    Rename flow
+
+commit ac8d073b4e37d0033f7b9c346aca1141ab3c2447
+Merge: 5327a05 4970ad4
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu May 1 16:14:11 2025 +0200
+
+    Merge branch 'main' into add/solver_callback
+
+commit 5327a05a7b2b1d03c2a672e8e35caf4998cf3b6d
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu May 1 12:37:09 2025 +0200
+
+    Added test for custom callbacks
+
+commit e65003157d44e75855903ef0b93e614cb9cfec1c
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu Apr 24 18:09:57 2025 +0200
+
+    Add typing and solver for on_train_end
+
+commit 5e18f6e0f944365dc2e60d12cbbe7694ef016c1e
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Mon Apr 21 16:57:33 2025 +0200
+
+    Add solver to callback call
+
+* Revert ""resolve comments""
+
+This reverts commit 1429cab21263dcd4f2b0382a930b5d70ec8c461c.
+
+* Revert ""Revert ""resolve comments""""
+
+This reverts commit 6f0d747925f68b50d1409ee2d8f7e0088b18d9e2.
+
+* Revert ""Squashed commit of the following:""
+
+This reverts commit d8507714ee15c850f62bf69464bebf3a489d8a55.
+
+* fix TokenAttention
+
+* fix tests
+
+* fix tests
+
+* revert previous precommit changes
+
+* update scvi dependency
+
+* skip gene emb tests
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* skip more tests
+
+* skip more tests
+
+* skip more tests
+
+* skip more tests
+
+* enable some more tests
+
+* deprecate 3.10
+
+* deprecate 3.10
+
+* deprecate 3.10
+
+* enable more tests again
+
+* skip some tests again
+
+* only enable test_cellflow_with_validation
+
+* enable all tests
+
+* add combosciplex
+
+* add combosciplex
+
+* Add solver to callback call
+
+* Add typing and solver for on_train_end
+
+* Added test for custom callbacks
+
+* Rename flow
+
+* Added source data parameter + stochastic test
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* fix docs
+
+* [pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/biomejs/pre-commit: v2.0.0-beta.3 → v2.0.0-beta.4](https://github.com/biomejs/pre-commit/compare/v2.0.0-beta.3...v2.0.0-beta.4)
+- [github.com/astral-sh/ruff-pre-commit: v0.11.9 → v0.11.10](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.9...v0.11.10)
+
+* pass rng from cellflow.predict
+
+* fix callback/
+
+* [pre-commit.ci] pre-commit autoupdate
+
+updates:
+- [github.com/biomejs/pre-commit: v2.0.0-beta.4 → v2.0.0-beta.5](https://github.com/biomejs/pre-commit/compare/v2.0.0-beta.4...v2.0.0-beta.5)
+- [github.com/tox-dev/pyproject-fmt: v2.5.1 → v2.6.0](https://github.com/tox-dev/pyproject-fmt/compare/v2.5.1...v2.6.0)
+- [github.com/astral-sh/ruff-pre-commit: v0.11.10 → v0.11.11](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.10...v0.11.11)
+
+* init
+
+* support both dataloaders
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* throw error when there isn't any valid indices
+
+* add tests
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* remove unused fixture
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* document better
+
+* update error message
+
+* add return types
+
+* init
+
+* condition keys left to add
+
+* needs testing
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* update implementation so that two functions predict and predict batch are unified
+
+* Adjust docs
+
+* Add batched predict test
+
+* Handle empty input
+
+* add genot
+
+* Add testing for genot predict
+
+* emove duplicate
+
+* revert duplicate removal
+
+* Replace tree map
+
+* Fix type error
+
+* clarify documentation that this requires same number of cells
+
+* When using PredictionSampler we can't use batched mode
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* init
+
+add tests
+
+[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+resolve comments
+
+Squashed commit of the following:
+
+commit 56888eb22f26d2b85cc08a26b36cdc2bd4754116
+Merge: d169628 9068a93
+Author: Selman Özleyen <32667648+selmanozleyen@users.noreply.github.com>
+Date:   Fri Jun 13 12:03:07 2025 +0200
+
+    Merge pull request #235 from theislab/feature/predict_batch
+
+    Feature and Speedup: `predict_batch`
+
+commit d1696283a3aaa2a940e60141d63620df99d0149b
+Merge: f6cdf17 801adf0
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri Jun 13 11:28:18 2025 +0200
+
+    Merge pull request #239 from theislab/feature/ooc-dataloading
+
+    Feature: Out of Core Dataloading Option
+
+commit 801adf0f041ed187bcfc9a2bf9ff4d6e9b6889ae
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 15:31:53 2025 +0200
+
+    add return types
+
+commit 6d44054cda4459402fd5bc2844b3d53701e3966c
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:56:48 2025 +0200
+
+    update error message
+
+commit 3bda1283474e44ed62946f27c77bad4ba47fa195
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:56:20 2025 +0200
+
+    document better
+
+commit de3b6eefeffdb0ee97c612bd070ab10b703d7f3a
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu Jun 12 11:51:03 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 8f1857448b918063891a574ad81058f716478511
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:50:55 2025 +0200
+
+    remove unused fixture
+
+commit 8e808a9044f011d596f366e62bfbf5bb49d791d6
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu Jun 12 11:17:33 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 67e64e19b7c2e32652febd79c878b3717b4ff61d
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 13:17:22 2025 +0200
+
+    add tests
+
+commit ab95081d0b977ff27471d2d4fa8f8c619a8bdd2e
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 12:08:48 2025 +0200
+
+    throw error when there isn't any valid indices
+
+commit 9068a9338943a3488029cd1a0c81499536c7b7ac
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu Jun 12 09:38:43 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit d65151a50342d18a7f45592a3eb5d4043f06b523
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 11:38:34 2025 +0200
+
+    When using PredictionSampler we can't use batched mode
+
+commit bb941ea7d7cc9e136e3e9ff8ae2ba6d4bc5692b3
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu Jun 12 11:33:45 2025 +0200
+
+    clarify documentation that this requires same number of cells
+
+commit 7461dc34c2a8ae51a8cbf0ae1dc751598781cccf
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sun Jun 1 16:07:15 2025 +0200
+
+    Fix type error
+
+commit 04566e738f8e316b8183925a88b8044f3a6fe1b6
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Tue May 27 17:11:02 2025 +0200
+
+    Replace tree map
+
+commit 4a9bbcde362f100c4a55d2e693723de2d42f50ac
+Merge: 855c5d9 f6cdf17
+Author: LeonStadelmann <169152764+LeonStadelmann@users.noreply.github.com>
+Date:   Tue May 27 16:58:19 2025 +0200
+
+    Merge branch 'main' into feature/predict_batch
+
+commit f6cdf1717b0cd31bec693f6896c229d84a209da9
+Merge: b4b7c96 70766f5
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 27 09:10:57 2025 +0200
+
+    Merge pull request #246 from theislab/pre-commit-ci-update-config
+
+    [pre-commit.ci] pre-commit autoupdate
+
+commit b4b7c9689e47c0f52bc3fac652a829324a1792f7
+Merge: 7a69c5d b67804f
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 27 09:10:36 2025 +0200
+
+    Merge pull request #245 from theislab/feature/stochastic_to_cellflow_class
+
+    pass rng from cellflow.predict
+
+commit 70766f54e285eecf0d6a52a0f15b265dbd123fa9
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon May 26 18:56:02 2025 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+
+    updates:
+    - [github.com/biomejs/pre-commit: v2.0.0-beta.4 → v2.0.0-beta.5](https://github.com/biomejs/pre-commit/compare/v2.0.0-beta.4...v2.0.0-beta.5)
+    - [github.com/tox-dev/pyproject-fmt: v2.5.1 → v2.6.0](https://github.com/tox-dev/pyproject-fmt/compare/v2.5.1...v2.6.0)
+    - [github.com/astral-sh/ruff-pre-commit: v0.11.10 → v0.11.11](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.10...v0.11.11)
+
+commit b67804f72a528322dee6dd3bbdf0b4547210ac4d
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Mon May 26 11:03:13 2025 +0200
+
+    fix callback/
+
+commit b9bc6c28c922c0ac4ad5ef0cb7c7ff045685a72b
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Mon May 26 09:04:25 2025 +0200
+
+    pass rng from cellflow.predict
+
+commit 7a69c5dcd7617286e24fe9789a19cae63f59b79e
+Merge: ce064e3 50a3cc8
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:17:03 2025 +0200
+
+    Merge pull request #238 from theislab/pre-commit-ci-update-config
+
+    [pre-commit.ci] pre-commit autoupdate
+
+commit ce064e319bd3f584bd98782ae66a1160a02cfdcc
+Merge: 6cb5540 b6c0bdb
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:14:53 2025 +0200
+
+    Merge pull request #215 from theislab/add/solver_callback
+
+    Add solver to callback call
+
+commit 6cb55405c4fb2d308e488ecfd84b8271f26ef47d
+Merge: 0dbf90f 83db489
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:05:14 2025 +0200
+
+    Merge pull request #233 from theislab/tutorial/combosciplex
+
+    add combosciplex
+
+commit 0dbf90fe63b51fd5c7000a52ac50d92e43746146
+Merge: d8ae659 69327d9
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 17:04:55 2025 +0200
+
+    Merge pull request #244 from theislab/tests/find_failing2
+
+    deprecation python 3.10
+
+commit 69327d91138789d8e162088d5696f8d4319e158d
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 15:42:55 2025 +0200
+
+    enable all tests
+
+commit 83db489e9627dab7574f5f3d68f896c0447eda46
+Merge: 63c4966 d8ae659
+Author: Dominik Klein <domin.klein@gmail.com>
+Date:   Fri May 23 15:29:53 2025 +0200
+
+    Merge branch 'main' into tutorial/combosciplex
+
+commit 63c4966c7effc0d405c011cd31b87fbed8bee693
+Author: Dominik Klein <domin.klein@gmail.com>
+Date:   Fri May 23 15:22:53 2025 +0200
+
+    add combosciplex
+
+commit 855c5d9c60e22d24b7064f3fe6ab22a34f18bde6
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Fri May 23 14:59:56 2025 +0200
+
+    revert duplicate removal
+
+commit 235bc0efb30e8caa4b4ed7a0215d4edf2569fa9f
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Fri May 23 14:03:43 2025 +0200
+
+    emove duplicate
+
+commit 24ade1e09ce1444989db4724284bbae4d01ebe36
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Fri May 23 14:01:31 2025 +0200
+
+    Add testing for genot predict
+
+commit 340b6962f5bb267bf4062c69f8fbb7f740790011
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 12:23:15 2025 +0200
+
+    only enable test_cellflow_with_validation
+
+commit 9dfcd18c256371ea0a747567da4d961475aa2b11
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 11:50:27 2025 +0200
+
+    skip some tests again
+
+commit f481dac4587fbe90134431032cd185c18061ec73
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:38:10 2025 +0200
+
+    enable more tests again
+
+commit 6bb6550720e4d99e49869b66ca0241742b3dd231
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:27:57 2025 +0200
+
+    deprecate 3.10
+
+commit 8e8d2ad933b4f0860719e8d0ebbdbd3e5c0bd606
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:26:24 2025 +0200
+
+    deprecate 3.10
+
+commit 11d2f5555f858aa9ed8850e759b48226b2dd4854
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:24:35 2025 +0200
+
+    deprecate 3.10
+
+commit 459f435b9da738ac77ac1612038c4dade9a76a04
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:22:14 2025 +0200
+
+    enable some more tests
+
+commit 0b56b4c21216a5d23d2a3a56213f248deec4eef0
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 10:05:24 2025 +0200
+
+    skip more tests
+
+commit 2e7aac948d3bb959f0707da8c0c206b77fab9fbf
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Fri May 23 09:48:30 2025 +0200
+
+    skip more tests
+
+commit d8ae659dcb0fb0dd612f95888c7ed554575f7b08
+Merge: 70eec9a f3c840c
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 16:27:36 2025 +0200
+
+    Merge pull request #241 from theislab/fix/tokenattention
+
+    fix TokenAttention
+
+commit 0da9154213b5d86165f7efebd21e13fc0e84d32b
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 16:25:26 2025 +0200
+
+    skip more tests
+
+commit 7de55b3960caf69107181fb713f3d05e643cddc3
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 15:06:36 2025 +0200
+
+    skip more tests
+
+commit 6e266a2a1837cb12700395102cc8dcb682a635e1
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Thu May 22 11:17:07 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 7840c80034a53184c245a8939bde077c89e713c2
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 13:16:42 2025 +0200
+
+    skip gene emb tests
+
+commit f3c840c77292285afec67ae5125e554279c1daa0
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Thu May 22 08:41:30 2025 +0200
+
+    update scvi dependency
+
+commit fd76f07d33b186ee22675ee7651266167d4ea52f
+Author: selmanozleyen <syozleyen@gmail.com>
+Date:   Wed May 21 13:15:15 2025 +0200
+
+    add genot
+
+commit e97edd26b502e8722e637ae6bbcb06d6b67547d9
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Wed May 21 12:41:07 2025 +0200
+
+    Handle empty input
+
+commit 454734edc802c01bdce6360b25453db271152f05
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 19:31:39 2025 +0200
+
+    revert previous precommit changes
+
+commit 0884a8b1cc635170e3bf011456615b0205ce87c1
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 17:17:10 2025 +0200
+
+    fix tests
+
+commit 186bcaab55681c8ccb9f6dfecc1fb7c757d22f46
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 15:35:46 2025 +0200
+
+    fix tests
+
+commit c5c0494d67960805a33a5c7738e8670af49a63a1
+Author: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Date:   Tue May 20 15:30:09 2025 +0200
+
+    fix TokenAttention
+
+commit 1e585cd1a8ef161d11fddce58c4447ddd0b5e8cf
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 20 10:46:42 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit 5dc4a54a2bf4c031a930d97b9014eac96e9165e6
+Author: selmanozleyen <syozleyen@gmail.com>
+Date:   Tue May 20 12:45:24 2025 +0200
+
+    support both dataloaders
+
+commit dd098fa3c18d0c7b66c322d9e6b0434e6101a43b
+Author: selmanozleyen <syozleyen@gmail.com>
+Date:   Tue May 20 11:21:35 2025 +0200
+
+    init
+
+commit 50a3cc8890506515171801cdc9a9da21c6f1537e
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon May 19 18:57:43 2025 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+
+    updates:
+    - [github.com/biomejs/pre-commit: v2.0.0-beta.3 → v2.0.0-beta.4](https://github.com/biomejs/pre-commit/compare/v2.0.0-beta.3...v2.0.0-beta.4)
+    - [github.com/astral-sh/ruff-pre-commit: v0.11.9 → v0.11.10](https://github.com/astral-sh/ruff-pre-commit/compare/v0.11.9...v0.11.10)
+
+commit 2ccb43da6fc91d882a454527348614f30b24967e
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sun May 18 12:33:32 2025 +0200
+
+    Add batched predict test
+
+commit 10edee2f5632bff17a0ad83f9277398130dc340c
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sat May 17 20:11:45 2025 +0200
+
+    Adjust docs
+
+commit b6c0bdbdee8d348d79df579dc52cad002126a404
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Sat May 17 17:42:27 2025 +0200
+
+    fix docs
+
+commit 021aff0e6a9514763bfc71a83e44637f814d9b35
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Thu May 15 12:42:30 2025 +0200
+
+    update implementation so that two functions predict and predict batch are unified
+
+commit 6bdbf5c7b054636b1accc8bdee564977df52ad73
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 13 16:24:30 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit db6dc69b561a460d9d837549092ac0eaa4f34f6e
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Tue May 13 18:20:22 2025 +0200
+
+    needs testing
+
+commit a3c43d360982cfe037b6a62f0570222602c00752
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Tue May 13 18:00:26 2025 +0200
+
+    condition keys left to add
+
+commit 03dfb2b889b5d35391ca760d303876641b58d33f
+Author: selman.ozleyen <syozleyen@gmail.com>
+Date:   Tue May 13 17:50:41 2025 +0200
+
+    init
+
+commit f1e87043d9153304043d5b6e6e0c186c68fa8720
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon May 12 11:24:11 2025 +0000
+
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+
+commit facf52d1c6b9e7d65761c65316df0513f2bf07f8
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Mon May 12 13:23:52 2025 +0200
+
+    Added source data parameter + stochastic test
+
+commit 04a1d2c53a1083d4d582a568e4f09c10b86520d5
+Author: Dominik Klein <domin.klein@gmail.com>
+Date:   Fri May 9 13:35:02 2025 +0200
+
+    add combosciplex
+
+commit 54e23862897da5166d405a11719d5554c199e2af
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu May 1 16:16:21 2025 +0200
+
+    Rename flow
+
+commit ac8d073b4e37d0033f7b9c346aca1141ab3c2447
+Merge: 5327a05 4970ad4
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu May 1 16:14:11 2025 +0200
+
+    Merge branch 'main' into add/solver_callback
+
+commit 5327a05a7b2b1d03c2a672e8e35caf4998cf3b6d
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu May 1 12:37:09 2025 +0200
+
+    Added test for custom callbacks
+
+commit e65003157d44e75855903ef0b93e614cb9cfec1c
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Thu Apr 24 18:09:57 2025 +0200
+
+    Add typing and solver for on_train_end
+
+commit 5e18f6e0f944365dc2e60d12cbbe7694ef016c1e
+Author: LeonStadelmann <leonstadlmnn@gmail.com>
+Date:   Mon Apr 21 16:57:33 2025 +0200
+
+    Add solver to callback call
+
+Revert ""resolve comments""
+
+This reverts commit 1429cab21263dcd4f2b0382a930b5d70ec8c461c.
+
+Revert ""Revert ""resolve comments""""
+
+This reverts commit 6f0d747925f68b50d1409ee2d8f7e0088b18d9e2.
+
+Revert ""Squashed commit of the following:""
+
+This reverts commit d8507714ee15c850f62bf69464bebf3a489d8a55.
+
+* add dask as dependency to see which tests fail
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* submit working version
+
+* remove get_condition_old
+
+* also remove function itself
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* partially working version
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* version closest to working so far
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* passes except condition_data
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* some state
+
+* save state before working on changing something
+
+* precommit
+
+* all works except condition_data
+
+* working version with models
+
+* change assert
+
+* all tests pass
+
+* format
+
+* format
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* fix primary_items
+
+* fix tests
+
+* all tests pass
+
+* fix the primary_group arg
+
+* remove assertion
+
+* remove some files
+
+* cleanup
+
+* format
+
+* fix not handling condition_id
+
+* add pyproject
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* add the old function properly in the tests
+
+* skip some tests on CI
+
+* remove pertpy from main dependencies and pin the version of pertpy
+
+* try to fix the issue with ubuntu
+
+* undo pertpy pinning
+
+* try to fix yaml files
+
+* reduce the number of slow cis
+
+* add pyarrpw for dask dataframes
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* add import error message to check what really is the problem with pertpy
+
+* modify dependency list until https://github.com/statsmodels/statsmodels/issues/9584 is fixed
+
+* fix scipy thing
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+* reduce the size of the model in test cases
+
+* Refactor/get cond data rewrite (#254)
+
+* save state
+
+* a bit more tidying
+
+* save state
+
+* add primary group to docstring
+
+* Revert ""add import error message to check what really is the problem with pertpy""
+
+This reverts commit 2062f4cc981893a629ec55878c0b33d64168f306.
+
+* revert
+
+* revert train argument
+
+* fix the bizzare bug
+
+* make test_cellflow models even smaller
+
+* remove is conditional
+
+* [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+
+---------
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Co-authored-by: Dominik Klein <dominik.klein@helmholtz-munich.de>
+Co-authored-by: Dominik Klein <domin.klein@gmail.com>
+Co-authored-by: LeonStadelmann <leonstadlmnn@gmail.com>",[![](https://github.com/theislab/CellFlow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/16027242944) [![](https://github.com/theislab/CellFlow/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/16027242955) [![](https://github.com/theislab/CellFlow/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/16027242962) [![](https://github.com/theislab/CellFlow/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/16027242934)
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,24,7,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,24,NA,NA,NA
 theislab,DRVI,theislab/DRVI,44,1,8,3,FALSE,https://github.com/theislab/DRVI,44,NA,NA,NA
 theislab,DRVI_reproducibility,theislab/DRVI_reproducibility,3,3,0,1,FALSE,https://github.com/theislab/DRVI_reproducibility,3,NA,NA,NA
@@ -132,8 +1440,8 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,3,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,3,8,4,FALSE,https://github.com/theislab/geome,16,402a0a8cdb442fee8666416e5f163c4098fa0c07,"Merge pull request #55 from theislab/fix/toarray
 
 Fix Sparse "".A"" Not Found",[![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/10868284169)
-theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,d3c1d1e9f0fdfbe3b7ee41754cd622bd71f54c05,[status] 2025-07-01 12:07:21 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/16024556817)
-theislab,graph_abstraction,theislab/graph_abstraction,26,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,26,NA,NA,NA
+theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,5e451b1efe3dfe376533f0c76da664f1bf54ec29,[status] 2025-07-02 12:06:42 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/16049865889)
+theislab,graph_abstraction,theislab/graph_abstraction,27,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,27,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,36,2,1,1,FALSE,https://github.com/theislab/graphcompass,36,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,3,4,0,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
 theislab,gut_lineage,theislab/gut_lineage,2,2,0,3,FALSE,https://github.com/theislab/gut_lineage,2,NA,NA,NA
@@ -145,7 +1453,7 @@ theislab,hadge-reproducibility,theislab/hadge-reproducibility,0,2,0,0,FALSE,http
 theislab,icml_cbw_2022_clcvae,theislab/icml_cbw_2022_clcvae,0,3,0,0,FALSE,https://github.com/theislab/icml_cbw_2022_clcvae,0,NA,NA,NA
 theislab,idtrack,theislab/idtrack,1,1,1,0,FALSE,https://github.com/theislab/idtrack,1,e309d62d926f81b89ea6453926dd41abad5aaf02,docstrings,[![](https://github.com/theislab/idtrack/workflows/Build%20idtrack%20Package/badge.svg)](https://github.com/theislab/idtrack/actions/runs/15518825752) [![](https://github.com/theislab/idtrack/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/idtrack/actions/runs/15518825753) [![](https://github.com/theislab/idtrack/workflows/Run%20idtrack%20Tests/badge.svg)](https://github.com/theislab/idtrack/actions/runs/15518825751)
 theislab,ifcseq,theislab/ifcseq,1,2,0,1,FALSE,https://github.com/theislab/ifcseq,1,NA,NA,NA
-theislab,inVAE,theislab/inVAE,16,3,1,3,FALSE,https://github.com/theislab/inVAE,16,NA,NA,NA
+theislab,inVAE,theislab/inVAE,17,3,1,3,FALSE,https://github.com/theislab/inVAE,17,NA,NA,NA
 theislab,inVAE_reproducibility,theislab/inVAE_reproducibility,0,2,0,0,FALSE,https://github.com/theislab/inVAE_reproducibility,0,NA,NA,NA
 theislab,integraph,theislab/integraph,0,2,4,0,FALSE,https://github.com/theislab/integraph,0,NA,NA,NA
 theislab,interaction-tools,theislab/interaction-tools,2,3,0,0,FALSE,https://github.com/theislab/interaction-tools,2,NA,NA,NA
@@ -157,7 +1465,7 @@ theislab,kBET,theislab/kBET,162,7,11,23,FALSE,https://github.com/theislab/kBET,1
 theislab,kbranches,theislab/kbranches,5,6,0,0,FALSE,https://github.com/theislab/kbranches,5,NA,NA,NA
 theislab,mapqc,theislab/mapqc,9,0,1,1,FALSE,https://github.com/theislab/mapqc,9,d62ca732877a43f312c64496b5a335a7a04baab8,refix formatting bug,[![](https://github.com/theislab/mapqc/workflows/Test/badge.svg)](https://github.com/theislab/mapqc/actions/runs/15990370122)
 theislab,masterpraktikum_ssl_segmentation,theislab/masterpraktikum_ssl_segmentation,3,3,0,2,FALSE,https://github.com/theislab/masterpraktikum_ssl_segmentation,3,NA,NA,NA
-theislab,moscot,theislab/moscot,163,3,35,10,FALSE,https://github.com/theislab/moscot,163,89a7936314da65b6773688cf791d28ff48daa676,init commit (#833),[![](https://github.com/theislab/moscot/workflows/Deployment/badge.svg)](https://github.com/theislab/moscot/actions/runs/15999180531)
+theislab,moscot,theislab/moscot,164,3,35,10,FALSE,https://github.com/theislab/moscot,164,89a7936314da65b6773688cf791d28ff48daa676,init commit (#833),[![](https://github.com/theislab/moscot/workflows/Deployment/badge.svg)](https://github.com/theislab/moscot/actions/runs/15999180531)
 theislab,moscot-framework_reproducibility,theislab/moscot-framework_reproducibility,14,2,1,5,FALSE,https://github.com/theislab/moscot-framework_reproducibility,14,NA,NA,NA
 theislab,moscot_benchmarks,theislab/moscot_benchmarks,4,2,1,2,FALSE,https://github.com/theislab/moscot_benchmarks,4,NA,NA,NA
 theislab,moscot_not,theislab/moscot_not,3,2,8,1,FALSE,https://github.com/theislab/moscot_not,3,NA,NA,NA
@@ -180,10 +1488,10 @@ theislab,ncem_tutorials,theislab/ncem_tutorials,13,3,6,0,FALSE,https://github.co
 theislab,neural_organoid_atlas,theislab/neural_organoid_atlas,35,6,2,6,FALSE,https://github.com/theislab/neural_organoid_atlas,35,NA,NA,NA
 theislab,nicheformer,theislab/nicheformer,94,4,11,8,FALSE,https://github.com/theislab/nicheformer,94,NA,NA,NA
 theislab,organoid_dexamethasone_stimulation,theislab/organoid_dexamethasone_stimulation,0,2,0,1,FALSE,https://github.com/theislab/organoid_dexamethasone_stimulation,0,NA,NA,NA
-theislab,paga,theislab/paga,222,9,24,33,FALSE,https://github.com/theislab/paga,222,NA,NA,NA
+theislab,paga,theislab/paga,223,9,24,33,FALSE,https://github.com/theislab/paga,223,NA,NA,NA
 theislab,pancreas-targeted_pharmacology,theislab/pancreas-targeted_pharmacology,0,5,1,2,FALSE,https://github.com/theislab/pancreas-targeted_pharmacology,0,NA,NA,NA
 theislab,pancreatic-endocrinogenesis,theislab/pancreatic-endocrinogenesis,8,2,0,7,FALSE,https://github.com/theislab/pancreatic-endocrinogenesis,8,NA,NA,NA
-theislab,paperbee,theislab/paperbee,42,1,8,2,FALSE,https://github.com/theislab/paperbee,42,41c8436aff024b5a1b20812c31aad988291a6fcc,"Merge pull request #22 from theislab/Updating-version
+theislab,paperbee,theislab/paperbee,43,1,8,2,FALSE,https://github.com/theislab/paperbee,43,41c8436aff024b5a1b20812c31aad988291a6fcc,"Merge pull request #22 from theislab/Updating-version
 
 Updating version",[![](https://github.com/theislab/paperbee/workflows/Draft%20PDF/badge.svg)](https://github.com/theislab/paperbee/actions/runs/15823908712)
 theislab,pdac_analysis,theislab/pdac_analysis,0,2,0,0,FALSE,https://github.com/theislab/pdac_analysis,0,NA,NA,NA
@@ -194,10 +1502,10 @@ theislab,prophet-reproducibility,theislab/prophet-reproducibility,0,3,0,0,FALSE,
 theislab,pseudodynamics,theislab/pseudodynamics,40,6,0,6,FALSE,https://github.com/theislab/pseudodynamics,40,NA,NA,NA
 theislab,quicat,theislab/quicat,0,0,0,0,FALSE,https://github.com/theislab/quicat,0,ca14403fda9fb0c58b57f8060f552f548ec5f730,fix makefile,[![](https://github.com/theislab/quicat/workflows/Main/badge.svg)](https://github.com/theislab/quicat/actions/runs/14018238297)
 theislab,quicat_reproducibility,theislab/quicat_reproducibility,0,1,0,0,FALSE,https://github.com/theislab/quicat_reproducibility,0,NA,NA,NA
-theislab,regvelo,theislab/regvelo,48,2,3,3,FALSE,https://github.com/theislab/regvelo,48,619e025f7b811d77157dda144013ab1b86f8cb54,"Merge pull request #14 from theislab/WWXkenmo-patch-1
+theislab,regvelo,theislab/regvelo,48,2,2,3,FALSE,https://github.com/theislab/regvelo,48,619e025f7b811d77157dda144013ab1b86f8cb54,"Merge pull request #14 from theislab/WWXkenmo-patch-1
 
 Update pyproject.toml",[![](https://github.com/theislab/regvelo/workflows/regvelo/badge.svg)](https://github.com/theislab/regvelo/actions/runs/11323656087)
-theislab,regvelo,theislab/regvelo,48,2,3,3,FALSE,https://github.com/theislab/regvelo,48,a9851861451a9af67ef40ded8f56f62957cf334e,"Merge pull request #7 from theislab/feat/update_package
+theislab,regvelo,theislab/regvelo,48,2,2,3,FALSE,https://github.com/theislab/regvelo,48,a9851861451a9af67ef40ded8f56f62957cf334e,"Merge pull request #7 from theislab/feat/update_package
 
 update dependences",[![](https://github.com/theislab/regvelo/workflows/Release/badge.svg)](https://github.com/theislab/regvelo/actions/runs/11307228307)
 theislab,regvelo_reproducibility,theislab/regvelo_reproducibility,8,0,1,0,FALSE,https://github.com/theislab/regvelo_reproducibility,8,56512e9001e4df89e16713aed0fa8ccd0cf4c017,fix wrong file name,[![](https://github.com/theislab/regvelo_reproducibility/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/regvelo_reproducibility/actions/runs/12651733568)
@@ -231,13 +1539,13 @@ Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.gi
 theislab,scarches,theislab/scarches,374,11,61,60,FALSE,https://github.com/theislab/scarches,374,NA,NA,NA
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,2,0,0,FALSE,https://github.com/theislab/scarches_notebooks,0,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,9,2,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,9,NA,NA,NA
-theislab,scgen,theislab/scgen,306,8,30,63,FALSE,https://github.com/theislab/scgen,306,NA,NA,NA
-theislab,scgen-reproducibility,theislab/scgen-reproducibility,28,3,7,9,FALSE,https://github.com/theislab/scgen-reproducibility,28,NA,NA,NA
+theislab,scgen,theislab/scgen,307,8,30,63,FALSE,https://github.com/theislab/scgen,307,NA,NA,NA
+theislab,scgen-reproducibility,theislab/scgen-reproducibility,29,3,7,9,FALSE,https://github.com/theislab/scgen-reproducibility,29,NA,NA,NA
 theislab,scib,theislab/scib,363,12,43,69,FALSE,https://github.com/theislab/scib,NA,023c4e81f49156503e7e85ecc1d2d8405401eb1c,Bump version: 1.1.6 → 1.1.7 (#422),[![](https://github.com/theislab/scib/workflows/Deployment/badge.svg)](https://github.com/theislab/scib/actions/runs/12754078859) [![](https://github.com/theislab/scib/workflows/Test/badge.svg)](https://github.com/theislab/scib/actions/runs/12754078846)
 theislab,scib-pipeline,theislab/scib-pipeline,74,5,16,30,FALSE,https://github.com/theislab/scib-pipeline,74,e97631a478e063883cee5db0dcebbf42d8268ab0,Add links to updated projects,[![](https://github.com/theislab/scib-pipeline/workflows/Manual%20workflow/badge.svg)](https://github.com/theislab/scib-pipeline/actions/runs/12927788428)
 theislab,scib-reproducibility,theislab/scib-reproducibility,67,5,4,18,FALSE,https://github.com/theislab/scib-reproducibility,67,NA,NA,NA
 theislab,scproto,theislab/scproto,2,2,0,1,FALSE,https://github.com/theislab/scproto,2,NA,NA,NA
-theislab,scvelo,theislab/scvelo,450,12,67,107,FALSE,https://github.com/theislab/scvelo,450,22b6e7e6cdb3c321c5a1be4ab2f29486ba01ab4f,"Update logging (#1281)
+theislab,scvelo,theislab/scvelo,450,12,67,108,FALSE,https://github.com/theislab/scvelo,450,22b6e7e6cdb3c321c5a1be4ab2f29486ba01ab4f,"Update logging (#1281)
 
 * Move logging to dedicated module
 
@@ -261,7 +1569,7 @@ submodule, local imports do not work anymore.
 * Remove redundant function definition
 
 * Remove `print_passed_time`",[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/12231133032)
-theislab,scvelo,theislab/scvelo,450,12,67,107,FALSE,https://github.com/theislab/scvelo,450,f89590b5912ff3c47c7a486fd02e45589632e766,Update _logging.py (#1296),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/13504948789) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/13504948818)
+theislab,scvelo,theislab/scvelo,450,12,67,108,FALSE,https://github.com/theislab/scvelo,450,f89590b5912ff3c47c7a486fd02e45589632e766,Update _logging.py (#1296),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/13504948789) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/13504948818)
 theislab,scvelo_notebooks,theislab/scvelo_notebooks,34,1,5,13,FALSE,https://github.com/theislab/scvelo_notebooks,34,NA,NA,NA
 theislab,sfaira,theislab/sfaira,135,7,167,11,FALSE,https://github.com/theislab/sfaira,135,55bcbbf2588a08e4a98b1e65324119407ec6e75c,Merge pull request #741 from theislab/release,[![](https://github.com/theislab/sfaira/workflows/Check%20URLs/badge.svg)](https://github.com/theislab/sfaira/actions/runs/9457340256)
 theislab,sfaira-portal,theislab/sfaira-portal,0,3,2,0,FALSE,https://github.com/theislab/sfaira-portal,0,NA,NA,NA
@@ -269,7 +1577,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,3,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,2,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,2,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,3,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,6,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,936,16,74,220,FALSE,https://github.com/theislab/single-cell-best-practices,936,6b6fa9c87d8a4386690149f468000a3dac213a5a,"Remove deprecated pandas2ri.activate() calls from parts 6–8 (#375)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,937,16,74,220,FALSE,https://github.com/theislab/single-cell-best-practices,937,6b6fa9c87d8a4386690149f468000a3dac213a5a,"Remove deprecated pandas2ri.activate() calls from parts 6–8 (#375)
 
 * pandas2ri.activate()_line_deletion
 
