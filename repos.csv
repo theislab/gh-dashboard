@@ -59,7 +59,7 @@ theislab,cellrank_protocol,theislab/cellrank_protocol,0,1,0,0,FALSE,https://gith
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,15,2,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,15,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,1,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,3,NA,NA,NA
 theislab,chemCPA,theislab/chemCPA,117,3,7,26,FALSE,https://github.com/theislab/chemCPA,117,NA,NA,NA
-theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,0,2,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,0,NA,NA,NA
+theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,1,2,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,1,NA,NA,NA
 theislab,consensus-clustering-evaluation,theislab/consensus-clustering-evaluation,0,3,0,0,FALSE,https://github.com/theislab/consensus-clustering-evaluation,0,NA,NA,NA
 theislab,countae,theislab/countae,1,3,0,0,FALSE,https://github.com/theislab/countae,1,NA,NA,NA
 theislab,covid-perturbation,theislab/covid-perturbation,4,2,0,0,FALSE,https://github.com/theislab/covid-perturbation,4,NA,NA,NA
@@ -126,7 +126,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,3,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,3,8,4,FALSE,https://github.com/theislab/geome,16,402a0a8cdb442fee8666416e5f163c4098fa0c07,"Merge pull request #55 from theislab/fix/toarray
 
 Fix Sparse "".A"" Not Found",[![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/10868284169)
-theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,a0a76acac9321cfa25640a0b1f1571a556413339,[status] 2025-07-04 12:07:12 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/16087904193)
+theislab,gh-dashboard,theislab/gh-dashboard,5,2,0,0,FALSE,https://github.com/theislab/gh-dashboard,5,ac1d520ec0032a1078abbede97698809ec74088f,[status] 2025-07-05 12:07:54 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/16098788665)
 theislab,graph_abstraction,theislab/graph_abstraction,27,7,0,10,FALSE,https://github.com/theislab/graph_abstraction,27,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,36,2,1,1,FALSE,https://github.com/theislab/graphcompass,36,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,3,4,0,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
@@ -248,7 +248,7 @@ theislab,organoid_dexamethasone_stimulation,theislab/organoid_dexamethasone_stim
 theislab,paga,theislab/paga,223,9,24,33,FALSE,https://github.com/theislab/paga,223,NA,NA,NA
 theislab,pancreas-targeted_pharmacology,theislab/pancreas-targeted_pharmacology,0,5,1,2,FALSE,https://github.com/theislab/pancreas-targeted_pharmacology,0,NA,NA,NA
 theislab,pancreatic-endocrinogenesis,theislab/pancreatic-endocrinogenesis,8,2,0,7,FALSE,https://github.com/theislab/pancreatic-endocrinogenesis,8,NA,NA,NA
-theislab,paperbee,theislab/paperbee,45,1,9,2,FALSE,https://github.com/theislab/paperbee,45,41c8436aff024b5a1b20812c31aad988291a6fcc,"Merge pull request #22 from theislab/Updating-version
+theislab,paperbee,theislab/paperbee,46,1,9,2,FALSE,https://github.com/theislab/paperbee,46,41c8436aff024b5a1b20812c31aad988291a6fcc,"Merge pull request #22 from theislab/Updating-version
 
 Updating version",[![](https://github.com/theislab/paperbee/workflows/Draft%20PDF/badge.svg)](https://github.com/theislab/paperbee/actions/runs/15823908712)
 theislab,pdac_analysis,theislab/pdac_analysis,0,2,0,0,FALSE,https://github.com/theislab/pdac_analysis,0,NA,NA,NA
@@ -334,7 +334,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,3,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,2,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,0,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,2,1,0,FALSE,https://github.com/theislab/sfaira_extension,0,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,3,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,6,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,938,16,75,220,FALSE,https://github.com/theislab/single-cell-best-practices,938,6b6fa9c87d8a4386690149f468000a3dac213a5a,"Remove deprecated pandas2ri.activate() calls from parts 6–8 (#375)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,940,16,75,222,FALSE,https://github.com/theislab/single-cell-best-practices,940,6b6fa9c87d8a4386690149f468000a3dac213a5a,"Remove deprecated pandas2ri.activate() calls from parts 6–8 (#375)
 
 * pandas2ri.activate()_line_deletion
 
@@ -352,7 +352,7 @@ Removed the pandas2ri.activate() lines, since they are deprecated.
 
 Co-authored-by: seohyonkim <seohyon.l.kim@gmail.com>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117126) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117112) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117119) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/15757117118)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,321,13,40,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,321,7ab9c7d8e086a5b58f41eaf0fb411f157bb6d44c,update csendes et al (#89),[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/15210556055)
-theislab,single-cell-tutorial,theislab/single-cell-tutorial,1493,30,21,478,FALSE,https://github.com/theislab/single-cell-tutorial,1493,NA,NA,NA
+theislab,single-cell-tutorial,theislab/single-cell-tutorial,1493,30,21,477,FALSE,https://github.com/theislab/single-cell-tutorial,1493,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,4,6,3,FALSE,https://github.com/theislab/singlecell_proteomics,6,NA,NA,NA
 theislab,spapros,theislab/spapros,38,2,14,7,FALSE,https://github.com/theislab/spapros,38,1ec08e6809978021e7ad0d7b7ce4f5412f391f79,"Merge pull request #357 from theislab/scrinshot_probe_designer
 
