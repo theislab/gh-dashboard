@@ -20,12 +20,12 @@ theislab,DRVI_tutorials,theislab/DRVI_tutorials,0,2,0,0,FALSE,https://github.com
 theislab,DeepCollisionalCrossSection,theislab/DeepCollisionalCrossSection,13,3,1,6,FALSE,https://github.com/theislab/DeepCollisionalCrossSection,13,NA,NA,NA
 theislab,DeepRT,theislab/DeepRT,31,0,11,10,FALSE,https://github.com/theislab/DeepRT,31,NA,NA,NA
 theislab,ELS_analysis,theislab/ELS_analysis,0,2,0,0,FALSE,https://github.com/theislab/ELS_analysis,0,NA,NA,NA
-theislab,FlatVI,theislab/FlatVI,6,0,1,1,FALSE,https://github.com/theislab/FlatVI,6,NA,NA,NA
+theislab,FlatVI,theislab/FlatVI,7,0,1,1,FALSE,https://github.com/theislab/FlatVI,7,NA,NA,NA
 theislab,GWAS-scRNAseq-Integration,theislab/GWAS-scRNAseq-Integration,12,3,0,12,FALSE,https://github.com/theislab/GWAS-scRNAseq-Integration,12,NA,NA,NA
 theislab,GoBI_single_cell,theislab/GoBI_single_cell,0,1,0,0,FALSE,https://github.com/theislab/GoBI_single_cell,0,NA,NA,NA
 theislab,HPA_reproducibility,theislab/HPA_reproducibility,2,1,0,1,FALSE,https://github.com/theislab/HPA_reproducibility,2,NA,NA,NA
 theislab,HRCA-reproducibility,theislab/HRCA-reproducibility,3,4,0,1,FALSE,https://github.com/theislab/HRCA-reproducibility,3,NA,NA,NA
-theislab,IMPA,theislab/IMPA,16,0,0,5,FALSE,https://github.com/theislab/IMPA,16,NA,NA,NA
+theislab,IMPA,theislab/IMPA,17,0,0,5,FALSE,https://github.com/theislab/IMPA,17,NA,NA,NA
 theislab,InterpretableAutoencoders,theislab/InterpretableAutoencoders,5,2,0,0,FALSE,https://github.com/theislab/InterpretableAutoencoders,5,NA,NA,NA
 theislab,LODE,theislab/LODE,5,0,9,0,FALSE,https://github.com/theislab/LODE,5,NA,NA,NA
 theislab,LineagePulse,theislab/LineagePulse,2,3,0,0,FALSE,https://github.com/theislab/LineagePulse,2,NA,NA,NA
@@ -78,13 +78,13 @@ Adds `scripts/metabolic_labeling/data_generation.py`
 * Add metabolic labeling example to Jupyter book",[![](https://github.com/theislab/cellrank_protocol/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519534) [![](https://github.com/theislab/cellrank_protocol/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519513)
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,15,1,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,15,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,0,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,3,NA,NA,NA
-theislab,chemCPA,theislab/chemCPA,125,2,7,30,FALSE,https://github.com/theislab/chemCPA,125,NA,NA,NA
+theislab,chemCPA,theislab/chemCPA,126,2,7,30,FALSE,https://github.com/theislab/chemCPA,126,NA,NA,NA
 theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,1,1,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,1,NA,NA,NA
 theislab,consensus-clustering-evaluation,theislab/consensus-clustering-evaluation,0,2,0,0,FALSE,https://github.com/theislab/consensus-clustering-evaluation,0,NA,NA,NA
 theislab,countae,theislab/countae,1,2,0,0,FALSE,https://github.com/theislab/countae,1,NA,NA,NA
 theislab,covid-perturbation,theislab/covid-perturbation,4,1,0,0,FALSE,https://github.com/theislab/covid-perturbation,4,NA,NA,NA
 theislab,covid_macrophages_integration,theislab/covid_macrophages_integration,2,3,0,5,FALSE,https://github.com/theislab/covid_macrophages_integration,2,NA,NA,NA
-theislab,cpa,theislab/cpa,112,3,22,20,FALSE,https://github.com/theislab/cpa,112,NA,NA,NA
+theislab,cpa,theislab/cpa,114,3,22,20,FALSE,https://github.com/theislab/cpa,114,NA,NA,NA
 theislab,cpa-reproducibility,theislab/cpa-reproducibility,12,1,1,2,FALSE,https://github.com/theislab/cpa-reproducibility,12,NA,NA,NA
 theislab,cross_system_integration,theislab/cross_system_integration,13,1,14,2,FALSE,https://github.com/theislab/cross_system_integration,13,NA,NA,NA
 theislab,dali,theislab/dali,0,5,0,1,FALSE,https://github.com/theislab/dali,0,NA,NA,NA
@@ -97,16 +97,26 @@ theislab,diffxpy,theislab/diffxpy,204,5,108,23,FALSE,https://github.com/theislab
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,10,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,10,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,6,NA,NA,NA
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,0,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,308,3,37,36,FALSE,https://github.com/theislab/ehrapy,308,83856a57d94caab2ec6fe0f3a693a3c3199270e4,"[pre-commit.ci] pre-commit autoupdate (#957)
-
-updates:
-- [github.com/biomejs/pre-commit: v2.2.4 → v2.2.5](https://github.com/biomejs/pre-commit/compare/v2.2.4...v2.2.5)
-- [github.com/astral-sh/ruff-pre-commit: v0.13.2 → v0.13.3](https://github.com/astral-sh/ruff-pre-commit/compare/v0.13.2...v0.13.3)
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/18293432070)
 theislab,ehrapy,theislab/ehrapy,308,3,37,36,FALSE,https://github.com/theislab/ehrapy,308,d37671d6fcf91e7105c679107f74c0b863433bdc,"Prepare 0.12.1
 
 Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/ehrapy/workflows/Release/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/15218818584)
+theislab,ehrapy,theislab/ehrapy,308,3,37,36,FALSE,https://github.com/theislab/ehrapy,308,f9675c5060a98ce090097d430a9dec7cce8572d4,"improved notebook CI (#959)
+
+* improved notebook CI
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* fix one docs warning
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* ignore union
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/18410216054)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,1,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,6,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,6,721fc0a289a7b2f046dcf9ca65711f12d8b13a79,"update and fix the notebooks (#28)
 
@@ -140,22 +150,7 @@ converted anndata objects to ehrdata
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,3,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,3,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,1,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,9,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,7,1,20,4,FALSE,https://github.com/theislab/ehrdata,7,88b70bf4705520e4f0b0486808e21075c38717d2,"[pre-commit.ci] pre-commit autoupdate (#167)
-
-* [pre-commit.ci] pre-commit autoupdate
-
-updates:
-- [github.com/biomejs/pre-commit: v2.2.4 → v2.2.5](https://github.com/biomejs/pre-commit/compare/v2.2.4...v2.2.5)
-- [github.com/tox-dev/pyproject-fmt: v2.6.0 → v2.7.0](https://github.com/tox-dev/pyproject-fmt/compare/v2.6.0...v2.7.0)
-- [github.com/astral-sh/ruff-pre-commit: v0.13.2 → v0.13.3](https://github.com/astral-sh/ruff-pre-commit/compare/v0.13.2...v0.13.3)
-
-* [pre-commit.ci] auto fixes from pre-commit.com hooks
-
-for more information, see https://pre-commit.ci
-
----------
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/18317048845) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/18317048849)
+theislab,ehrdata,theislab/ehrdata,7,1,24,4,FALSE,https://github.com/theislab/ehrdata,7,NA,NA,NA
 theislab,enrichment_analysis_celltype,theislab/enrichment_analysis_celltype,9,3,0,4,FALSE,https://github.com/theislab/enrichment_analysis_celltype,9,NA,NA,NA
 theislab,epicardiods_analysis,theislab/epicardiods_analysis,2,1,1,0,FALSE,https://github.com/theislab/epicardiods_analysis,2,NA,NA,NA
 theislab,expiMap_reproducibility,theislab/expiMap_reproducibility,11,3,3,4,FALSE,https://github.com/theislab/expiMap_reproducibility,11,NA,NA,NA
@@ -170,7 +165,7 @@ Fix Sparse "".A"" Not Found",[![](https://github.com/theislab/geome/workflows/Te
 theislab,geome,theislab/geome,15,1,9,4,FALSE,https://github.com/theislab/geome,15,d1392437b831d0c4b0408f3d1f65dc0ea47ad453,"Merge pull request #62 from FrancescaDr/one_hot_encode
 
 Features for InterScale",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/16776682431)
-theislab,gh-dashboard,theislab/gh-dashboard,6,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,6,6fb12693cbae788f8cd163c89f480f920f909a45,[status] 2025-10-09 12:10:27 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/18405884828)
+theislab,gh-dashboard,theislab/gh-dashboard,6,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,6,7986b904811904caf9d3a4922f1b2571e05cfd73,[status] 2025-10-10 12:08:16 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/18429096593)
 theislab,graph_abstraction,theislab/graph_abstraction,27,6,0,10,FALSE,https://github.com/theislab/graph_abstraction,27,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,38,1,4,2,FALSE,https://github.com/theislab/graphcompass,38,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,2,4,1,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
@@ -253,7 +248,7 @@ theislab,scCODA_reproducibility,theislab/scCODA_reproducibility,8,3,0,1,FALSE,ht
 theislab,scPoli_legacy,theislab/scPoli_legacy,5,4,0,0,FALSE,https://github.com/theislab/scPoli_legacy,5,NA,NA,NA
 theislab,scPoli_reproduce,theislab/scPoli_reproduce,19,2,2,4,FALSE,https://github.com/theislab/scPoli_reproduce,19,NA,NA,NA
 theislab,scPortrait_ot,theislab/scPortrait_ot,1,1,0,0,FALSE,https://github.com/theislab/scPortrait_ot,1,NA,NA,NA
-theislab,scProtVelo,theislab/scProtVelo,6,1,0,1,FALSE,https://github.com/theislab/scProtVelo,6,NA,NA,NA
+theislab,scProtVelo,theislab/scProtVelo,7,1,0,0,FALSE,https://github.com/theislab/scProtVelo,7,NA,NA,NA
 theislab,scTab,theislab/scTab,61,3,5,9,FALSE,https://github.com/theislab/scTab,61,NA,NA,NA
 theislab,sc_analysis_template,theislab/sc_analysis_template,4,1,0,0,FALSE,https://github.com/theislab/sc_analysis_template,4,NA,NA,NA
 theislab,sc_ketamine_analysis,theislab/sc_ketamine_analysis,0,2,0,0,FALSE,https://github.com/theislab/sc_ketamine_analysis,0,NA,NA,NA
@@ -314,7 +309,7 @@ theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github
 theislab,single-cell-best-practices,theislab/single-cell-best-practices,1025,19,80,236,FALSE,https://github.com/theislab/single-cell-best-practices,1025,e1b10f6b11945e688a783d363ee375623266bee4,main branch,[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/16338084764) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/16338084768) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/16338084780) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/16338084766)
 theislab,single-cell-best-practices,theislab/single-cell-best-practices,1025,19,80,236,FALSE,https://github.com/theislab/single-cell-best-practices,1025,ff6e6949275a1dd7d9af70d36a219db688864635,fix example URL (#386),[![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/16246482654)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,330,12,40,40,FALSE,https://github.com/theislab/single-cell-transformer-papers,330,7ab9c7d8e086a5b58f41eaf0fb411f157bb6d44c,update csendes et al (#89),[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/15210556055)
-theislab,single-cell-tutorial,theislab/single-cell-tutorial,1517,30,21,477,FALSE,https://github.com/theislab/single-cell-tutorial,1517,NA,NA,NA
+theislab,single-cell-tutorial,theislab/single-cell-tutorial,1518,30,21,477,FALSE,https://github.com/theislab/single-cell-tutorial,1518,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,3,6,3,FALSE,https://github.com/theislab/singlecell_proteomics,6,NA,NA,NA
 theislab,spapros,theislab/spapros,44,2,16,8,FALSE,https://github.com/theislab/spapros,44,080151b67bbe671499d608ff3efd5ffd7e901b8f,"workflows update, lint etc",[![](https://github.com/theislab/spapros/workflows/Build%20spapros%20Package/badge.svg)](https://github.com/theislab/spapros/actions/runs/18104988213) [![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/18104988217) [![](https://github.com/theislab/spapros/workflows/Run%20spapros%20Tests/badge.svg)](https://github.com/theislab/spapros/actions/runs/18104988214)
 theislab,spapros,theislab/spapros,44,2,16,8,FALSE,https://github.com/theislab/spapros,44,1ec08e6809978021e7ad0d7b7ce4f5412f391f79,"Merge pull request #357 from theislab/scrinshot_probe_designer
