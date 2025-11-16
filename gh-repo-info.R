@@ -18,20 +18,34 @@ gh_workflows <- function(owner, repo, ...) {
 }
 
 gh_runs <- function(owner, repo, workflow_id, ...) {
-  runs <- gh(
-    "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
+  push_run <- gh(
+    "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs?event=push",
     owner = owner,
     repo = repo,
     workflow_id = workflow_id,
     per_page = 1
-  )
+  )$workflow_runs
 
-  # Return an empty list if the workflow as never run
-  if (length(runs$workflow_runs) == 0) {
-    return(list())
+  schedule_run <- gh(
+    "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs?event=schedule",
+    owner = owner,
+    repo = repo,
+    workflow_id = workflow_id,
+    per_page = 1
+  )$workflow_runs
+
+  # Return an empty list if there are no workflow runs
+  if (length(push_run) == 0 && length(schedule_run) == 0) {
+    list()
+  } else if (length(push_run) == 0) {
+    schedule_run[[1]]
+  } else if (length(schedule_run) == 0) {
+    push_run[[1]]
+  } else if (push_run[[1]]$created_at > schedule_run[[1]]$created_at) {
+    push_run[[1]]
+  } else {
+    schedule_run[[1]]
   }
-
-  runs$workflow_runs[[1]]
 }
 
 gh_url <- function(url) {
@@ -84,7 +98,7 @@ gh_repo_workflows <- function(repos) {
   workflows <- repos %>%
     unnest(.workflows) %>%
     mutate(
-      workflow_id = map_chr(.workflows, "id"),
+      workflow_id = map_chr(.workflows, \(.workflow) {as.character(.workflow$id)}),
       badge_url = map_chr(.workflows, "badge_url")
     )
 
@@ -94,6 +108,7 @@ gh_repo_workflows <- function(repos) {
     filter(purrr::map_int(runs, length) > 0) %>%
     mutate(
       event = map_chr(runs, "event"),
+      created_at = map_chr(runs, "created_at"),
       html_url_run = map_chr(runs, "html_url"),
       run_conclusion = map_chr(runs, "conclusion", .default = NA_character_),
       commit_message = map_chr(runs, ~ .x$head_commit$message),
@@ -103,9 +118,9 @@ gh_repo_workflows <- function(repos) {
 
 # Get repos
 gh_get_repo_status <- function(
-  repo_list = NULL,
-  all_by_owner = NULL,
-  .write_csv = !interactive()
+    repo_list = NULL,
+    all_by_owner = NULL,
+    .write_csv = !interactive()
 ) {
   if (is.null(repo_list) && is.null(all_by_owner)) {
     stop("At least one repo must be listed or a username must be provided in `all_by_owner`")
@@ -133,6 +148,12 @@ gh_get_repo_status <- function(
     workflows %>%
     filter(event %in% c("push", "schedule")) %>%
     mutate(badge = glue::glue("[![]({badge_url})]({html_url_run})")) %>%
+    # Set the commit to most recent for each repo
+    # group_by(owner, repo) %>%
+    # mutate(
+    #   commit_message = commit_message[which(created_at == max(created_at))[1]],
+    #   commit_id = commit_id[which(created_at == max(created_at))[1]]
+    # ) %>%
     group_by(owner, repo, commit_id, commit_message) %>%
     summarize(badge = paste(badge, collapse = " ")) %>%
     ungroup()
