@@ -6,7 +6,7 @@ params:
 # provide user name to include all public, non-fork repos from the owner
 all_by_owner: theislab
 # the repository where this repo exists
-status_repo: gadenbuie/status
+status_repo: theislab/gh-dashboard
 # list of repositories by owner name and repo (appear before owner's repos)
 repos:
   theislab:
