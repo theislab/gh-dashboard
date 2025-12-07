@@ -12,11 +12,11 @@ theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancrea
 theislab,2025_cpmeasure_performance_eval,theislab/2025_cpmeasure_performance_eval,0,0,0,0,FALSE,https://github.com/theislab/2025_cpmeasure_performance_eval,0,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,61,4,6,8,FALSE,https://github.com/theislab/AutoGeneS,61,NA,NA,NA
 theislab,CFGen,theislab/CFGen,23,3,0,5,FALSE,https://github.com/theislab/CFGen,23,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,101,0,62,16,FALSE,https://github.com/theislab/CellFlow,101,0f55ba20c49bcee60da979bd5a9fb4ab16420b1e,"Merge pull request #272 from theislab/fix/predict_kwargs
+theislab,CellFlow,theislab/CellFlow,102,0,62,16,FALSE,https://github.com/theislab/CellFlow,102,0f55ba20c49bcee60da979bd5a9fb4ab16420b1e,"Merge pull request #272 from theislab/fix/predict_kwargs
 
 fix predict kwargs",[![](https://github.com/theislab/CellFlow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/19670987091) [![](https://github.com/theislab/CellFlow/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/19807317752) [![](https://github.com/theislab/CellFlow/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/19812001382) [![](https://github.com/theislab/CellFlow/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/19812023280)
-theislab,CellFlow2,theislab/CellFlow2,4,0,0,0,FALSE,https://github.com/theislab/CellFlow2,4,NA,NA,NA
-theislab,CellHermes,theislab/CellHermes,6,0,1,0,FALSE,https://github.com/theislab/CellHermes,6,NA,NA,NA
+theislab,CellFlow2,theislab/CellFlow2,5,0,0,0,FALSE,https://github.com/theislab/CellFlow2,5,NA,NA,NA
+theislab,CellHermes,theislab/CellHermes,7,0,1,0,FALSE,https://github.com/theislab/CellHermes,7,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,25,6,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,25,NA,NA,NA
 theislab,DRVI,theislab/DRVI,56,1,9,4,FALSE,https://github.com/theislab/DRVI,56,0dfae77b8d837f4c8ff8538f7c5208759247bbf8,"[pre-commit.ci] pre-commit autoupdate (#73)
 
@@ -80,8 +80,8 @@ Adds `scripts/metabolic_labeling/data_generation.py`
 * Add metabolic labeling example to Jupyter book",[![](https://github.com/theislab/cellrank_protocol/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519534) [![](https://github.com/theislab/cellrank_protocol/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519513)
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,16,1,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,16,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,0,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,3,NA,NA,NA
+theislab,cellucid-data,theislab/cellucid-data,0,0,0,0,FALSE,https://github.com/theislab/cellucid-data,0,28a5ab209255d9d63fb21b0d9f5bc5f1a52d5cbf,serializer,[![](https://github.com/theislab/cellucid-data/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-data/actions/runs/19996887351) [![](https://github.com/theislab/cellucid-data/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-data/actions/runs/19996887342)
 theislab,cellucid-data,theislab/cellucid-data,0,0,0,0,FALSE,https://github.com/theislab/cellucid-data,0,2b666216158a5075466ad2fc4290e88767557fc3,Initial release v0.0.1a0,[![](https://github.com/theislab/cellucid-data/workflows/Publish%20to%20PyPI/badge.svg)](https://github.com/theislab/cellucid-data/actions/runs/19899817854)
-theislab,cellucid-data,theislab/cellucid-data,0,0,0,0,FALSE,https://github.com/theislab/cellucid-data,0,4c288663620b5fc43b0b21191bcbbc6922df2aa5,Update readthedocs.yml,[![](https://github.com/theislab/cellucid-data/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-data/actions/runs/19899934369) [![](https://github.com/theislab/cellucid-data/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-data/actions/runs/19899934367)
 theislab,chemCPA,theislab/chemCPA,131,2,7,32,FALSE,https://github.com/theislab/chemCPA,131,NA,NA,NA
 theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,1,1,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,1,NA,NA,NA
 theislab,consensus-clustering-evaluation,theislab/consensus-clustering-evaluation,0,2,0,0,FALSE,https://github.com/theislab/consensus-clustering-evaluation,0,NA,NA,NA
@@ -100,23 +100,42 @@ theislab,diffxpy,theislab/diffxpy,205,5,108,22,FALSE,https://github.com/theislab
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,11,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,6,NA,NA,NA
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,0,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,319,3,36,38,FALSE,https://github.com/theislab/ehrapy,319,d37671d6fcf91e7105c679107f74c0b863433bdc,"Prepare 0.12.1
+theislab,ehrapy,theislab/ehrapy,319,3,35,38,FALSE,https://github.com/theislab/ehrapy,319,d37671d6fcf91e7105c679107f74c0b863433bdc,"Prepare 0.12.1
 
 Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/ehrapy/workflows/Release/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/15218818584)
-theislab,ehrapy,theislab/ehrapy,319,3,36,38,FALSE,https://github.com/theislab/ehrapy,319,f14a55d018adb25a07c0037ac59b522b96c44b89,"Longitudinal and new qc_metrics (#967)
+theislab,ehrapy,theislab/ehrapy,319,3,35,38,FALSE,https://github.com/theislab/ehrapy,319,df4d3045907fc09cd8798943d2756488432649cb,"Add interactive `ols` plot (#992)
 
-* qc_metrics methods improved with new metrics, 3d enabled, tests and docstrings updated
+* Add interactive ols plot
 
-* vanilla test advanced added and default fixed
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
 
-* _apply_over_time_axis decorator for the functions added
+* simplify plot
 
-* array types moved from conftest.py to _types.py
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* curve kwargs
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* export Colormaps
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* fix docs
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Remove kmf
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* intersphinx
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
 
 ---------
 
-Co-authored-by: Öykü Süoglu <oeykue.sueoglu@helmholtz-munich.de>
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19966617164) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19966617157) [![](https://github.com/theislab/ehrapy/workflows/Test/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19966617148) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19966617150) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19966617134)
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19991044341) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19991044336) [![](https://github.com/theislab/ehrapy/workflows/Test/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19991044348) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19991044330) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/19991044332)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,1,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,6,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,6,721fc0a289a7b2f046dcf9ca65711f12d8b13a79,"update and fix the notebooks (#28)
 
@@ -167,106 +186,22 @@ theislab,flexible_priors,theislab/flexible_priors,2,0,0,0,FALSE,https://github.c
 theislab,flowVI,theislab/flowVI,5,2,1,0,FALSE,https://github.com/theislab/flowVI,5,NA,NA,NA
 theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,https://github.com/theislab/gastrulation_analysis,10,NA,NA,NA
 theislab,geome,theislab/geome,15,1,9,4,FALSE,https://github.com/theislab/geome,15,8694f8ec3e70469a098c35b15e67f5c8eabb1d2c,change default preserve_category type to list instead of [],[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/19627217903)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,8,a5905b76d9eb3691aeb4d672a0a4675bea514669,[status] 2025-12-05 12:09:31 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/19988181530)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,8,14104a3bc31a34cf6a694415d7e844da69c2fa7f,[status] 2025-12-06 12:08:19 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/20003887888)
 theislab,graph_abstraction,theislab/graph_abstraction,27,6,0,10,FALSE,https://github.com/theislab/graph_abstraction,27,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,38,1,4,2,FALSE,https://github.com/theislab/graphcompass,38,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,2,4,1,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
 theislab,gut_lineage,theislab/gut_lineage,2,1,0,3,FALSE,https://github.com/theislab/gut_lineage,2,NA,NA,NA
-theislab,hadge,theislab/hadge,24,2,25,7,FALSE,https://github.com/theislab/hadge,24,619d403b9321b9b0f0879ee737e2c6a8eaab500a,"fix CI maybe
+theislab,hadge,theislab/hadge,24,2,26,7,FALSE,https://github.com/theislab/hadge,24,35d030c80008df95e12933182c692363e4004b2e,clean subset_gt_donors (update env),[![](https://github.com/theislab/hadge/workflows/.github/workflows/release-announcements.yml/badge.svg)](https://github.com/theislab/hadge/actions/runs/20001789815)
+theislab,hadge,theislab/hadge,24,2,26,7,FALSE,https://github.com/theislab/hadge,24,619d403b9321b9b0f0879ee737e2c6a8eaab500a,"fix CI maybe
 
 Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/hadge/workflows/pre-commit/badge.svg)](https://github.com/theislab/hadge/actions/runs/15283075989)
-theislab,hadge,theislab/hadge,24,2,25,7,FALSE,https://github.com/theislab/hadge,24,67841fc00afbca020b989dfa5da263b5eebbcedf,"Merge pull request #59 from mari-ga/main
+theislab,hadge,theislab/hadge,24,2,26,7,FALSE,https://github.com/theislab/hadge,24,67841fc00afbca020b989dfa5da263b5eebbcedf,"Merge pull request #59 from mari-ga/main
 
 * Donor match - data problems (barcodes.tsv)
 * hashing pipeline running",[![](https://github.com/theislab/hadge/workflows/hadge%20test%20workflow/badge.svg)](https://github.com/theislab/hadge/actions/runs/15302489286)
-theislab,hadge,theislab/hadge,24,2,25,7,FALSE,https://github.com/theislab/hadge,24,aa4f85e3dc486c93cb3168c62d5da84fcb956d63,"local changes to modules souporcell - if this works, it has to be updated in the upstream nfcore",[![](https://github.com/theislab/hadge/workflows/Run%20nf-test/badge.svg)](https://github.com/theislab/hadge/actions/runs/18076426811)
-theislab,hadge,theislab/hadge,24,2,25,7,FALSE,https://github.com/theislab/hadge,24,b8a7d0e4ede61be535d73d3481f68c6d32dcb99b,"Integration of genetic modules and donor matching (#78)
-
-* save first steps
-
-* join outputs
-
-* gene_summary merges results for vireo, demuxlet and freemuxlet
-
-* merge on Barcode
-
-* all modules work for gene_summary but demuxlet has still empty values after merging
-
-* prepare donor matching
-
-* try understanding donor match
-
-* debugging donor match
-
-* donor_match produces something
-
-* donor_match produces something
-
-* donor_match seems to produce correct output files now, but it still needs to be tested with properly joined data
-
-* pipeline is running with new input data and donor_match produces correct output
-
-* first updates to souporcell
-
-* update souporcell
-
-* final versions.yml
-
-* save anndata/mudata, output before joining and left join to rna barcodes
-
-* couln't fix demuxEM error, opened an issue at developer's github
-
-* gene/hash_summary: save mudata/anndata, print results overview fuction and clean code
-
-* include all methods in donor_match and update bff() in hash_summary
-
-* improve the readability of hadge.nf
-
-* use fasta from iGenomes for souporcell but not fully tested (see #77)
-
-* remove prints and linting errors
-
-* update snapshot
-
-* Merge origin/dev
-
-* update souporcell
-
-* Fix image files
-
-* update snapshot
-
-* update snapshot 2
-
-* fasta updates
-
-* update snapshot with 3 modules each (hash/gene)
-
-* update fasta description
-
-* update snapshot
-
-* replace  set with list to keep the same order
-
-* snapshot from codespace
-
-* add souporcell outputs to .nftignore
-
-* Add trailing newline to .nftignore
-
-* fix end of file
-
-* add freemuxlet/*/*.clust1.vcf.gz to .nftignore
-
-* Incorporate review comments
-
-* update snapshot
-
----------
-
-Co-authored-by: nictru <nictru32@gmail.com>",[![](https://github.com/theislab/hadge/workflows/.github/workflows/release-announcements.yml/badge.svg)](https://github.com/theislab/hadge/actions/runs/19785318533)
+theislab,hadge,theislab/hadge,24,2,26,7,FALSE,https://github.com/theislab/hadge,24,aa4f85e3dc486c93cb3168c62d5da84fcb956d63,"local changes to modules souporcell - if this works, it has to be updated in the upstream nfcore",[![](https://github.com/theislab/hadge/workflows/Run%20nf-test/badge.svg)](https://github.com/theislab/hadge/actions/runs/18076426811)
 theislab,hadge-reproducibility,theislab/hadge-reproducibility,0,1,0,0,FALSE,https://github.com/theislab/hadge-reproducibility,0,NA,NA,NA
-theislab,huCIRA,theislab/huCIRA,0,0,0,0,FALSE,https://github.com/theislab/huCIRA,0,f903d2c96855780fd1300dd05f6be61e3edd6f2f,Update README.md,[![](https://github.com/theislab/huCIRA/workflows/Check%20Build/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/19965354264) [![](https://github.com/theislab/huCIRA/workflows/Test/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/19965354276)
+theislab,huCIRA,theislab/huCIRA,0,0,1,0,FALSE,https://github.com/theislab/huCIRA,0,f903d2c96855780fd1300dd05f6be61e3edd6f2f,Update README.md,[![](https://github.com/theislab/huCIRA/workflows/Check%20Build/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/19965354264) [![](https://github.com/theislab/huCIRA/workflows/Test/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/19965354276)
 theislab,icml_cbw_2022_clcvae,theislab/icml_cbw_2022_clcvae,0,2,0,0,FALSE,https://github.com/theislab/icml_cbw_2022_clcvae,0,NA,NA,NA
 theislab,idtrack,theislab/idtrack,1,0,1,0,FALSE,https://github.com/theislab/idtrack,1,9ded5e6019c9a5f16203455fa2808419c476e046,run `anndata_generator`,[![](https://github.com/theislab/idtrack/workflows/Build%20idtrack%20Package/badge.svg)](https://github.com/theislab/idtrack/actions/runs/18734047075) [![](https://github.com/theislab/idtrack/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/idtrack/actions/runs/18734047092) [![](https://github.com/theislab/idtrack/workflows/Run%20idtrack%20Tests/badge.svg)](https://github.com/theislab/idtrack/actions/runs/18734047077)
 theislab,ifcseq,theislab/ifcseq,1,1,0,1,FALSE,https://github.com/theislab/ifcseq,1,NA,NA,NA
