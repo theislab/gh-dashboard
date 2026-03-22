@@ -12,7 +12,7 @@ theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancrea
 theislab,2025_cpmeasure_performance_eval,theislab/2025_cpmeasure_performance_eval,0,0,0,0,FALSE,https://github.com/theislab/2025_cpmeasure_performance_eval,0,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,61,4,7,10,FALSE,https://github.com/theislab/AutoGeneS,61,NA,NA,NA
 theislab,CFGen,theislab/CFGen,27,3,0,5,FALSE,https://github.com/theislab/CFGen,27,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,125,0,65,25,FALSE,https://github.com/theislab/CellFlow,125,0a2d28e435f63f52cb9ce30b368a88302395dcd2,"feat: removed batched as parallelism is ensured by default by not eagerly casting jax to numpy. also added pytest-split to ci (#290)
+theislab,CellFlow,theislab/CellFlow,126,0,65,25,FALSE,https://github.com/theislab/CellFlow,126,0a2d28e435f63f52cb9ce30b368a88302395dcd2,"feat: removed batched as parallelism is ensured by default by not eagerly casting jax to numpy. also added pytest-split to ci (#290)
 
 * remove batched since everything should be parallelized atm
 
@@ -202,7 +202,7 @@ theislab,flexible_priors,theislab/flexible_priors,2,0,0,0,FALSE,https://github.c
 theislab,flowVI,theislab/flowVI,5,2,1,0,FALSE,https://github.com/theislab/flowVI,5,NA,NA,NA
 theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,https://github.com/theislab/gastrulation_analysis,10,NA,NA,NA
 theislab,geome,theislab/geome,15,1,9,4,FALSE,https://github.com/theislab/geome,15,8694f8ec3e70469a098c35b15e67f5c8eabb1d2c,change default preserve_category type to list instead of [],[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/19627217903)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,8,8be210188eb7369e48d3375eddf2935396b9d7f2,[status] 2026-03-20 12:12:43 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/23379257460)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,8,56b5769ebe6b3db52d41be53f99cdd2a77b5ac4f,[status] 2026-03-21 12:09:50 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/23402653384)
 theislab,graph_abstraction,theislab/graph_abstraction,27,6,0,10,FALSE,https://github.com/theislab/graph_abstraction,27,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,38,1,4,2,FALSE,https://github.com/theislab/graphcompass,38,NA,NA,NA
 theislab,greatpy,theislab/greatpy,14,2,5,1,FALSE,https://github.com/theislab/greatpy,14,NA,NA,NA
