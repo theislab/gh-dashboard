@@ -62,6 +62,10 @@ theislab,MetaMap-web,theislab/MetaMap-web,0,2,2,0,FALSE,https://github.com/theis
 theislab,PDAC,theislab/PDAC,1,1,0,0,FALSE,https://github.com/theislab/PDAC,1,NA,NA,NA
 theislab,PathReg,theislab/PathReg,8,2,1,0,FALSE,https://github.com/theislab/PathReg,8,NA,NA,NA
 theislab,ReconEval,theislab/ReconEval,1,0,0,0,FALSE,https://github.com/theislab/ReconEval,1,NA,NA,NA
+theislab,Statistical_Learning,theislab/Statistical_Learning,0,0,0,0,FALSE,https://github.com/theislab/Statistical_Learning,0,16fe77011c0de6ac24c4713e6730682f344507e3,"Add bbm font package for blackboard-bold indicator notation.
+
+bbm-macros only provides bbm.sty; the bbm10.tfm metrics come from the
+separate bbm package, which caused lecture builds to fail in CI.",[![](https://github.com/theislab/Statistical_Learning/workflows/Build%20PDFs/badge.svg)](https://github.com/theislab/Statistical_Learning/actions/runs/26879260423)
 theislab,annbatch_paper,theislab/annbatch_paper,0,0,0,0,FALSE,https://github.com/theislab/annbatch_paper,0,NA,NA,NA
 theislab,anndata2ri,theislab/anndata2ri,151,5,13,19,FALSE,https://github.com/theislab/anndata2ri,151,83c789c39020f838d385bb851821719527935b8a,[pre-commit.ci] pre-commit autoupdate (#282),[![](https://github.com/theislab/anndata2ri/workflows/Unit%20Tests/badge.svg)](https://github.com/theislab/anndata2ri/actions/runs/26788744836)
 theislab,archmap,theislab/archmap,4,2,4,0,FALSE,https://github.com/theislab/archmap,4,NA,NA,NA
@@ -100,7 +104,7 @@ theislab,cellucid-python,theislab/cellucid-python,2,0,0,0,FALSE,https://github.c
 theislab,cellucid-python,theislab/cellucid-python,2,0,0,0,FALSE,https://github.com/theislab/cellucid-python,2,5871a9eef5466562eafd04b8522564c3f1858d21,hdca dataset,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/22469977202) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/22469977208)
 theislab,cellucid-r,theislab/cellucid-r,0,0,0,0,FALSE,https://github.com/theislab/cellucid-r,0,0a39bb0a61224a34af015f0dbf43a71e74d747c8,debugging,[![](https://github.com/theislab/cellucid-r/workflows/R-CMD-check/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/20646864137) [![](https://github.com/theislab/cellucid-r/workflows/pkgdown/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/20646864135)
 theislab,chem-perturbridge_lpm,theislab/chem-perturbridge_lpm,0,0,0,0,FALSE,https://github.com/theislab/chem-perturbridge_lpm,0,NA,NA,NA
-theislab,chemCPA,theislab/chemCPA,151,2,7,32,FALSE,https://github.com/theislab/chemCPA,151,NA,NA,NA
+theislab,chemCPA,theislab/chemCPA,151,2,7,33,FALSE,https://github.com/theislab/chemCPA,151,NA,NA,NA
 theislab,chimera,theislab/chimera,1,0,0,0,FALSE,https://github.com/theislab/chimera,1,NA,NA,NA
 theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,1,1,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,1,NA,NA,NA
 theislab,comparative_atlas,theislab/comparative_atlas,10,1,0,0,FALSE,https://github.com/theislab/comparative_atlas,10,NA,NA,NA
@@ -159,14 +163,83 @@ converted anndata objects to ehrdata
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,4,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,4,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,1,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,9,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,13,1,12,6,FALSE,https://github.com/theislab/ehrdata,13,3ebf171adb0ae2741b4997dc4f1260f9b0bddadb,"Fix ´infer_feature_types´ for 3D EHRData with X=None (#246)
+theislab,ehrdata,theislab/ehrdata,13,1,11,6,FALSE,https://github.com/theislab/ehrdata,13,2d1d15d0b159101777c9b8a0b6a1c8fc412c5585,"Use pooch for dataset downloads (#244) (#251)
 
-* infer_feature_types updated to be able to process 3D layer + the layer=None is hardcoded in _check_feature_types if X is None it goes through layers of the input ehrdata
+* Use pooch for dataset downloads (#244)
 
-* correct 3D array construction in the 3d test, replace reshape with stack to preserve variables along the time axis
+Replace the custom requests-based downloader with pooch, aligning with
+the scverse ecosystem (cf. scverse/pertpy#980). pooch handles the
+transfer and on-disk caching; the existing FileLock guard, extracted-
+folder cache check, and multi-format archive extraction are preserved.
+The download progress bar is rendered by pooch via tqdm instead of rich,
+which is more robust in notebooks.
 
-* sorted alphabetically, UserWarning raised",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/26872808459) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/26872808463) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/26872808520)
-theislab,embpy,theislab/embpy,11,0,4,0,FALSE,https://github.com/theislab/embpy,11,532ee3b93d77a5b3901686b9060b87b9a2c0f3d7,"Merge pull request #15 from theislab/vibe_embpy
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+* Drop EHRDATA_DOWNLOAD_* retry env vars
+
+These configured the requests retry loop that pooch replaced; they are
+now no-ops. Remove them from the test and notebook CI workflows so pooch
+just handles the download. The dataset caching steps are unaffected.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+* Drop retry params and filelock from downloader; force fresh CI download
+
+Get closer to pertpy's pooch downloader (scverse/pertpy#980):
+- Remove the unused max_retries/retry_delay params, the `del` statement,
+  and their docstring lines from _download; pooch owns the transfer.
+- Drop the FileLock guard (and the filelock dependency); pertpy no longer
+  uses it. pooch downloads to a unique temp file and moves atomically.
+- Remove the now-pointless CI retry kwargs from the diabetes_130 loaders.
+- Bump the CI dataset cache keys (v1 -> v2) so this PR actually downloads
+  the datasets fresh through pooch instead of relying on the old cache.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+* Serialize same-path dataset tests onto one xdist worker
+
+With filelock gone and the cache cold (v2), tests that download the same
+dataset to the default path could extract concurrently under `-n auto`.
+Mark the colliding pairs with @pytest.mark.xdist_group and run CI with
+--dist loadgroup so they land on the same worker:
+- mimic-iv: test_mimic_iv_omop + the omop_connection_mimic_iv fixture test
+- physionet2012: test_physionet2012 + test_physionet2012_arguments
+- physionet2019: test_physionet2019 + test_physionet2019_arguments
+
+Register the xdist_group marker so runs without pytest-xdist don't warn.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+* Polish download output and fix physionet2019 full-dataset load
+
+From testing the dataset loaders in a notebook:
+- Silence the one-time ""IProgress not found"" tqdm warning that pooch
+  triggers by importing tqdm.auto at module load in a Jupyter kernel
+  without ipywidgets; we render a plain-text bar, so the warning is noise.
+- Drop the ""Moving files ..."" info log (and the now-unused logger import)
+  from the OMOP dataset setup; it was just noise on every fresh extract.
+- Fix ed.dt.physionet2019() on the full dataset: persons whose dynamic
+  measurements all fall outside the observation window were dropped from
+  the long->xarray pivot, leaving the time-series tensor with fewer rows
+  than obs (40333 vs 40336) and raising a shape mismatch. Reindex the
+  pivot onto all obs RecordIDs (in obs order) so missing persons are
+  padded with NaN and the layer stays aligned with obs.
+
+Verified: full physionet2019 -> (40336, 35, 48); physionet2012/2019
+(incl. subsampled) and gibleed regression tests pass; a notebook fresh
+download shows a clean tqdm bar with no ipywidgets warning.
+
+Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+* polish
+
+* fix pr nr in changelog
+
+---------
+
+Co-authored-by: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/26937776099) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/26937776024) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/26937776047)
+theislab,embpy,theislab/embpy,12,0,4,0,FALSE,https://github.com/theislab/embpy,12,532ee3b93d77a5b3901686b9060b87b9a2c0f3d7,"Merge pull request #15 from theislab/vibe_embpy
 
 Vibe embpy",[![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/23833830794)
 theislab,enrichment_analysis_celltype,theislab/enrichment_analysis_celltype,9,3,0,4,FALSE,https://github.com/theislab/enrichment_analysis_celltype,9,NA,NA,NA
@@ -180,7 +253,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,15,1,7,4,FALSE,https://github.com/theislab/geome,15,95d0138fff325cba5670ad637bc88f41c6e1994d,"Merge pull request #66 from theislab/template-update-v0.7.0
 
 Template update v0.7.0",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/23642169904) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/26739289894)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,8,a2f68150438857942e4bf426b186d7ff8bd99523,[status] 2026-06-02 13:13:44 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/26888000864)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,8,7ddd43f202dbe87c28c1a1c6ff0098a32ce70924,[status] 2026-06-03 13:35:19 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/26953120616)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,27,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,39,NA,NA,NA
 theislab,greatpy,theislab/greatpy,15,2,5,1,FALSE,https://github.com/theislab/greatpy,15,NA,NA,NA
@@ -260,7 +333,7 @@ theislab,neural_organoid_atlas,theislab/neural_organoid_atlas,49,4,3,7,FALSE,htt
 theislab,nicheformer,theislab/nicheformer,165,5,24,21,FALSE,https://github.com/theislab/nicheformer,165,NA,NA,NA
 theislab,op3_signatures,theislab/op3_signatures,0,0,0,0,FALSE,https://github.com/theislab/op3_signatures,0,NA,NA,NA
 theislab,organoid_dexamethasone_stimulation,theislab/organoid_dexamethasone_stimulation,0,1,0,1,FALSE,https://github.com/theislab/organoid_dexamethasone_stimulation,0,NA,NA,NA
-theislab,paga,theislab/paga,242,8,24,35,FALSE,https://github.com/theislab/paga,242,NA,NA,NA
+theislab,paga,theislab/paga,243,8,24,35,FALSE,https://github.com/theislab/paga,243,NA,NA,NA
 theislab,pancreas-targeted_pharmacology,theislab/pancreas-targeted_pharmacology,1,5,1,2,FALSE,https://github.com/theislab/pancreas-targeted_pharmacology,1,NA,NA,NA
 theislab,pancreatic-endocrinogenesis,theislab/pancreatic-endocrinogenesis,8,1,0,7,FALSE,https://github.com/theislab/pancreatic-endocrinogenesis,8,NA,NA,NA
 theislab,paperbee,theislab/paperbee,130,1,14,17,FALSE,https://github.com/theislab/paperbee,130,b1abaadb15488bbd19d30383c652195fc14bc1fd,"Fix/mattermost (#37)
@@ -321,7 +394,7 @@ theislab,scarches,theislab/scarches,405,10,67,70,FALSE,https://github.com/theisl
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,1,0,0,FALSE,https://github.com/theislab/scarches_notebooks,0,NA,NA,NA
 theislab,scarches_protocol,theislab/scarches_protocol,0,1,2,0,FALSE,https://github.com/theislab/scarches_protocol,0,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,9,1,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,9,NA,NA,NA
-theislab,scgen,theislab/scgen,346,7,31,70,FALSE,https://github.com/theislab/scgen,346,NA,NA,NA
+theislab,scgen,theislab/scgen,347,7,31,70,FALSE,https://github.com/theislab/scgen,347,NA,NA,NA
 theislab,scgen-reproducibility,theislab/scgen-reproducibility,33,2,7,10,FALSE,https://github.com/theislab/scgen-reproducibility,33,NA,NA,NA
 theislab,scib,theislab/scib,420,11,43,76,FALSE,https://github.com/theislab/scib,NA,cd67913396b4c0430710b3d90f1d1841f5fa4468,"chore(main): release 1.2.1 (#434)
 
@@ -330,8 +403,8 @@ theislab,scib-pipeline,theislab/scib-pipeline,82,4,16,29,FALSE,https://github.co
 theislab,scib-reproducibility,theislab/scib-reproducibility,72,4,4,20,FALSE,https://github.com/theislab/scib-reproducibility,72,NA,NA,NA
 theislab,scproto,theislab/scproto,4,2,0,1,FALSE,https://github.com/theislab/scproto,4,NA,NA,NA
 theislab,sctram,theislab/sctram,3,1,0,1,FALSE,https://github.com/theislab/sctram,3,NA,NA,NA
-theislab,scvelo,theislab/scvelo,501,11,78,113,FALSE,https://github.com/theislab/scvelo,501,9b6e94647654eca1c4a38b08a21f59df8a4ae6a6,Implement fix of get_sparse_from_igraph() theislab/scvelo#1241 (#1308),[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22367982926)
-theislab,scvelo,theislab/scvelo,501,11,78,113,FALSE,https://github.com/theislab/scvelo,501,f63c0e70596ced2f1bee8cf07e8ab66037cf86b2,Replace `adata.obsm_keys` calls (#1337),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707111) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707146)
+theislab,scvelo,theislab/scvelo,502,11,78,113,FALSE,https://github.com/theislab/scvelo,502,9b6e94647654eca1c4a38b08a21f59df8a4ae6a6,Implement fix of get_sparse_from_igraph() theislab/scvelo#1241 (#1308),[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22367982926)
+theislab,scvelo,theislab/scvelo,502,11,78,113,FALSE,https://github.com/theislab/scvelo,502,f63c0e70596ced2f1bee8cf07e8ab66037cf86b2,Replace `adata.obsm_keys` calls (#1337),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707111) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707146)
 theislab,scvelo_notebooks,theislab/scvelo_notebooks,36,0,5,12,FALSE,https://github.com/theislab/scvelo_notebooks,36,NA,NA,NA
 theislab,sfaira,theislab/sfaira,136,6,167,11,FALSE,https://github.com/theislab/sfaira,136,NA,NA,NA
 theislab,sfaira-portal,theislab/sfaira-portal,0,2,2,0,FALSE,https://github.com/theislab/sfaira-portal,0,NA,NA,NA
