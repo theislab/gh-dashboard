@@ -2,7 +2,7 @@ GitHub Dashboard
 ================
 
 ![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)  
-2026-06-20 12:33:16 UTC
+2026-06-21 12:37:15 UTC
 
 | Repo | Stars | Subscribers | Issues | Forks | Status | Commit |
 |:---|---:|---:|---:|---:|:---|:---|
@@ -39,7 +39,7 @@ GitHub Dashboard
 | [theislab/idtrack](https://github.com/theislab/idtrack) | 10 | 0 | 2 | 1 | [![](https://github.com/theislab/idtrack/workflows/Build%20idtrack%20Package/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21184289077) [![](https://github.com/theislab/idtrack/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21183972660) [![](https://github.com/theislab/idtrack/workflows/Run%20idtrack%20Tests/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21184289091) [![](https://github.com/theislab/idtrack/workflows/Dependency%20Compatibility/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21184289085) | <a href="https://github.com/theislab/idtrack/commit/d8514ab51a494842f4278e769c9538f103592c7a" title="experiments">d8514a</a> |
 | [theislab/interscale](https://github.com/theislab/interscale) | 10 | 1 | 11 | 1 | [![](https://github.com/theislab/interscale/workflows/Check%20Build/badge.svg)](https://github.com/theislab/interscale/actions/runs/25677070778) [![](https://github.com/theislab/interscale/workflows/Test/badge.svg)](https://github.com/theislab/interscale/actions/runs/27528898264) | <a href="https://github.com/theislab/interscale/commit/662e864041a7007cfc4952a3f1d2ab2edd62bf20" title="Merge pull request #66 from theislab/FrancescaDr-patch-2">662e86</a> |
 | [theislab/moscot_notebooks](https://github.com/theislab/moscot_notebooks) | 9 | 0 | 7 | 4 | [![](https://github.com/theislab/moscot_notebooks/workflows/lint/badge.svg)](https://github.com/theislab/moscot_notebooks/actions/runs/17195852353) | <a href="https://github.com/theislab/moscot_notebooks/commit/02e631ed15a49325cc0e4400aeb39a4f11319d54" title="fix callback name (#105)">02e631</a> |
-| [theislab/gh-dashboard](https://github.com/theislab/gh-dashboard) | 8 | 1 | 1 | 0 | [![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/27871263551) | <a href="https://github.com/theislab/gh-dashboard/commit/5fa867465e3e8112e6a50b8886564bfcefcbbba5" title="[status] 2026-06-19 13:14:30 UTC">5fa867</a> |
+| [theislab/gh-dashboard](https://github.com/theislab/gh-dashboard) | 8 | 1 | 1 | 0 | [![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/27904503233) | <a href="https://github.com/theislab/gh-dashboard/commit/367e6cee2561efcc0d292b20c21871066eab8931" title="[status] 2026-06-20 12:36:57 UTC">367e6c</a> |
 | [theislab/ehrapy-datasets](https://github.com/theislab/ehrapy-datasets) | 5 | 0 | 4 | 2 | [![](https://github.com/theislab/ehrapy-datasets/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy-datasets/actions/runs/15684474582) | <a href="https://github.com/theislab/ehrapy-datasets/commit/721fc0a289a7b2f046dcf9ca65711f12d8b13a79" title="update and fix the notebooks (#28)">721fc0</a> |
 | [theislab/cellrank_protocol](https://github.com/theislab/cellrank_protocol) | 2 | 1 | 0 | 0 | [![](https://github.com/theislab/cellrank_protocol/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519534) [![](https://github.com/theislab/cellrank_protocol/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519513) | <a href="https://github.com/theislab/cellrank_protocol/commit/499b5490d1416ee459c7f855d686886d9679ae5a" title="Add metabolic labeling example (#28)">499b54</a> |
 | [theislab/cellucid-python](https://github.com/theislab/cellucid-python) | 2 | 0 | 0 | 0 | [![](https://github.com/theislab/cellucid-python/workflows/Publish%20to%20PyPI/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/20645691904) | <a href="https://github.com/theislab/cellucid-python/commit/1dd7a557aeb4c4f927c7e772b7749b623d437f46" title="version 0.9.0">1dd7a5</a> |
@@ -59,7 +59,7 @@ GitHub Dashboard
 
 | Repo | Stars | Subscribers | Issues | Forks |
 |:---|---:|---:|---:|---:|
-| [theislab/single-cell-tutorial](https://github.com/theislab/single-cell-tutorial) | 1570 | 30 | 22 | 492 |
+| [theislab/single-cell-tutorial](https://github.com/theislab/single-cell-tutorial) | 1571 | 30 | 22 | 492 |
 | [theislab/scarches](https://github.com/theislab/scarches) | 406 | 10 | 67 | 70 |
 | [theislab/scgen](https://github.com/theislab/scgen) | 351 | 7 | 31 | 71 |
 | [theislab/dca](https://github.com/theislab/dca) | 274 | 9 | 33 | 75 |
@@ -128,6 +128,7 @@ GitHub Dashboard
 | [theislab/scAnalysisTutorial](https://github.com/theislab/scAnalysisTutorial) | 10 | 1 | 0 | 3 |
 | [theislab/squidpy_reproducibility](https://github.com/theislab/squidpy_reproducibility) | 10 | 0 | 0 | 8 |
 | [theislab/superexacttestpy](https://github.com/theislab/superexacttestpy) | 10 | 1 | 3 | 0 |
+| [theislab/trvaep](https://github.com/theislab/trvaep) | 10 | 1 | 0 | 6 |
 | [theislab/2018_Angelidis](https://github.com/theislab/2018_Angelidis) | 9 | 2 | 0 | 6 |
 | [theislab/CellFlow2](https://github.com/theislab/CellFlow2) | 9 | 0 | 1 | 2 |
 | [theislab/ehrapy-tutorials](https://github.com/theislab/ehrapy-tutorials) | 9 | 1 | 0 | 2 |
@@ -136,7 +137,6 @@ GitHub Dashboard
 | [theislab/perturbation-metrics](https://github.com/theislab/perturbation-metrics) | 9 | 1 | 1 | 0 |
 | [theislab/scatac_poisson_reproducibility](https://github.com/theislab/scatac_poisson_reproducibility) | 9 | 1 | 0 | 0 |
 | [theislab/scCODA_reproducibility](https://github.com/theislab/scCODA_reproducibility) | 9 | 3 | 0 | 1 |
-| [theislab/trvaep](https://github.com/theislab/trvaep) | 9 | 1 | 0 | 6 |
 | [theislab/trVAE_reproducibility](https://github.com/theislab/trVAE_reproducibility) | 9 | 1 | 2 | 7 |
 | [theislab/2019_Strunz](https://github.com/theislab/2019_Strunz) | 8 | 3 | 1 | 10 |
 | [theislab/moscot_benchmarks](https://github.com/theislab/moscot_benchmarks) | 8 | 1 | 2 | 2 |
