@@ -1,7 +1,7 @@
 owner,repo,full_name,stargazers_count,subscribers_count,open_issues_count,forks_count,fork,html_url_repo,commit_id,commit_message,badge
 theislab,2015-grn-inference,theislab/2015-grn-inference,0,1,0,0,FALSE,https://github.com/theislab/2015-grn-inference,NA,NA,NA
 theislab,2018_Angelidis,theislab/2018_Angelidis,9,2,0,6,FALSE,https://github.com/theislab/2018_Angelidis,NA,NA,NA
-theislab,2019_Strunz,theislab/2019_Strunz,8,3,1,10,FALSE,https://github.com/theislab/2019_Strunz,NA,NA,NA
+theislab,2019_Strunz,theislab/2019_Strunz,8,3,2,10,FALSE,https://github.com/theislab/2019_Strunz,NA,NA,NA
 theislab,2020_Inhibition_LTbetaR-signalling,theislab/2020_Inhibition_LTbetaR-signalling,0,2,0,3,FALSE,https://github.com/theislab/2020_Inhibition_LTbetaR-signalling,NA,NA,NA
 theislab,2020_Mayr,theislab/2020_Mayr,8,4,0,8,FALSE,https://github.com/theislab/2020_Mayr,NA,NA,NA
 theislab,2020_iPS_Lung_Differentiation,theislab/2020_iPS_Lung_Differentiation,2,3,0,2,FALSE,https://github.com/theislab/2020_iPS_Lung_Differentiation,NA,NA,NA
@@ -11,7 +11,7 @@ theislab,2022_Bakhti_pancreas_Syt13,theislab/2022_Bakhti_pancreas_Syt13,0,1,0,0,
 theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancreas_cross_species,5,2,0,1,FALSE,https://github.com/theislab/2022_Tritschler_pancreas_cross_species,NA,NA,NA
 theislab,2025_cpmeasure_performance_eval,theislab/2025_cpmeasure_performance_eval,0,0,0,0,FALSE,https://github.com/theislab/2025_cpmeasure_performance_eval,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,62,4,7,10,FALSE,https://github.com/theislab/AutoGeneS,NA,NA,NA
-theislab,CFGen,theislab/CFGen,36,3,0,5,FALSE,https://github.com/theislab/CFGen,NA,NA,NA
+theislab,CFGen,theislab/CFGen,37,3,0,5,FALSE,https://github.com/theislab/CFGen,NA,NA,NA
 theislab,CellFlow,theislab/CellFlow,151,0,67,27,FALSE,https://github.com/theislab/CellFlow,446ed6073c60ac2e8db13c4ea096a43cdec288b2,"Feat/vf conditioning hooks (#308)
 
 * extract cfg null helpers
@@ -36,7 +36,7 @@ theislab,CellFlow2,theislab/CellFlow2,9,0,3,2,FALSE,https://github.com/theislab/
 Feat/de val metrics",[![](https://github.com/theislab/CellFlow2/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039841057) [![](https://github.com/theislab/CellFlow2/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840725) [![](https://github.com/theislab/CellFlow2/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840835) [![](https://github.com/theislab/CellFlow2/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840951)
 theislab,CellHermes,theislab/CellHermes,30,0,1,6,FALSE,https://github.com/theislab/CellHermes,NA,NA,NA
 theislab,Chem-PerturBridge,theislab/Chem-PerturBridge,1,2,2,0,FALSE,https://github.com/theislab/Chem-PerturBridge,NA,NA,NA
-theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,0,0,0,0,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
+theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,0,0,0,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,24,6,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,NA,NA,NA
 theislab,DRVI,theislab/DRVI,72,1,8,5,FALSE,https://github.com/theislab/DRVI,151a0aaeb64c1ec1de9e35975bdcf56da9a6b667,"Add Internal model (#135)
 
@@ -135,19 +135,36 @@ theislab,diffxpy,theislab/diffxpy,206,0,108,22,FALSE,https://github.com/theislab
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,355,3,19,50,FALSE,https://github.com/theislab/ehrapy,76a9687c62b742037e3dba1cd256e4a9fbb20ee0,"update submodule to ehrdata 0.4.0 (#1089)
+theislab,ehrapy,theislab/ehrapy,355,3,19,50,FALSE,https://github.com/theislab/ehrapy,3ce0a1d428377936f510fe601a9fcce5fc0a9948,"Remove mice_forest_impute and drop the miceforest dependency (#1097)
 
-* update submodule
+miceforest is effectively unmaintained: its last upstream commit was
+2025-10-27, and it is broken against lightgbm>=4.7.0 (released
+2026-07-18) because it calls the private, name-mangled internal
+`Booster._Booster__inner_predict`, whose argument became keyword-only.
+The one-line upstream fix sits in an unmerged PR. Any fresh install of
+ehrapy therefore resolves a lightgbm that breaks mice_forest_impute.
 
-* update submodule
+The dependency was not carrying its weight independently of the
+breakage. It was declared unconditionally, so every user pulled lightgbm
+and pyarrow for a function documented as unsupported on macOS with all
+its tests skipped on Darwin. num_datasets was hardcoded to 1, so
+multiple imputation was never exposed, leaving single imputation
+equivalent to miss_forest_impute. save_all_iterations_data defaulted to
+True and retained every iteration in memory, but the kernel was
+discarded immediately, so the parameter only cost RAM.
 
-* submodule update; check if ehrapy fine with it
+miss_forest_impute already covers this niche via sklearn's
+IterativeImputer, which is MICE, with a tree ensemble. A LightGBM
+backend remains available by composition as
+IterativeImputer(estimator=LGBMRegressor(...)), without depending on
+LightGBM private internals.
 
-* update submodule|
+Also de-link the historical v0.15.0 changelog reference to the removed
+function, since nitpicky mode plus sphinx-build -W would fail the docs
+build on the dangling cross-reference.
 
-* add sparse to notebooks
-
-* ehrdata 0.4.0",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591941721) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591941959) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591944468) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591943252) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591942613) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591942290)
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/30178276959) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/30178277033) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/30178276968) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/30178276978) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/30178276956) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/30178276958)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,721fc0a289a7b2f046dcf9ca65711f12d8b13a79,"update and fix the notebooks (#28)
 
@@ -181,7 +198,13 @@ converted anndata objects to ehrdata
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,1,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,14,1,13,6,FALSE,https://github.com/theislab/ehrdata,82da252173cabb3fc422a08a2c057b6eee91563f,bump to 0.4.0 (#281),[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/29591100258) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/29591100375) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/29591100395)
+theislab,ehrdata,theislab/ehrdata,14,1,12,6,FALSE,https://github.com/theislab/ehrdata,3d3e259e593c335e2ae03bf621d7dd35ba628441,"[pre-commit.ci] pre-commit autoupdate (#282)
+
+updates:
+- [github.com/biomejs/pre-commit: v2.5.3 → v2.5.4](https://github.com/biomejs/pre-commit/compare/v2.5.3...v2.5.4)
+- [github.com/astral-sh/ruff-pre-commit: v0.15.21 → v0.15.22](https://github.com/astral-sh/ruff-pre-commit/compare/v0.15.21...v0.15.22)
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/30154199483) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/30154199476) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/30154199475)
 theislab,embpy,theislab/embpy,21,0,11,1,FALSE,https://github.com/theislab/embpy,6fcfb688e151a2279130bc6349009cfc8d916299,"Merge pull request #40 from theislab/chore/hatch-vcs
 
 chore: bring hatch vcs versioning",[![](https://github.com/theislab/embpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/embpy/actions/runs/28331102209) [![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/29392340172)
@@ -196,7 +219,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,1,8,4,FALSE,https://github.com/theislab/geome,95d0138fff325cba5670ad637bc88f41c6e1994d,"Merge pull request #66 from theislab/template-update-v0.7.0
 
 Template update v0.7.0",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/23642169904) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/27529080433)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,878f36bb5478f93ee02cb66791e5e7652437dad9,[status] 2026-07-23 12:36:44 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/30093139364)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,a65448dd7c55c8be4845b1790089c5074a384cca,[status] 2026-07-24 12:35:26 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/30157697102)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -318,7 +341,7 @@ theislab,scarches,theislab/scarches,406,10,66,70,FALSE,https://github.com/theisl
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,1,0,0,FALSE,https://github.com/theislab/scarches_notebooks,NA,NA,NA
 theislab,scarches_protocol,theislab/scarches_protocol,0,1,2,0,FALSE,https://github.com/theislab/scarches_protocol,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,9,1,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,NA,NA,NA
-theislab,scgen,theislab/scgen,353,7,31,71,FALSE,https://github.com/theislab/scgen,NA,NA,NA
+theislab,scgen,theislab/scgen,352,7,31,71,FALSE,https://github.com/theislab/scgen,NA,NA,NA
 theislab,scgen-reproducibility,theislab/scgen-reproducibility,34,2,7,10,FALSE,https://github.com/theislab/scgen-reproducibility,NA,NA,NA
 theislab,scib,theislab/scib,426,11,43,76,FALSE,https://github.com/theislab/scib,cd67913396b4c0430710b3d90f1d1841f5fa4468,"chore(main): release 1.2.1 (#434)
 
@@ -336,7 +359,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1232,20,62,278,FALSE,https://github.com/theislab/single-cell-best-practices,05915ed2bd5994d5a665b636037942ae977efc79,"Update compositional analysis chapter (#448)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1231,20,62,278,FALSE,https://github.com/theislab/single-cell-best-practices,05915ed2bd5994d5a665b636037942ae977efc79,"Update compositional analysis chapter (#448)
 
 * work in progress
 
@@ -401,7 +424,51 @@ theislab,single-cell-best-practices,theislab/single-cell-best-practices,1232,20,
 * test
 
 * pin a specific python version",[![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29337787004) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29337787101)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1232,20,62,278,FALSE,https://github.com/theislab/single-cell-best-practices,a84f5652d6b30e3670ad7bfec3c0128970befca2,fix typos while at it,[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29649127389) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29649127375) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29649127372)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1231,20,62,278,FALSE,https://github.com/theislab/single-cell-best-practices,a45f9d30eb89f57f5a621530882b2253fa9251a7,"Address review feedback on the Jupyter Book v2 migration
+
+Fixes the items @LuisHeinzlmeier raised in review.
+
+Two ""References"" headings per chapter. The MyST book theme already renders a
+references section in the backmatter of every page that has citations, so the
+manual `## References` heading plus the `{bibliography}` directive that carried
+over from the Sphinx build produced a second one. Both are removed everywhere,
+which also means pages without citations no longer show an empty heading.
+
+Broken browser back button after clicking a key takeaway. Navigating to a
+same-page anchor and then going back rendered ""Application Error:
+TypeError: Cannot read properties of undefined (reading 'frontmatter')"". This is
+an upstream router bug that is fixed in mystmd 1.10.1, so jupyter-book is bumped
+from 2.1.5 to 2.1.6. That release also puts a separator between grouped
+citations, which 1.9.0 ran together.
+
+In-text citations lost their brackets. A bare `{cite}` renders narratively in
+MyST (""Wolf et al. (2019)""), so every citation is switched to the parenthetical
+`{cite:p}`. The theme wraps those in a `.cite-group` span but adds no delimiters,
+so a small stylesheet puts the brackets of the old build back around them.
+
+Missing dropdown icons in scrna_seq.ipynb. The Strengths and Limitations titles
+still carried raw FontAwesome HTML, which MyST does not render; they now use
+emoji like the key takeaways, environment and data dropdowns already do.
+
+Inline code and cell outputs are styled closer to the old build again, in the
+same stylesheet.
+
+While in here:
+
+- Restore wording that merge conflict resolutions reverted to pre-fix versions
+  (""Sanger sequecing"", ""mammels"", ""none coding RNA"", ""TBRD2"", ""CRD3"",
+  ""non-continoues"", ""linages"", ""complimentary"", ""there are is"", a stale 10x
+  documentation link and a dropped `{term}` link, among others). The prose of
+  every chapter was diffed against main to find these.
+- Fix a citation that used single quotes instead of backticks and so had been
+  rendering as literal text since before the migration.
+- Drop the now unused sphinx and playwright pins from environment.yml and align
+  its jupytext and beautifulsoup4 versions with netlify.toml.
+- Fix the stray fence in the authors example in CONTRIBUTING.md and document the
+  citation roles and the automatic references section.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30178217334) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30178217270) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30178217294)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,342,12,41,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,NA,NA,NA
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1583,48,22,492,FALSE,https://github.com/theislab/single-cell-tutorial,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,3,6,2,FALSE,https://github.com/theislab/singlecell_proteomics,NA,NA,NA
