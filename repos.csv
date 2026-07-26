@@ -36,7 +36,7 @@ theislab,CellFlow2,theislab/CellFlow2,9,0,3,2,FALSE,https://github.com/theislab/
 Feat/de val metrics",[![](https://github.com/theislab/CellFlow2/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039841057) [![](https://github.com/theislab/CellFlow2/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840725) [![](https://github.com/theislab/CellFlow2/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840835) [![](https://github.com/theislab/CellFlow2/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840951)
 theislab,CellHermes,theislab/CellHermes,30,0,1,6,FALSE,https://github.com/theislab/CellHermes,NA,NA,NA
 theislab,Chem-PerturBridge,theislab/Chem-PerturBridge,1,2,2,0,FALSE,https://github.com/theislab/Chem-PerturBridge,NA,NA,NA
-theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,0,0,0,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
+theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,0,0,1,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,24,6,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,NA,NA,NA
 theislab,DRVI,theislab/DRVI,72,1,8,5,FALSE,https://github.com/theislab/DRVI,151a0aaeb64c1ec1de9e35975bdcf56da9a6b667,"Add Internal model (#135)
 
@@ -219,7 +219,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,1,8,4,FALSE,https://github.com/theislab/geome,95d0138fff325cba5670ad637bc88f41c6e1994d,"Merge pull request #66 from theislab/template-update-v0.7.0
 
 Template update v0.7.0",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/23642169904) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/27529080433)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,a65448dd7c55c8be4845b1790089c5074a384cca,[status] 2026-07-24 12:35:26 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/30157697102)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,7329a133ef88a0ec1b8b47960bef28702da131bf,[status] 2026-07-25 22:52:58 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/30201871210)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -359,72 +359,75 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1231,20,62,278,FALSE,https://github.com/theislab/single-cell-best-practices,05915ed2bd5994d5a665b636037942ae977efc79,"Update compositional analysis chapter (#448)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1231,20,60,278,FALSE,https://github.com/theislab/single-cell-best-practices,5c686c23aced704aff07f3985ef5006a2c1dc388,"Migrate to Jupyter Book v2 (#436)
 
-* work in progress
+* update jupter book version to the most recent one
 
-* work in progress
+* after automatic upgrade
 
-* work in progress
+* manual changes.. WIP
 
-* updated until without labeled clusters
+* fix figure formats
 
-* work in progress 2
+* change Makefile for v2
 
-* rerun
+* fix anchor link issues
 
-* micromamba@v3
+* fix link to integration chapter
 
-* add questions
+* fix warnings a little bit
 
-* update key takeaways
+* fix gitignore
 
-* small fixes
+* BIG appologies for the massive commit.. I just realised I never committed..
 
-* update scvi-tools to 1.4.3
+* fixing errors?
 
-* update links
+* oh i didn't have pre-commit on this laptop
 
-* remove smillie dataset
+* update workflow
 
-* add the first glossary terms
+* fixing workflow?
 
-* remove-input and add remaining glossary terms
+* edit jupyter book version on netflify.toml
 
-* add changelog
+* update CONTRIBUTING with the author/reviewer section on top
 
-* rerun
+* update package versions for netlify
 
-* rerun chapter
+* netlify uses make build specifically now instead of make (serve)
 
-* update citations
+* changing workflows to call make build instead of make as well
 
-* final fixes
+* fix dropdown icons and key takeaway anchors etc.
 
-* finalize
+* fix MOST of the errors and warnings building the book
 
-* update cell-cell env
+* replace the original  syntax since it's not available in V2 anymore
 
-* test
+* update build workflow to match V2 - pdf still dropping some contents - WIP
 
-* update integration env
+* update CONTRIBUTING and templates
 
-* move bbknn to pip
+* add prettier ignore to some tiny parts to prevent prettier from adding an extra backslash
 
-* resolve bbknn issue
+* disable chapter numbering
 
-* try cell-cell env with 4.3.3
+* fix errors regarding changelog when building the book
 
-* update r version
+* fix the key takeaways anchors with the new way
 
-* r-base>=4.4
+* fix typo
 
-* pin to =4.4
+* fix leftover old syd syntax
 
-* test
+* seealso syntax - needs discussion
 
-* pin a specific python version",[![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29337787004) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/29337787101)
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1231,20,62,278,FALSE,https://github.com/theislab/single-cell-best-practices,a45f9d30eb89f57f5a621530882b2253fa9251a7,"Address review feedback on the Jupyter Book v2 migration
+* restore minor(?) bug(?) from earlier work - fix flattened notebook cell sources (JSON format only, no content change)
+
+* fix typos while at it
+
+* Address review feedback on the Jupyter Book v2 migration
 
 Fixes the items @LuisHeinzlmeier raised in review.
 
@@ -468,7 +471,154 @@ While in here:
   citation roles and the automatic references section.
 
 Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30178217334) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30178217270) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30178217294)
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Fix the key takeaway back button on the RNA velocity chapter
+
+The jupyter-book 2.1.6 bump fixed the back button everywhere except
+trajectories/rna-velocity, which still rendered ""Application Error:
+TypeError: Cannot read properties of undefined (reading 'frontmatter')"".
+
+Two of its key takeaways contained a citation. A key takeaway card is itself a
+link, so the citation link ended up nested inside it, which is invalid HTML. The
+browser reparents the inner anchor, the resulting DOM no longer matches the
+server-rendered markup, and React hydration fails for the entire page — React
+error #418. An unhydrated page has no router attached, so clicking a card is a
+plain browser navigation, and going back from it hits the upstream router bug
+that 2.1.6 otherwise avoids.
+
+Dropping the two citations from the key takeaways fixes it. They are summaries
+of statements that are cited in the chapter body anyway.
+
+The failure mode is silent — the build is clean, the page looks right, and only
+interaction is broken — so `make dropdown` now rejects key takeaways containing
+a citation, cross reference, glossary term or markdown link, and CONTRIBUTING.md
+explains why the existing ""don't link terms in the key takeaways"" rule matters.
+
+Verified across all 49 pages: no hydration failures, and clicking every key
+takeaway card on every chapter and going back no longer errors.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Stop static hosts answering the router's data requests with HTML
+
+The book theme links internally with Remix's `prefetch=""intent""`, so hovering any
+internal link — a key takeaway card, a sidebar entry, a footer link — makes the
+router fetch the target with a `?_data=root` / `?_data=routes/$` query string and
+expect loader JSON back.
+
+A static build has no server behind it. Netlify and GitHub Pages both ignore the
+query string and answer with the page's own HTML, 200. The router stores that as
+the route's loader data, and the next navigation into the route reads
+`data.page.frontmatter` on data that has no `page`. That is the
+""Application Error: Cannot read properties of undefined (reading 'frontmatter')""
+you get after clicking a key takeaway and pressing the browser back button.
+
+Answering any request carrying a `_data` query parameter with a 404 keeps the
+HTML out of the router cache. Same class of bug as upstream
+https://github.com/jupyter-book/mystmd/issues/1178, which was fixed for
+navigation links but not for the prefetching links the theme still uses.
+
+This covers the Netlify deploy previews only. Releases publish to GitHub Pages,
+which has no redirect configuration, so that path still needs a fix before this
+migration ships.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Revert ""Stop static hosts answering the router's data requests with HTML""
+
+The 404 made no difference to the crash, so the prefetched `?_data=` responses
+were not what poisoned the router. Dropping the rule again rather than leaving a
+redirect in place that only breaks requests the router makes on purpose.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Reload the page on browser back instead of crashing the theme
+
+Going back after clicking a key takeaway shows
+""Application Error: TypeError: Cannot read properties of undefined (reading
+'frontmatter')"" instead of the chapter. On a client side history POP the router
+ends up without loader data for the entry it lands on, and the page route's
+`meta` function reads `data.page.frontmatter` on it. Same error and stack as
+upstream https://github.com/jupyter-book/mystmd/issues/1178, which was fixed for
+navigation links but not for the links this theme still uses.
+
+There is no setting for this and no server to fix it in — releases publish to
+GitHub Pages — so `make build` now appends a `popstate` listener to the theme's
+client entry bundle that turns every history POP into a normal document load.
+Back and forward cost a page load rather than an in place transition, which is
+the price of them working at all.
+
+The listener goes into the JavaScript bundle rather than a `<script>` tag in the
+HTML on purpose. Remix hydrates `<head>` and `<body>`, so an injected tag is DOM
+React did not render: adding one broke hydration on all 49 pages, which is a
+worse bug than the one being worked around.
+
+The script fails the build if the theme's bundle layout changes, so this cannot
+silently stop being applied.
+
+Verified on a static host that reproduces the production setup, in Chromium and
+Firefox: the listener is installed on all 49 pages, a history POP triggers a
+document load, and there are no hydration failures.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Reload only when going back from a key takeaway, and satisfy ruff format
+
+Two fixes to the previous commit.
+
+The `popstate` listener reloaded on every history POP, which turned all back and
+forward navigation into a full page load. It is now armed only by a click on a key
+takeaway card and disarmed by a click on any other link, so only the navigation
+that actually crashes is reloaded and the rest stay in place transitions.
+
+Arming is keyed off the `a.myst-card` element rather than a `-key-takeaway-N` URL
+pattern, because a takeaway may point at an existing label instead — three of them
+do, `#rna-doublet-detection`, `#totalvi` and `#at-mudata`. Cards are only produced
+by scripts/dropdowns/keytakeaways.py, so the class identifies key takeaways.
+
+The file was also committed with `--no-verify` and so never went through
+ruff-format, which is what turned the pre-commit CI job red.
+
+Verified in Chromium and Firefox: a POP reloads after a key takeaway click, and
+does not reload with no click, after a different link, or after a takeaway
+followed by another link.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Key the back button workaround off the path, not a remembered click
+
+The previous commit armed the reload from a click on a key takeaway card, which
+brought the crash back. The click listener set the flag on a card click but also
+cleared it on every other click, including clicks that are not on a link at all,
+so anything the reader touched between following a takeaway and pressing back
+disarmed it.
+
+The workaround now compares the path of the entry being left with the path being
+navigated to. A key takeaway link only adds a fragment, so going back from one
+stays on the same page, which is the POP the theme cannot render, and that is
+reloaded. Chapter to chapter back and forward changes the path and is still an in
+place transition. Nothing depends on click bookkeeping, so intervening clicks no
+longer matter.
+
+Verified in Chromium and Firefox against a static host that reproduces the
+production setup, using the fragment push plus back sequence that reproducibly
+crashed before: it now reloads and renders the chapter. A cross page POP is left
+alone as intended.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375933) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375880) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375907) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375910) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375871)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,342,12,41,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,NA,NA,NA
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1583,48,22,492,FALSE,https://github.com/theislab/single-cell-tutorial,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,3,6,2,FALSE,https://github.com/theislab/singlecell_proteomics,NA,NA,NA
