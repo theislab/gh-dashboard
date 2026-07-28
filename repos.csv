@@ -12,7 +12,7 @@ theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancrea
 theislab,2025_cpmeasure_performance_eval,theislab/2025_cpmeasure_performance_eval,0,0,0,0,FALSE,https://github.com/theislab/2025_cpmeasure_performance_eval,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,62,4,7,10,FALSE,https://github.com/theislab/AutoGeneS,NA,NA,NA
 theislab,CFGen,theislab/CFGen,37,3,0,5,FALSE,https://github.com/theislab/CFGen,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,151,0,67,27,FALSE,https://github.com/theislab/CellFlow,446ed6073c60ac2e8db13c4ea096a43cdec288b2,"Feat/vf conditioning hooks (#308)
+theislab,CellFlow,theislab/CellFlow,151,0,68,27,FALSE,https://github.com/theislab/CellFlow,446ed6073c60ac2e8db13c4ea096a43cdec288b2,"Feat/vf conditioning hooks (#308)
 
 * extract cfg null helpers
 
@@ -72,13 +72,9 @@ theislab,Statistical_Learning,theislab/Statistical_Learning,0,0,0,0,FALSE,https:
 bbm-macros only provides bbm.sty; the bbm10.tfm metrics come from the
 separate bbm package, which caused lecture builds to fail in CI.",[![](https://github.com/theislab/Statistical_Learning/workflows/Build%20PDFs/badge.svg)](https://github.com/theislab/Statistical_Learning/actions/runs/26879260423)
 theislab,annbatch_paper,theislab/annbatch_paper,0,0,0,0,FALSE,https://github.com/theislab/annbatch_paper,NA,NA,NA
-theislab,anndata2ri,theislab/anndata2ri,152,5,11,19,FALSE,https://github.com/theislab/anndata2ri,a7d537dd1bd3d11c2c4770add22db859d2329a78,"[pre-commit.ci] pre-commit autoupdate (#296)
+theislab,anndata2ri,theislab/anndata2ri,152,5,11,19,FALSE,https://github.com/theislab/anndata2ri,32912b812ca09e6a0ad2e2403942c4fccf14ebb3,"[pre-commit.ci] pre-commit autoupdate (#297)
 
-updates:
-- [github.com/astral-sh/ruff-pre-commit: v0.15.21 → v0.15.22](https://github.com/astral-sh/ruff-pre-commit/compare/v0.15.21...v0.15.22)
-- [github.com/biomejs/pre-commit: v2.5.3 → v2.5.4](https://github.com/biomejs/pre-commit/compare/v2.5.3...v2.5.4)
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/anndata2ri/workflows/Unit%20Tests/badge.svg)](https://github.com/theislab/anndata2ri/actions/runs/29810335327)
+Co-authored-by: Philipp A. <flying-sheep@web.de>",[![](https://github.com/theislab/anndata2ri/workflows/Unit%20Tests/badge.svg)](https://github.com/theislab/anndata2ri/actions/runs/30337182689)
 theislab,archmap,theislab/archmap,5,3,4,0,FALSE,https://github.com/theislab/archmap,NA,NA,NA
 theislab,archmap_admin,theislab/archmap_admin,0,1,0,0,FALSE,https://github.com/theislab/archmap_admin,NA,NA,NA
 theislab,archmap_data,theislab/archmap_data,1,0,2,0,FALSE,https://github.com/theislab/archmap_data,NA,NA,NA
@@ -109,13 +105,13 @@ Adds `scripts/metabolic_labeling/data_generation.py`
 * Add metabolic labeling example to Jupyter book",[![](https://github.com/theislab/cellrank_protocol/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519534) [![](https://github.com/theislab/cellrank_protocol/workflows/Lint/badge.svg)](https://github.com/theislab/cellrank_protocol/actions/runs/16578519513)
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,17,1,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,0,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,NA,NA,NA
-theislab,cellucid,theislab/cellucid,4,0,0,0,FALSE,https://github.com/theislab/cellucid,01d81b8064451991f3e113a76c853069fffbe052,update,[![](https://github.com/theislab/cellucid/workflows/Web%20contracts/badge.svg)](https://github.com/theislab/cellucid/actions/runs/30252608206)
-theislab,cellucid-annotation,theislab/cellucid-annotation,0,0,0,0,FALSE,https://github.com/theislab/cellucid-annotation,d4859e74e5eed7f33761721139d23c3284246db0,Update,[![](https://github.com/theislab/cellucid-annotation/workflows/Validate%20Annotation%20Files/badge.svg)](https://github.com/theislab/cellucid-annotation/actions/runs/30246026923)
-theislab,cellucid-datasets,theislab/cellucid-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-datasets,825abf6b33aa03a3632f635a368ed73ad2b0ccd1,update,[![](https://github.com/theislab/cellucid-datasets/workflows/Dataset%20contracts/badge.svg)](https://github.com/theislab/cellucid-datasets/actions/runs/30252632144)
+theislab,cellucid,theislab/cellucid,4,0,0,0,FALSE,https://github.com/theislab/cellucid,7dd79a0a80ffe860e4841f6953f86b6a4029b98e,Update,[![](https://github.com/theislab/cellucid/workflows/Web%20contracts/badge.svg)](https://github.com/theislab/cellucid/actions/runs/30307918095)
+theislab,cellucid-annotation,theislab/cellucid-annotation,0,0,0,0,FALSE,https://github.com/theislab/cellucid-annotation,b44f9e272ad7cac6079a083b0b40fbc43f734266,Update,[![](https://github.com/theislab/cellucid-annotation/workflows/Validate%20Annotation%20Files/badge.svg)](https://github.com/theislab/cellucid-annotation/actions/runs/30273207985)
+theislab,cellucid-datasets,theislab/cellucid-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-datasets,bac02f84581c12ff948c8f26b8c95b7404d0cac1,Update,[![](https://github.com/theislab/cellucid-datasets/workflows/Dataset%20contracts/badge.svg)](https://github.com/theislab/cellucid-datasets/actions/runs/30273061076)
 theislab,cellucid-demo-custom-datasets,theislab/cellucid-demo-custom-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-demo-custom-datasets,NA,NA,NA
 theislab,cellucid-python,theislab/cellucid-python,2,0,0,0,FALSE,https://github.com/theislab/cellucid-python,1dd7a557aeb4c4f927c7e772b7749b623d437f46,version 0.9.0,[![](https://github.com/theislab/cellucid-python/workflows/Publish%20to%20PyPI/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/20645691904)
-theislab,cellucid-python,theislab/cellucid-python,2,0,0,0,FALSE,https://github.com/theislab/cellucid-python,a60eeb4432a7822685fd20bc55da04685e53d5ed,update,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30252590560) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30252590533) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30252590567)
-theislab,cellucid-r,theislab/cellucid-r,0,0,0,0,FALSE,https://github.com/theislab/cellucid-r,573208f1ad410ac84990cfd8d3cc5116eb9ee495,update,[![](https://github.com/theislab/cellucid-r/workflows/R-CMD-check/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30248268737) [![](https://github.com/theislab/cellucid-r/workflows/pkgdown/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30248268662)
+theislab,cellucid-python,theislab/cellucid-python,2,0,0,0,FALSE,https://github.com/theislab/cellucid-python,937d6db8b13bb8e92c1a6664d56d75ef0d6926a2,Update,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30307943823) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30307943813) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30307943788)
+theislab,cellucid-r,theislab/cellucid-r,0,0,0,0,FALSE,https://github.com/theislab/cellucid-r,acaa97d0876c9ba66f052d6d0038a0c5d3863995,Update,[![](https://github.com/theislab/cellucid-r/workflows/R-CMD-check/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30299998566) [![](https://github.com/theislab/cellucid-r/workflows/pkgdown/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30299998606)
 theislab,chem-perturbridge_lpm,theislab/chem-perturbridge_lpm,0,0,0,0,FALSE,https://github.com/theislab/chem-perturbridge_lpm,NA,NA,NA
 theislab,chemCPA,theislab/chemCPA,156,2,7,32,FALSE,https://github.com/theislab/chemCPA,NA,NA,NA
 theislab,chimera,theislab/chimera,1,0,0,0,FALSE,https://github.com/theislab/chimera,NA,NA,NA
@@ -200,7 +196,7 @@ converted anndata objects to ehrdata
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,1,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,14,1,12,6,FALSE,https://github.com/theislab/ehrdata,3d3e259e593c335e2ae03bf621d7dd35ba628441,"[pre-commit.ci] pre-commit autoupdate (#282)
+theislab,ehrdata,theislab/ehrdata,14,1,13,6,FALSE,https://github.com/theislab/ehrdata,3d3e259e593c335e2ae03bf621d7dd35ba628441,"[pre-commit.ci] pre-commit autoupdate (#282)
 
 updates:
 - [github.com/biomejs/pre-commit: v2.5.3 → v2.5.4](https://github.com/biomejs/pre-commit/compare/v2.5.3...v2.5.4)
@@ -221,7 +217,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,16,1,8,4,FALSE,https://github.com/theislab/geome,95d0138fff325cba5670ad637bc88f41c6e1994d,"Merge pull request #66 from theislab/template-update-v0.7.0
 
 Template update v0.7.0",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/23642169904) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/27529080433)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,61095127528f2fbbcc9fd4712131166dd38ac6f1,[status] 2026-07-26 12:26:46 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/30268207340)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,6b8d3f51051ba2b805f7971ae446d73ea29a7383,[status] 2026-07-27 13:04:52 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/30359399799)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -333,12 +329,9 @@ theislab,scanpy-in-R,theislab/scanpy-in-R,15,1,1,0,FALSE,https://github.com/thei
 theislab,scanpy.org,theislab/scanpy.org,0,5,1,0,FALSE,https://github.com/theislab/scanpy.org,NA,NA,NA
 theislab,scanpy_neighbors,theislab/scanpy_neighbors,0,1,0,1,FALSE,https://github.com/theislab/scanpy_neighbors,NA,NA,NA
 theislab,scanpy_squidpy_demo_2021,theislab/scanpy_squidpy_demo_2021,2,2,0,1,FALSE,https://github.com/theislab/scanpy_squidpy_demo_2021,NA,NA,NA
-theislab,scanpydoc,theislab/scanpydoc,12,3,4,5,FALSE,https://github.com/theislab/scanpydoc,d94fc5e1b128715599ea0cf541a42ac7dc94d3f6,"[pre-commit.ci] pre-commit autoupdate (#278)
+theislab,scanpydoc,theislab/scanpydoc,12,3,4,5,FALSE,https://github.com/theislab/scanpydoc,b146bbc2921b7f0a588ba23058d815a139f6cd15,"[pre-commit.ci] pre-commit autoupdate (#279)
 
-updates:
-- [github.com/astral-sh/ruff-pre-commit: v0.15.21 → v0.15.22](https://github.com/astral-sh/ruff-pre-commit/compare/v0.15.21...v0.15.22)
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scanpydoc/workflows/Python%20tests/badge.svg)](https://github.com/theislab/scanpydoc/actions/runs/29810334838)
+Co-authored-by: Philipp A. <flying-sheep@web.de>",[![](https://github.com/theislab/scanpydoc/workflows/Python%20tests/badge.svg)](https://github.com/theislab/scanpydoc/actions/runs/30336900488)
 theislab,scarches,theislab/scarches,406,10,66,70,FALSE,https://github.com/theislab/scarches,NA,NA,NA
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,1,0,0,FALSE,https://github.com/theislab/scarches_notebooks,NA,NA,NA
 theislab,scarches_protocol,theislab/scarches_protocol,0,1,2,0,FALSE,https://github.com/theislab/scarches_protocol,NA,NA,NA
@@ -361,266 +354,46 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1232,20,60,278,FALSE,https://github.com/theislab/single-cell-best-practices,5c686c23aced704aff07f3985ef5006a2c1dc388,"Migrate to Jupyter Book v2 (#436)
-
-* update jupter book version to the most recent one
-
-* after automatic upgrade
-
-* manual changes.. WIP
-
-* fix figure formats
-
-* change Makefile for v2
-
-* fix anchor link issues
-
-* fix link to integration chapter
-
-* fix warnings a little bit
-
-* fix gitignore
-
-* BIG appologies for the massive commit.. I just realised I never committed..
-
-* fixing errors?
-
-* oh i didn't have pre-commit on this laptop
-
-* update workflow
-
-* fixing workflow?
-
-* edit jupyter book version on netflify.toml
-
-* update CONTRIBUTING with the author/reviewer section on top
-
-* update package versions for netlify
-
-* netlify uses make build specifically now instead of make (serve)
-
-* changing workflows to call make build instead of make as well
-
-* fix dropdown icons and key takeaway anchors etc.
-
-* fix MOST of the errors and warnings building the book
-
-* replace the original  syntax since it's not available in V2 anymore
-
-* update build workflow to match V2 - pdf still dropping some contents - WIP
-
-* update CONTRIBUTING and templates
-
-* add prettier ignore to some tiny parts to prevent prettier from adding an extra backslash
-
-* disable chapter numbering
-
-* fix errors regarding changelog when building the book
-
-* fix the key takeaways anchors with the new way
-
-* fix typo
-
-* fix leftover old syd syntax
-
-* seealso syntax - needs discussion
-
-* restore minor(?) bug(?) from earlier work - fix flattened notebook cell sources (JSON format only, no content change)
-
-* fix typos while at it
-
-* Address review feedback on the Jupyter Book v2 migration
-
-Fixes the items @LuisHeinzlmeier raised in review.
-
-Two ""References"" headings per chapter. The MyST book theme already renders a
-references section in the backmatter of every page that has citations, so the
-manual `## References` heading plus the `{bibliography}` directive that carried
-over from the Sphinx build produced a second one. Both are removed everywhere,
-which also means pages without citations no longer show an empty heading.
-
-Broken browser back button after clicking a key takeaway. Navigating to a
-same-page anchor and then going back rendered ""Application Error:
-TypeError: Cannot read properties of undefined (reading 'frontmatter')"". This is
-an upstream router bug that is fixed in mystmd 1.10.1, so jupyter-book is bumped
-from 2.1.5 to 2.1.6. That release also puts a separator between grouped
-citations, which 1.9.0 ran together.
-
-In-text citations lost their brackets. A bare `{cite}` renders narratively in
-MyST (""Wolf et al. (2019)""), so every citation is switched to the parenthetical
-`{cite:p}`. The theme wraps those in a `.cite-group` span but adds no delimiters,
-so a small stylesheet puts the brackets of the old build back around them.
-
-Missing dropdown icons in scrna_seq.ipynb. The Strengths and Limitations titles
-still carried raw FontAwesome HTML, which MyST does not render; they now use
-emoji like the key takeaways, environment and data dropdowns already do.
-
-Inline code and cell outputs are styled closer to the old build again, in the
-same stylesheet.
-
-While in here:
-
-- Restore wording that merge conflict resolutions reverted to pre-fix versions
-  (""Sanger sequecing"", ""mammels"", ""none coding RNA"", ""TBRD2"", ""CRD3"",
-  ""non-continoues"", ""linages"", ""complimentary"", ""there are is"", a stale 10x
-  documentation link and a dropped `{term}` link, among others). The prose of
-  every chapter was diffed against main to find these.
-- Fix a citation that used single quotes instead of backticks and so had been
-  rendering as literal text since before the migration.
-- Drop the now unused sphinx and playwright pins from environment.yml and align
-  its jupytext and beautifulsoup4 versions with netlify.toml.
-- Fix the stray fence in the authors example in CONTRIBUTING.md and document the
-  citation roles and the automatic references section.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Fix the key takeaway back button on the RNA velocity chapter
-
-The jupyter-book 2.1.6 bump fixed the back button everywhere except
-trajectories/rna-velocity, which still rendered ""Application Error:
-TypeError: Cannot read properties of undefined (reading 'frontmatter')"".
-
-Two of its key takeaways contained a citation. A key takeaway card is itself a
-link, so the citation link ended up nested inside it, which is invalid HTML. The
-browser reparents the inner anchor, the resulting DOM no longer matches the
-server-rendered markup, and React hydration fails for the entire page — React
-error #418. An unhydrated page has no router attached, so clicking a card is a
-plain browser navigation, and going back from it hits the upstream router bug
-that 2.1.6 otherwise avoids.
-
-Dropping the two citations from the key takeaways fixes it. They are summaries
-of statements that are cited in the chapter body anyway.
-
-The failure mode is silent — the build is clean, the page looks right, and only
-interaction is broken — so `make dropdown` now rejects key takeaways containing
-a citation, cross reference, glossary term or markdown link, and CONTRIBUTING.md
-explains why the existing ""don't link terms in the key takeaways"" rule matters.
-
-Verified across all 49 pages: no hydration failures, and clicking every key
-takeaway card on every chapter and going back no longer errors.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Stop static hosts answering the router's data requests with HTML
-
-The book theme links internally with Remix's `prefetch=""intent""`, so hovering any
-internal link — a key takeaway card, a sidebar entry, a footer link — makes the
-router fetch the target with a `?_data=root` / `?_data=routes/$` query string and
-expect loader JSON back.
-
-A static build has no server behind it. Netlify and GitHub Pages both ignore the
-query string and answer with the page's own HTML, 200. The router stores that as
-the route's loader data, and the next navigation into the route reads
-`data.page.frontmatter` on data that has no `page`. That is the
-""Application Error: Cannot read properties of undefined (reading 'frontmatter')""
-you get after clicking a key takeaway and pressing the browser back button.
-
-Answering any request carrying a `_data` query parameter with a 404 keeps the
-HTML out of the router cache. Same class of bug as upstream
-https://github.com/jupyter-book/mystmd/issues/1178, which was fixed for
-navigation links but not for the prefetching links the theme still uses.
-
-This covers the Netlify deploy previews only. Releases publish to GitHub Pages,
-which has no redirect configuration, so that path still needs a fix before this
-migration ships.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Revert ""Stop static hosts answering the router's data requests with HTML""
-
-The 404 made no difference to the crash, so the prefetched `?_data=` responses
-were not what poisoned the router. Dropping the rule again rather than leaving a
-redirect in place that only breaks requests the router makes on purpose.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Reload the page on browser back instead of crashing the theme
-
-Going back after clicking a key takeaway shows
-""Application Error: TypeError: Cannot read properties of undefined (reading
-'frontmatter')"" instead of the chapter. On a client side history POP the router
-ends up without loader data for the entry it lands on, and the page route's
-`meta` function reads `data.page.frontmatter` on it. Same error and stack as
-upstream https://github.com/jupyter-book/mystmd/issues/1178, which was fixed for
-navigation links but not for the links this theme still uses.
-
-There is no setting for this and no server to fix it in — releases publish to
-GitHub Pages — so `make build` now appends a `popstate` listener to the theme's
-client entry bundle that turns every history POP into a normal document load.
-Back and forward cost a page load rather than an in place transition, which is
-the price of them working at all.
-
-The listener goes into the JavaScript bundle rather than a `<script>` tag in the
-HTML on purpose. Remix hydrates `<head>` and `<body>`, so an injected tag is DOM
-React did not render: adding one broke hydration on all 49 pages, which is a
-worse bug than the one being worked around.
-
-The script fails the build if the theme's bundle layout changes, so this cannot
-silently stop being applied.
-
-Verified on a static host that reproduces the production setup, in Chromium and
-Firefox: the listener is installed on all 49 pages, a history POP triggers a
-document load, and there are no hydration failures.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Reload only when going back from a key takeaway, and satisfy ruff format
-
-Two fixes to the previous commit.
-
-The `popstate` listener reloaded on every history POP, which turned all back and
-forward navigation into a full page load. It is now armed only by a click on a key
-takeaway card and disarmed by a click on any other link, so only the navigation
-that actually crashes is reloaded and the rest stay in place transitions.
-
-Arming is keyed off the `a.myst-card` element rather than a `-key-takeaway-N` URL
-pattern, because a takeaway may point at an existing label instead — three of them
-do, `#rna-doublet-detection`, `#totalvi` and `#at-mudata`. Cards are only produced
-by scripts/dropdowns/keytakeaways.py, so the class identifies key takeaways.
-
-The file was also committed with `--no-verify` and so never went through
-ruff-format, which is what turned the pre-commit CI job red.
-
-Verified in Chromium and Firefox: a POP reloads after a key takeaway click, and
-does not reload with no click, after a different link, or after a takeaway
-followed by another link.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
-* Key the back button workaround off the path, not a remembered click
-
-The previous commit armed the reload from a click on a key takeaway card, which
-brought the crash back. The click listener set the flag on a card click but also
-cleared it on every other click, including clicks that are not on a link at all,
-so anything the reader touched between following a takeaway and pressing back
-disarmed it.
-
-The workaround now compares the path of the entry being left with the path being
-navigated to. A key takeaway link only adds a fragment, so going back from one
-stays on the same page, which is the POP the theme cannot render, and that is
-reloaded. Chapter to chapter back and forward changes the path and is still an in
-place transition. Nothing depends on click bookkeeping, so intervening clicks no
-longer matter.
-
-Verified in Chromium and Firefox against a static host that reproduces the
-production setup, using the fragment push plus back sequence that reproducibly
-crashed before: it now reloads and renders the chapter. A cross page POP is left
-alone as intended.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-
----------
-
-Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
-Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
-Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375933) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375880) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375907) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375910) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30194375871)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1232,20,60,278,FALSE,https://github.com/theislab/single-cell-best-practices,4bca91d0e3a4bf3d844b0def1b36c10a2a6d9790,"Fix inline code and cell output formatting (#456)
+
+* Fix inline code and cell output formatting
+
+Three regressions from the Jupyter Book v2 migration, all in the inline
+code and cell output styling of the custom stylesheet.
+
+The theme renders a text output as a `<code>` inside a `<div>` rather than
+inside a `<pre>`, so the inline code rule boxed it on top of the grey
+backdrop it already has. Cell output is code already, so it is added to
+the elements that opt out of the box.
+
+A key takeaway card is a link around a paragraph rather than a link inside
+one, so the exception that keeps links free of the box also took it away
+from the card text. Cards are excluded from that exception, and the prose
+colour the theme drops for link content is put back.
+
+MuData ships its object description as HTML, which is not one of the
+output types the theme renders itself. It goes through the notebook
+renderer instead and so never reached the selectors carrying the grey
+backdrop. Any output that is a bare preformatted block now gets it, which
+covers those descriptions and the rich console logs in the same state,
+while tables, widgets and figures keep the layout they bring along.
+
+The two base rules are wrapped in `:where()` so that they carry no
+specificity. The dark variant is a class and therefore more specific than
+the elements that opt out, so without it the box came back on all of them
+in dark mode.
+
+Closes #452
+Closes #453
+Closes #454
+
+* Put the output backdrop on the block rather than its container
+
+The notebook renderer gives a preformatted block a white background of its
+own, so a backdrop on the container around it only showed as a frame: grey
+padding around a white box holding the description. The backdrop goes on
+the block itself, which is what carries the white, and the container is
+left with nothing but its padding removed.",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30356070991) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30356072138) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30356072091) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30356070984) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/30356070951)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,342,12,41,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,NA,NA,NA
 theislab,single-cell-tutorial,theislab/single-cell-tutorial,1584,48,22,492,FALSE,https://github.com/theislab/single-cell-tutorial,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,3,6,2,FALSE,https://github.com/theislab/singlecell_proteomics,NA,NA,NA
