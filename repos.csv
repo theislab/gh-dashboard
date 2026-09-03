@@ -12,7 +12,7 @@ theislab,2022_Tritschler_pancreas_cross_species,theislab/2022_Tritschler_pancrea
 theislab,2025_cpmeasure_performance_eval,theislab/2025_cpmeasure_performance_eval,0,0,0,0,FALSE,https://github.com/theislab/2025_cpmeasure_performance_eval,NA,NA,NA
 theislab,AutoGeneS,theislab/AutoGeneS,63,4,7,10,FALSE,https://github.com/theislab/AutoGeneS,NA,NA,NA
 theislab,CFGen,theislab/CFGen,37,3,0,5,FALSE,https://github.com/theislab/CFGen,NA,NA,NA
-theislab,CellFlow,theislab/CellFlow,158,0,68,27,FALSE,https://github.com/theislab/CellFlow,446ed6073c60ac2e8db13c4ea096a43cdec288b2,"Feat/vf conditioning hooks (#308)
+theislab,CellFlow,theislab/CellFlow,159,0,68,27,FALSE,https://github.com/theislab/CellFlow,446ed6073c60ac2e8db13c4ea096a43cdec288b2,"Feat/vf conditioning hooks (#308)
 
 * extract cfg null helpers
 
@@ -152,73 +152,39 @@ theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.c
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,15,1,9,7,FALSE,https://github.com/theislab/ehrdata,8c377d7df93f978c8af18ba7ecdfd9b0db1e3ec7,"aggregation_strategy=""last""/""first"" in setup_variables to skip NULL when an interval's last/first row has a NULL value (#299)
-
-* Require anndata>=0.13.1 and drop all version branching
-
-0.13.1 is the first anndata providing everything EHRData is built on: a
-3D `.X`, `.X` unified into `layers[None]`, and pydata-sparse `COO` arrays
-accepted in memory. Requiring it lets every compatibility shim go.
-
-src:
-- `Index`, `Index1D` and `IndexManager` now come from the public
-  `anndata.typing`, and the accessor references from `anndata.acc`, so the
-  three `try`/`except ImportError` blocks in `ehrdata.core` are gone. This
-  also removes the last `anndata.compat` imports from the package.
-- `LayersView3D` no longer guards `parent_mapping.isbacked` with `hasattr`;
-  both `Layers` and `LayersView` expose it.
-- backed reconstruction no longer assigns `instance._X = None`; AnnData has
-  no `_X` slot any more, so that only set a stray attribute.
-- `AlignedMappingProperty3D(cls=Layers3D)` drops the `name=` argument kept
-  for the 0.12.x dataclass-field ordering.
-
-tests:
-- the `_anndata_allows_nd_x` / `_anndata_has_acc` / `_anndata_allows_coo`
-  probes and `_ANNDATA_X_UNIFIED` are deleted, together with ~20 `skipif`s
-  and `pytest.param(marks=...)` wrappers across five modules.
-- the view `.X`-broadcast test asserts the single real behaviour instead of
-  branching on the anndata version.
-
-ci: the `core-anndata-min` lane is repointed from `anndata<0.13` to
-`anndata==0.13.1`, so it verifies the declared floor rather than a version
-that is no longer supported.
-
-Verified: full suite green on anndata 0.13.2 (1101 passed, 6 skipped) and
-on the min lane at 0.13.1 (1092 passed, 8 skipped).
-
-Closes #277
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-
-* cleanup some comments
-
-* Move core-pre's pre-release opt-in above the new anndata floor
-
-The `core-pre` lane enabled pre-releases via `anndata>=0.13.0rc1`, which
-now names a version below the declared minimum of 0.13.1. Bump it to
-`>=0.13.1rc1`: the bound only has to mention a pre-release for uv and pip
-to allow them for anndata, and it does not restrict which pre-release is
-picked, so the lane keeps upgrading to whatever the newest anndata
-pre-release is.
-
-Verified with `uv pip compile`: a specifier naming an rc does select a
-later pre-release when one exists (e.g. `pydantic>=2.0.0rc1` resolves to
-2.14.0b1 while plain `pydantic` gives stable 2.13.5). anndata currently
-publishes no pre-release newer than its latest stable, so the lane
-resolves to 0.13.3.post0 today, same as the `core` lane.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+theislab,ehrdata,theislab/ehrdata,15,1,8,7,FALSE,https://github.com/theislab/ehrdata,532d67a3752733f4aaca6d0323e70311f5ec7af6,"Fix unit handling in `setup_variables` when identical units; raise NotImplementedError when different units (#301)
 
 * fix
 
+* docs build fix
+
+* Carry the units in setup_interval_variables, too
+
+setup_variables assumed a hardcoded pair of unit fields, and
+setup_interval_variables handled units not at all - so device_exposure
+and dose_era, the two interval tables that do carry a unit_concept_id,
+were silently aggregated across units.
+
+Resolve the unit fields from the data table instead: they vary per table
+and per OMOP CDM version, as device_exposure has them in 5.4 but not in
+5.3. Both setup functions now carry the fields their table actually has,
+and run the same multiple-unit check, which exempts the tables without a
+unit_concept_id.
+
+Also restore the note on why the value aggregation needs no NULL filter
+of its own, and drop the claim that setup_interval_variables makes the
+units describe the value that is kept, which it did not.
+
+Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+
 ---------
 
-Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33522464871) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33522464699) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33522464781)
-theislab,embpy,theislab/embpy,21,0,11,1,FALSE,https://github.com/theislab/embpy,b6c6b259bdde804c95e7d2e8b5652a9da6733005,"Merge pull request #43 from theislab/la2
+Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962447) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962592) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962505)
+theislab,embpy,theislab/embpy,22,0,11,1,FALSE,https://github.com/theislab/embpy,b6c6b259bdde804c95e7d2e8b5652a9da6733005,"Merge pull request #43 from theislab/la2
 
 Borzoi extension",[![](https://github.com/theislab/embpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/embpy/actions/runs/33400830257) [![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/33472473920)
 theislab,enrichment_analysis_celltype,theislab/enrichment_analysis_celltype,9,3,0,4,FALSE,https://github.com/theislab/enrichment_analysis_celltype,NA,NA,NA
-theislab,epicardiods_analysis,theislab/epicardiods_analysis,2,1,1,0,FALSE,https://github.com/theislab/epicardiods_analysis,NA,NA,NA
+theislab,epicardiods_analysis,theislab/epicardiods_analysis,3,1,1,0,FALSE,https://github.com/theislab/epicardiods_analysis,NA,NA,NA
 theislab,expiMap_reproducibility,theislab/expiMap_reproducibility,12,3,3,4,FALSE,https://github.com/theislab/expiMap_reproducibility,NA,NA,NA
 theislab,extended-single-cell-best-practices-container,theislab/extended-single-cell-best-practices-container,3,1,2,1,FALSE,https://github.com/theislab/extended-single-cell-best-practices-container,NA,NA,NA
 theislab,feature-attribution-sc,theislab/feature-attribution-sc,3,1,8,1,FALSE,https://github.com/theislab/feature-attribution-sc,NA,NA,NA
@@ -228,7 +194,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/33472901475)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,88c4cc8cb63432809a729e0da889ceb7b645d3bc,[status] 2026-09-01 12:13:54 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/33628078798)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,779d29bca55dc91fcc23464923d29c369633eb4b,[status] 2026-09-02 12:14:44 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/33753342267)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -377,7 +343,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1257,21,49,278,FALSE,https://github.com/theislab/single-cell-best-practices,483cef24f2497cbb20c4eabc4cc6a469b97ce52a,"Ship the sidebar expanded instead of expanding it after load (#482)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1258,21,49,278,FALSE,https://github.com/theislab/single-cell-best-practices,483cef24f2497cbb20c4eabc4cc6a469b97ce52a,"Ship the sidebar expanded instead of expanding it after load (#482)
 
 Every section of the table of contents was opened by clicking its chevron from a script appended to the client bundle, which can only run once the page is up.
 A reader therefore got the collapsed sidebar the theme prerenders, watched it expand section by section, and saw it happen again on every navigation.
