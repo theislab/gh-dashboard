@@ -152,6 +152,14 @@ theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.c
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
+theislab,ehrdata,theislab/ehrdata,15,1,8,7,FALSE,https://github.com/theislab/ehrdata,3b5bd6a1f788e09c95336f19a483298a36d90522,"[pre-commit.ci] pre-commit autoupdate (#238)
+
+updates:
+- [github.com/biomejs/pre-commit: v2.4.14 → v2.4.15](https://github.com/biomejs/pre-commit/compare/v2.4.14...v2.4.15)
+- [github.com/tox-dev/pyproject-fmt: v2.21.1 → v2.21.2](https://github.com/tox-dev/pyproject-fmt/compare/v2.21.1...v2.21.2)
+
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Co-authored-by: Eljas Roellin <65244425+eroell@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/25791937087)
 theislab,ehrdata,theislab/ehrdata,15,1,8,7,FALSE,https://github.com/theislab/ehrdata,532d67a3752733f4aaca6d0323e70311f5ec7af6,"Fix unit handling in `setup_variables` when identical units; raise NotImplementedError when different units (#301)
 
 * fix
@@ -179,7 +187,7 @@ Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
 
 ---------
 
-Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962447) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962592) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962505)
+Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962447) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/33735962505)
 theislab,embpy,theislab/embpy,22,0,11,1,FALSE,https://github.com/theislab/embpy,b6c6b259bdde804c95e7d2e8b5652a9da6733005,"Merge pull request #43 from theislab/la2
 
 Borzoi extension",[![](https://github.com/theislab/embpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/embpy/actions/runs/33400830257) [![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/33472473920)
@@ -194,7 +202,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/33472901475)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,779d29bca55dc91fcc23464923d29c369633eb4b,[status] 2026-09-02 12:14:44 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/33753342267)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,13f6f0339bdcc1d38d1cbf58f15eb8d9eb43845d,[status] 2026-09-03 12:15:24 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/33871087061)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -309,7 +317,7 @@ theislab,scanpy.org,theislab/scanpy.org,0,5,1,0,FALSE,https://github.com/theisla
 theislab,scanpy_neighbors,theislab/scanpy_neighbors,0,1,0,1,FALSE,https://github.com/theislab/scanpy_neighbors,NA,NA,NA
 theislab,scanpy_squidpy_demo_2021,theislab/scanpy_squidpy_demo_2021,2,2,0,1,FALSE,https://github.com/theislab/scanpy_squidpy_demo_2021,NA,NA,NA
 theislab,scanpydoc,theislab/scanpydoc,12,3,4,5,FALSE,https://github.com/theislab/scanpydoc,1028878ddec4948a697f2acd3ef40aaa04bf7a9d,fix: simplify s-a-t usage (#285),[![](https://github.com/theislab/scanpydoc/workflows/Python%20tests/badge.svg)](https://github.com/theislab/scanpydoc/actions/runs/33521606498)
-theislab,scarches,theislab/scarches,407,10,67,71,FALSE,https://github.com/theislab/scarches,NA,NA,NA
+theislab,scarches,theislab/scarches,407,10,67,72,FALSE,https://github.com/theislab/scarches,NA,NA,NA
 theislab,scarches_notebooks,theislab/scarches_notebooks,0,1,0,0,FALSE,https://github.com/theislab/scarches_notebooks,NA,NA,NA
 theislab,scarches_protocol,theislab/scarches_protocol,0,1,2,0,FALSE,https://github.com/theislab/scarches_protocol,NA,NA,NA
 theislab,scatac_poisson_reproducibility,theislab/scatac_poisson_reproducibility,9,1,0,0,FALSE,https://github.com/theislab/scatac_poisson_reproducibility,NA,NA,NA
@@ -324,7 +332,7 @@ theislab,scfit,theislab/scfit,2,0,3,0,FALSE,https://github.com/theislab/scfit,08
 * debloat docstrings",[![](https://github.com/theislab/scfit/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scfit/actions/runs/31176843008) [![](https://github.com/theislab/scfit/workflows/Test/badge.svg)](https://github.com/theislab/scfit/actions/runs/33472157504)
 theislab,scgen,theislab/scgen,355,7,31,71,FALSE,https://github.com/theislab/scgen,NA,NA,NA
 theislab,scgen-reproducibility,theislab/scgen-reproducibility,35,2,7,10,FALSE,https://github.com/theislab/scgen-reproducibility,NA,NA,NA
-theislab,scib,theislab/scib,430,11,43,76,FALSE,https://github.com/theislab/scib,cd67913396b4c0430710b3d90f1d1841f5fa4468,"chore(main): release 1.2.1 (#434)
+theislab,scib,theislab/scib,429,11,43,76,FALSE,https://github.com/theislab/scib,cd67913396b4c0430710b3d90f1d1841f5fa4468,"chore(main): release 1.2.1 (#434)
 
 Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scib/workflows/Deployment/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026834) [![](https://github.com/theislab/scib/workflows/Test/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026861)
 theislab,scib-pipeline,theislab/scib-pipeline,83,4,16,29,FALSE,https://github.com/theislab/scib-pipeline,NA,NA,NA
