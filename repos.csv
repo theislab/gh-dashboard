@@ -33,10 +33,7 @@ for more information, see https://pre-commit.ci
 Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/CellFlow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/29201771384) [![](https://github.com/theislab/CellFlow/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/34793476971) [![](https://github.com/theislab/CellFlow/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/34931617481) [![](https://github.com/theislab/CellFlow/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/34931870450)
 theislab,CellFlow2,theislab/CellFlow2,11,0,3,2,FALSE,https://github.com/theislab/CellFlow2,4ac86903cca31b275f578ae90ce92298eb055567,"Merge pull request #19 from theislab/feat/de-val-metrics
 
-Feat/de val metrics",[![](https://github.com/theislab/CellFlow2/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840725) [![](https://github.com/theislab/CellFlow2/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840835) [![](https://github.com/theislab/CellFlow2/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840951)
-theislab,CellFlow2,theislab/CellFlow2,11,0,3,2,FALSE,https://github.com/theislab/CellFlow2,60e672774e71719bdfda96caef518ef9aa73416e,"Merge pull request #15 from theislab/feat/build-metacells
-
-add SEACells metacell construction script for perturbation datasets",[![](https://github.com/theislab/CellFlow2/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/28199865370)
+Feat/de val metrics",[![](https://github.com/theislab/CellFlow2/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039841057) [![](https://github.com/theislab/CellFlow2/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840725) [![](https://github.com/theislab/CellFlow2/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840835) [![](https://github.com/theislab/CellFlow2/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840951)
 theislab,CellHermes,theislab/CellHermes,31,0,1,6,FALSE,https://github.com/theislab/CellHermes,NA,NA,NA
 theislab,Chem-PerturBridge,theislab/Chem-PerturBridge,2,2,2,0,FALSE,https://github.com/theislab/Chem-PerturBridge,NA,NA,NA
 theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,0,0,1,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
@@ -109,7 +106,7 @@ theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.c
 theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,24f021d70cd6ae53777230cafb2f519710261556,Fix,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649372) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649384) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649381)
 theislab,cellucid-r,theislab/cellucid-r,0,0,0,0,FALSE,https://github.com/theislab/cellucid-r,7f670b9737d8bd499b81b74bbafaa2f3e0a7d946,Fix,[![](https://github.com/theislab/cellucid-r/workflows/R-CMD-check/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30845754379) [![](https://github.com/theislab/cellucid-r/workflows/pkgdown/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30845754443)
 theislab,chem-perturbridge_lpm,theislab/chem-perturbridge_lpm,0,0,0,0,FALSE,https://github.com/theislab/chem-perturbridge_lpm,NA,NA,NA
-theislab,chemCPA,theislab/chemCPA,158,2,7,34,FALSE,https://github.com/theislab/chemCPA,NA,NA,NA
+theislab,chemCPA,theislab/chemCPA,159,2,7,34,FALSE,https://github.com/theislab/chemCPA,NA,NA,NA
 theislab,chimera,theislab/chimera,1,0,0,0,FALSE,https://github.com/theislab/chimera,NA,NA,NA
 theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,1,1,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,NA,NA,NA
 theislab,comparative_atlas,theislab/comparative_atlas,14,1,0,1,FALSE,https://github.com/theislab/comparative_atlas,NA,NA,NA
@@ -129,24 +126,7 @@ theislab,diffxpy,theislab/diffxpy,205,0,108,21,FALSE,https://github.com/theislab
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,361,2,23,53,FALSE,https://github.com/theislab/ehrapy,b65fef02d24587bfe32e59d4f974995b45045d53,"v0.15.0 release (#1088)
-
-* bump version; changelog
-
-* Address review feedback: pin ehrdata>=0.3.0, restructure v0.15.0 changelog
-
-- Pin `ehrdata>=0.3.0` as the minimum dependency
-- Move the in-house causal inference module (#1076) to Features and
-  showcase its public `ep.tl` API
-- Rename the v0.15.0 ""⚠️ Modified"" section to ""💥 Breaking changes""
-- Make the v0.15.0 API references clickable {func}/{class} cross-references
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
----------
-
-Co-authored-by: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29015181676)
-theislab,ehrapy,theislab/ehrapy,361,2,23,53,FALSE,https://github.com/theislab/ehrapy,ee0ca8253c11aac24f0f0f552ccbe753602e5970,Add changelog entry for knn_impute NotImplementedError on unsupported array types (#1109) (#1117),[![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730745) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730752) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730719) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730696) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34931079266)
+theislab,ehrapy,theislab/ehrapy,361,2,23,53,FALSE,https://github.com/theislab/ehrapy,ee0ca8253c11aac24f0f0f552ccbe753602e5970,Add changelog entry for knn_impute NotImplementedError on unsupported array types (#1109) (#1117),[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730847) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730745) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730752) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730719) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730696) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34931079266)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,NA,NA,NA
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
@@ -160,63 +140,10 @@ updates:
 - [github.com/astral-sh/ruff-pre-commit: v0.16.5 → v0.16.7](https://github.com/astral-sh/ruff-pre-commit/compare/v0.16.5...v0.16.7)
 - [github.com/zizmorcore/zizmor-pre-commit: v1.24.1 → v1.30.1](https://github.com/zizmorcore/zizmor-pre-commit/compare/v1.24.1...v1.30.1)
 
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/34989585114)
-theislab,ehrdata,theislab/ehrdata,15,1,9,7,FALSE,https://github.com/theislab/ehrdata,3b5bd6a1f788e09c95336f19a483298a36d90522,"[pre-commit.ci] pre-commit autoupdate (#238)
-
-updates:
-- [github.com/biomejs/pre-commit: v2.4.14 → v2.4.15](https://github.com/biomejs/pre-commit/compare/v2.4.14...v2.4.15)
-- [github.com/tox-dev/pyproject-fmt: v2.21.1 → v2.21.2](https://github.com/tox-dev/pyproject-fmt/compare/v2.21.1...v2.21.2)
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
-Co-authored-by: Eljas Roellin <65244425+eroell@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/25791937105)
-theislab,ehrdata,theislab/ehrdata,15,1,9,7,FALSE,https://github.com/theislab/ehrdata,949e29a449745ad40245ee7c559478e103a677f7,"fix(vitessce): reduce 3D X/layer to a timestep in gen_default_config (#271)
-
-* fix(vitessce): reduce 3D X/layer to a timestep in gen_default_config
-
-`gen_default_config` builds a plain AnnData and calls `write_zarr` for
-Vitessce, but anndata >=0.13 rejects a >2D `X`/`layers` on write. When the
-EHRData time series lives in a 3D `.X` (the default for e.g.
-`ed.dt.physionet2019`), the previous code passed the raw 3D array through and
-crashed.
-
-Resolve the source array first (`layer=None` -> `.X`, else the named layer)
-and reduce any 3D source to the requested `timestep`; 2D sources pass through
-unchanged. `layer` now defaults to `None`, and an unknown `layer` raises a
-clear error. Add tests for the 3D-in-`.X` path and the unknown-layer error.
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
-* docs(changelog): note gen_default_config 3D .X fix (#271)
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
-* test(vitessce): build 3D-in-.X EHRData via constructor, not .X setter
-
-The .X setter enforces a 2D shape check across anndata versions; construct
-the EHRData with the blob's 3D array as X instead.
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
-* test(vitessce): skip 3D-in-.X test on anndata <0.13, use .X assignment
-
-anndata <0.13 rejects a >2D X in memory, so gate the test with the existing
-_ANNDATA_ALLOWS_ND_X skip and store the 3D array via the natural .X setter.
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
-* test(vitessce): hoist anndata/ehrdata imports to module top
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
----------
-
-Co-authored-by: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/29347416905)
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/34989585149) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/34989585127) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/34989585114)
 theislab,embpy,theislab/embpy,22,0,11,1,FALSE,https://github.com/theislab/embpy,86f9110c41f2607e3b968552ecec8f987632aa81,"Merge pull request #44 from theislab/la2
 
-Region scoring functionality",[![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/34931554941)
-theislab,embpy,theislab/embpy,22,0,11,1,FALSE,https://github.com/theislab/embpy,b6c6b259bdde804c95e7d2e8b5652a9da6733005,"Merge pull request #43 from theislab/la2
-
-Borzoi extension",[![](https://github.com/theislab/embpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/embpy/actions/runs/33400830257)
+Region scoring functionality",[![](https://github.com/theislab/embpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/embpy/actions/runs/34003865000) [![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/34931554941)
 theislab,enrichment_analysis_celltype,theislab/enrichment_analysis_celltype,9,3,0,4,FALSE,https://github.com/theislab/enrichment_analysis_celltype,NA,NA,NA
 theislab,epicardiods_analysis,theislab/epicardiods_analysis,3,1,1,0,FALSE,https://github.com/theislab/epicardiods_analysis,NA,NA,NA
 theislab,expiMap_reproducibility,theislab/expiMap_reproducibility,12,3,3,4,FALSE,https://github.com/theislab/expiMap_reproducibility,NA,NA,NA
@@ -228,7 +155,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/34931992857)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,ba19790b34d6e2243a87bdd399beea811ea09e22,[status] 2026-09-15 12:12:14 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/35093911582)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,736d218340ea710d9241680f029608f063de5e21,[status] 2026-09-16 12:14:15 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/35219223317)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -320,7 +247,7 @@ theislab,sc-best-practices-ce,theislab/sc-best-practices-ce,8,6,2,3,FALSE,https:
 theislab,sc-pert,theislab/sc-pert,184,3,6,15,FALSE,https://github.com/theislab/sc-pert,NA,NA,NA
 theislab,scAnalysisTutorial,theislab/scAnalysisTutorial,10,1,0,3,FALSE,https://github.com/theislab/scAnalysisTutorial,NA,NA,NA
 theislab,scArches-reproducibility,theislab/scArches-reproducibility,33,2,5,0,FALSE,https://github.com/theislab/scArches-reproducibility,NA,NA,NA
-theislab,scCODA,theislab/scCODA,202,11,11,27,FALSE,https://github.com/theislab/scCODA,NA,NA,NA
+theislab,scCODA,theislab/scCODA,203,11,11,27,FALSE,https://github.com/theislab/scCODA,NA,NA,NA
 theislab,scCODA_reproducibility,theislab/scCODA_reproducibility,9,3,0,1,FALSE,https://github.com/theislab/scCODA_reproducibility,NA,NA,NA
 theislab,scConcept,theislab/scConcept,38,2,3,7,FALSE,https://github.com/theislab/scConcept,dc9e932725af13793ded5bd631ec277076a9c378,"Pin dependency majors and drop direct anndata dep
 
@@ -329,7 +256,7 @@ rely on scanpy to pull in anndata rather than declaring it directly.
 
 Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/scConcept/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scConcept/actions/runs/34227554111) [![](https://github.com/theislab/scConcept/workflows/Test/badge.svg)](https://github.com/theislab/scConcept/actions/runs/34931648379)
 theislab,scConcept_rep,theislab/scConcept_rep,1,0,2,1,FALSE,https://github.com/theislab/scConcept_rep,7268a837547332e0c63f410aa4e59fe681559520,init from template,[![](https://github.com/theislab/scConcept_rep/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scConcept_rep/actions/runs/22822607124) [![](https://github.com/theislab/scConcept_rep/workflows/Test/badge.svg)](https://github.com/theislab/scConcept_rep/actions/runs/23104177683)
-theislab,scPDAC,theislab/scPDAC,4,0,1,1,FALSE,https://github.com/theislab/scPDAC,717524e6548721a640d21c86d24c7f956c46fbeb,fix meta,[![](https://github.com/theislab/scPDAC/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scPDAC/actions/runs/32031785001) [![](https://github.com/theislab/scPDAC/workflows/Test/badge.svg)](https://github.com/theislab/scPDAC/actions/runs/34931697157)
+theislab,scPDAC,theislab/scPDAC,4,0,1,1,FALSE,https://github.com/theislab/scPDAC,717524e6548721a640d21c86d24c7f956c46fbeb,fix meta,[![](https://github.com/theislab/scPDAC/workflows/Test/badge.svg)](https://github.com/theislab/scPDAC/actions/runs/34931697157)
 theislab,scPoli_legacy,theislab/scPoli_legacy,5,4,0,0,FALSE,https://github.com/theislab/scPoli_legacy,NA,NA,NA
 theislab,scPoli_reproduce,theislab/scPoli_reproduce,23,2,2,3,FALSE,https://github.com/theislab/scPoli_reproduce,NA,NA,NA
 theislab,scPortrait_ot,theislab/scPortrait_ot,2,1,0,0,FALSE,https://github.com/theislab/scPortrait_ot,NA,NA,NA
@@ -380,7 +307,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1264,21,47,279,FALSE,https://github.com/theislab/single-cell-best-practices,483cef24f2497cbb20c4eabc4cc6a469b97ce52a,"Ship the sidebar expanded instead of expanding it after load (#482)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1265,21,47,278,FALSE,https://github.com/theislab/single-cell-best-practices,483cef24f2497cbb20c4eabc4cc6a469b97ce52a,"Ship the sidebar expanded instead of expanding it after load (#482)
 
 Every section of the table of contents was opened by clicking its chevron from a script appended to the client bundle, which can only run once the page is up.
 A reader therefore got the collapsed sidebar the theme prerenders, watched it expand section by section, and saw it happen again on every navigation.
