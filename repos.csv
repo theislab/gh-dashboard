@@ -38,89 +38,22 @@ theislab,CellHermes,theislab/CellHermes,31,0,1,6,FALSE,https://github.com/theisl
 theislab,Chem-PerturBridge,theislab/Chem-PerturBridge,2,2,2,0,FALSE,https://github.com/theislab/Chem-PerturBridge,NA,NA,NA
 theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,0,0,1,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,25,6,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,NA,NA,NA
-theislab,DRVI,theislab/DRVI,82,2,10,6,FALSE,https://github.com/theislab/DRVI,18882ef7748b283cd1261f2255003fcaffb8a354,"Update template to v0.8.0 (#140)
+theislab,DRVI,theislab/DRVI,82,2,7,6,FALSE,https://github.com/theislab/DRVI,b9bdb744b610245d7814c2cf81d8703498d78289,"ci(deps): bump astral-sh/setup-uv from 8.3.2 to 10.1.0 (#145)
 
-* Update template to v0.8.0
+Bumps [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv) from 8.3.2 to 10.1.0.
+- [Release notes](https://github.com/astral-sh/setup-uv/releases)
+- [Commits](https://github.com/astral-sh/setup-uv/compare/v8.3.2...bec219d24cd3e171d82865faccec33120bb574f4)
 
-Applies the cookiecutter-scverse v0.8.0 template update (#137) via `cruft update`,
-resolving conflicts by hand since the automated PR was based on the pristine
-template baseline instead of current main.
+---
+updated-dependencies:
+- dependency-name: astral-sh/setup-uv
+  dependency-version: 10.1.0
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
 
-- Pin GitHub Actions to immutable commit hashes and add zizmor as a pre-commit
-  hook to harden CI against supply-chain attacks
-- Migrate from pre-commit to prek, and add mypy type checking (with overrides
-  for currently-untyped third-party deps and pre-existing type errors, to be
-  cleaned up incrementally)
-- Migrate docs from sphinx-tabs to sphinx-design and move shared sphinx
-  extensions into scverse-misc
-- Add an autofix.ci workflow, list installed packages in test CI output, and
-  other minor CI/docs housekeeping from the template release
-
-Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
-
-* Fix all mypy errors instead of suppressing them
-
-Removes the blanket ignore_errors overrides added when wiring up mypy from
-the template and actually resolves the 15 real type errors they were
-masking, across _cmap, _generative_mixin, _module, _metrics, _interpretability,
-_latent, and porting. Only the ignore_missing_imports override for untyped
-third-party deps (scanpy/scipy/scvi/sklearn) remains.
-
-Notable fixes:
-- _cmap.py: give each colormap dict its own name and a Literal-keyed type
-  instead of reusing one dynamically-retyped `cmap_data` variable
-- _generative_mixin.py: declare the attributes SparseLatentMixin expects
-  from the model classes it's combined with, under TYPE_CHECKING
-- _metrics.py: annotate torchmetrics state/buffer attributes so they're
-  seen as Tensor rather than the generic Module fallback
-- _latent.py: add an _as_frame() helper to narrow anndata's `DataFrame |
-  Dataset2D` to a concrete DataFrame, since this module's operations
-  (groupby/query/sort_values/mutation) require an in-memory AnnData anyway
-
-Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
-
-* Use cast-based narrowing for the mypy fixes
-
-Reworks the previous commit's type fixes to be less intrusive and more honest
-about what is actually known:
-
-- _latent.py: `_as_df`/`_as_array` now narrow anndata's `.obs`/`.var`/`.X`
-  annotations with `typing.cast` instead of an isinstance check that raised.
-  The raise added an untested error path (and a repeated name string at every
-  call site) for a change that is only about types.
-- _generative_mixin.py: declare the attributes the mixin expects from its
-  sibling base class as `Callable`, rather than fabricating full signatures
-  for an upstream (untyped) scvi API that mypy cannot verify them against.
-- _cmap.py: keep the per-colormap data dicts private; `plotting.cmap` is a
-  public module, so they should not become API.
-- _interpretability.py: lift `_dim_number` out of the plotting function body
-  and raise `ValueError` rather than assert.
-- porting.py: express the terminal chain entry as `if migration := ...`
-  (None means ""no parameter change""), which the dict already means, instead
-  of asserting it away.
-- Drop the two `# type: ignore` comments and the bare asserts these replace.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-
-* Add changelog entries for the template sync
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-
-* Skip the mypy hook on pre-commit.ci
-
-The hook shells out to `hatch`, which pre-commit.ci cannot provide: mypy needs
-the project's dependencies installed, and pre-commit.ci has no network access
-while running hooks. It failed there with ""Executable `hatch` not found"" while
-every other hook passed.
-
-mypy still runs locally through prek and on CI in the `Pre-commit checks` job,
-which installs hatch first.
-
-Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-
----------
-
-Co-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",[![](https://github.com/theislab/DRVI/workflows/Check%20Build/badge.svg)](https://github.com/theislab/DRVI/actions/runs/35253474057) [![](https://github.com/theislab/DRVI/workflows/Test/badge.svg)](https://github.com/theislab/DRVI/actions/runs/35253473908)
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",[![](https://github.com/theislab/DRVI/workflows/Check%20Build/badge.svg)](https://github.com/theislab/DRVI/actions/runs/35435479872) [![](https://github.com/theislab/DRVI/workflows/Test/badge.svg)](https://github.com/theislab/DRVI/actions/runs/35435479868)
 theislab,DRVI_reproducibility,theislab/DRVI_reproducibility,4,3,0,1,FALSE,https://github.com/theislab/DRVI_reproducibility,NA,NA,NA
 theislab,DRVI_tutorials,theislab/DRVI_tutorials,1,1,0,1,FALSE,https://github.com/theislab/DRVI_tutorials,NA,NA,NA
 theislab,DeepCollisionalCrossSection,theislab/DeepCollisionalCrossSection,13,3,1,6,FALSE,https://github.com/theislab/DeepCollisionalCrossSection,NA,NA,NA
@@ -201,24 +134,7 @@ theislab,diffxpy,theislab/diffxpy,205,0,108,21,FALSE,https://github.com/theislab
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,361,2,23,53,FALSE,https://github.com/theislab/ehrapy,b65fef02d24587bfe32e59d4f974995b45045d53,"v0.15.0 release (#1088)
-
-* bump version; changelog
-
-* Address review feedback: pin ehrdata>=0.3.0, restructure v0.15.0 changelog
-
-- Pin `ehrdata>=0.3.0` as the minimum dependency
-- Move the in-house causal inference module (#1076) to Features and
-  showcase its public `ep.tl` API
-- Rename the v0.15.0 ""⚠️ Modified"" section to ""💥 Breaking changes""
-- Make the v0.15.0 API references clickable {func}/{class} cross-references
-
-Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-
----------
-
-Co-authored-by: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29015181723)
-theislab,ehrapy,theislab/ehrapy,361,2,23,53,FALSE,https://github.com/theislab/ehrapy,ee0ca8253c11aac24f0f0f552ccbe753602e5970,Add changelog entry for knn_impute NotImplementedError on unsupported array types (#1109) (#1117),[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730847) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730752) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730719) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730696) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34931079266)
+theislab,ehrapy,theislab/ehrapy,361,2,23,53,FALSE,https://github.com/theislab/ehrapy,ee0ca8253c11aac24f0f0f552ccbe753602e5970,Add changelog entry for knn_impute NotImplementedError on unsupported array types (#1109) (#1117),[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730847) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730745) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730752) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730719) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34203730696) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/34931079266)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,NA,NA,NA
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
@@ -247,7 +163,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/34931992857)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,bffc1d40da0cfdbacefb0f8cb3a759d7c11b25c0,[status] 2026-09-17 12:12:26 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/35342866272)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,f1ceb427ec15c3dc17acefd0239f2a7b4617702b,[status] 2026-09-18 12:12:51 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/35441864640)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
