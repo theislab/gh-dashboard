@@ -30,23 +30,7 @@ for more information, see https://pre-commit.ci
 
 ---------
 
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/CellFlow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/29201771384) [![](https://github.com/theislab/CellFlow/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/29392358974) [![](https://github.com/theislab/CellFlow/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/36818773968)
-theislab,CellFlow,theislab/CellFlow,161,0,68,29,FALSE,https://github.com/theislab/CellFlow,60901d12486c1392ea7f8ccc5c61e7c45f1a11eb,"fix: correct dropout target and FC residual dim in SelfAttention transformer block (#296)
-
-The transformer-block FC sublayer in `SelfAttention` applied dropout to `z`
-instead of `z_`, silently discarding the `Dense` output. Fixing that exposed a
-latent shape bug: the attention output keeps the input feature dimension (flax's
-`out_features` default), but the FC layer projected to `qkv_dim`, so the residual
-`z + z_` failed whenever `qkv_dim != input_dim`. The original bug masked this by
-throwing away the `Dense` output.
-
-- Apply dropout to `z_` (the FC output), matching `SeedAttentionPooling`.
-- Project the FC layer back to the residual-stream dimension (`nn.Dense(z.shape[-1])`)
-  so the residual add is valid for any `qkv_dim`, and the FC layer actually applies
-  a learned transformation instead of being a no-op.
-- Remove a duplicated `A = jnp.matmul(...)` line in `SeedAttentionPooling`.
-
-Co-authored-by: Claude Opus 4.8 <noreply@anthropic.com>",[![](https://github.com/theislab/CellFlow/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/29037882081)
+Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/CellFlow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/29201771384) [![](https://github.com/theislab/CellFlow/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/37248647786) [![](https://github.com/theislab/CellFlow/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/36818477491) [![](https://github.com/theislab/CellFlow/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow/actions/runs/36818773968)
 theislab,CellFlow2,theislab/CellFlow2,11,0,3,2,FALSE,https://github.com/theislab/CellFlow2,4ac86903cca31b275f578ae90ce92298eb055567,"Merge pull request #19 from theislab/feat/de-val-metrics
 
 Feat/de val metrics",[![](https://github.com/theislab/CellFlow2/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039841057) [![](https://github.com/theislab/CellFlow2/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840725) [![](https://github.com/theislab/CellFlow2/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840835) [![](https://github.com/theislab/CellFlow2/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840951)
@@ -69,10 +53,7 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",[![](https://github.com/theislab/DRVI/workflows/Test/badge.svg)](https://github.com/theislab/DRVI/actions/runs/36817871046)
-theislab,DRVI,theislab/DRVI,83,2,8,6,FALSE,https://github.com/theislab/DRVI,6c43dd30d2019329a5b6eb2fb99fcc7d0b847da1,"Revert ""WIP: Update DRVI and align with the latest scvi-tools version (#33)"" (#52)
-
-This reverts commit 5794bcb98b84f4aca78b472f9b828d565801fa0a.",[![](https://github.com/theislab/DRVI/workflows/Check%20Build/badge.svg)](https://github.com/theislab/DRVI/actions/runs/19409098450)
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",[![](https://github.com/theislab/DRVI/workflows/Check%20Build/badge.svg)](https://github.com/theislab/DRVI/actions/runs/36489425826) [![](https://github.com/theislab/DRVI/workflows/Test/badge.svg)](https://github.com/theislab/DRVI/actions/runs/36817871046)
 theislab,DRVI_reproducibility,theislab/DRVI_reproducibility,4,3,0,1,FALSE,https://github.com/theislab/DRVI_reproducibility,NA,NA,NA
 theislab,DRVI_tutorials,theislab/DRVI_tutorials,1,1,0,1,FALSE,https://github.com/theislab/DRVI_tutorials,NA,NA,NA
 theislab,DeepCollisionalCrossSection,theislab/DeepCollisionalCrossSection,13,3,1,6,FALSE,https://github.com/theislab/DeepCollisionalCrossSection,NA,NA,NA
@@ -88,6 +69,8 @@ theislab,IMPA,theislab/IMPA,28,0,1,7,FALSE,https://github.com/theislab/IMPA,NA,N
 theislab,InterScale_reproducibility,theislab/InterScale_reproducibility,0,0,0,0,FALSE,https://github.com/theislab/InterScale_reproducibility,ca172e57f7f875234262d88a923c09bd33119e2b,remove damond and melton notebook for merge,[![](https://github.com/theislab/InterScale_reproducibility/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/InterScale_reproducibility/actions/runs/22107897937) [![](https://github.com/theislab/InterScale_reproducibility/workflows/Lint/badge.svg)](https://github.com/theislab/InterScale_reproducibility/actions/runs/22107897919)
 theislab,InterpretableAutoencoders,theislab/InterpretableAutoencoders,5,2,0,0,FALSE,https://github.com/theislab/InterpretableAutoencoders,NA,NA,NA
 theislab,LODE,theislab/LODE,5,0,9,0,FALSE,https://github.com/theislab/LODE,NA,NA,NA
+theislab,LabCompass,theislab/LabCompass,3,0,16,0,FALSE,https://github.com/theislab/LabCompass,NA,NA,NA
+theislab,LabCompass-reproducibility,theislab/LabCompass-reproducibility,1,0,1,0,FALSE,https://github.com/theislab/LabCompass-reproducibility,NA,NA,NA
 theislab,LineagePulse,theislab/LineagePulse,2,3,0,0,FALSE,https://github.com/theislab/LineagePulse,NA,NA,NA
 theislab,LungAgingAtlas,theislab/LungAgingAtlas,0,3,0,0,FALSE,https://github.com/theislab/LungAgingAtlas,NA,NA,NA
 theislab,LungInjuryRegeneration,theislab/LungInjuryRegeneration,2,6,0,0,FALSE,https://github.com/theislab/LungInjuryRegeneration,NA,NA,NA
@@ -102,8 +85,8 @@ theislab,Statistical_Learning,theislab/Statistical_Learning,2,0,0,0,FALSE,https:
 bbm-macros only provides bbm.sty; the bbm10.tfm metrics come from the
 separate bbm package, which caused lecture builds to fail in CI.",[![](https://github.com/theislab/Statistical_Learning/workflows/Build%20PDFs/badge.svg)](https://github.com/theislab/Statistical_Learning/actions/runs/26879260423)
 theislab,annbatch_paper,theislab/annbatch_paper,0,0,0,0,FALSE,https://github.com/theislab/annbatch_paper,NA,NA,NA
-theislab,anndata2ri,theislab/anndata2ri,154,5,11,19,FALSE,https://github.com/theislab/anndata2ri,63d1db7bf02235edc54c2ae37449215dd0cc1f06,[pre-commit.ci] pre-commit autoupdate (#304),[![](https://github.com/theislab/anndata2ri/workflows/Unit%20Tests/badge.svg)](https://github.com/theislab/anndata2ri/actions/runs/34944925950)
-theislab,archmap,theislab/archmap,7,3,4,0,FALSE,https://github.com/theislab/archmap,NA,NA,NA
+theislab,anndata2ri,theislab/anndata2ri,154,5,11,19,FALSE,https://github.com/theislab/anndata2ri,f3cecc279fb15b137617150f85b62d180a683d7b,[pre-commit.ci] pre-commit autoupdate (#307),[![](https://github.com/theislab/anndata2ri/workflows/Unit%20Tests/badge.svg)](https://github.com/theislab/anndata2ri/actions/runs/37430890969)
+theislab,archmap,theislab/archmap,8,3,4,0,FALSE,https://github.com/theislab/archmap,NA,NA,NA
 theislab,archmap_admin,theislab/archmap_admin,0,1,0,0,FALSE,https://github.com/theislab/archmap_admin,NA,NA,NA
 theislab,archmap_data,theislab/archmap_data,3,0,2,0,FALSE,https://github.com/theislab/archmap_data,NA,NA,NA
 theislab,archmap_doc,theislab/archmap_doc,0,2,0,0,FALSE,https://github.com/theislab/archmap_doc,NA,NA,NA
@@ -130,7 +113,7 @@ theislab,cellucid-annotation,theislab/cellucid-annotation,0,0,0,0,FALSE,https://
 theislab,cellucid-datasets,theislab/cellucid-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-datasets,491c2bc78d27120a9728c11c8366deb3640eee5f,Fix,[![](https://github.com/theislab/cellucid-datasets/workflows/Dataset%20contracts/badge.svg)](https://github.com/theislab/cellucid-datasets/actions/runs/30906648777)
 theislab,cellucid-demo-custom-datasets,theislab/cellucid-demo-custom-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-demo-custom-datasets,NA,NA,NA
 theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,1dd7a557aeb4c4f927c7e772b7749b623d437f46,version 0.9.0,[![](https://github.com/theislab/cellucid-python/workflows/Publish%20to%20PyPI/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/20645691904)
-theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,24f021d70cd6ae53777230cafb2f519710261556,Fix,[![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649384) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649381)
+theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,24f021d70cd6ae53777230cafb2f519710261556,Fix,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649372) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649384) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/30906649381)
 theislab,cellucid-r,theislab/cellucid-r,0,0,0,0,FALSE,https://github.com/theislab/cellucid-r,7f670b9737d8bd499b81b74bbafaa2f3e0a7d946,Fix,[![](https://github.com/theislab/cellucid-r/workflows/R-CMD-check/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30845754379) [![](https://github.com/theislab/cellucid-r/workflows/pkgdown/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/30845754443)
 theislab,chem-perturbridge_lpm,theislab/chem-perturbridge_lpm,0,0,0,0,FALSE,https://github.com/theislab/chem-perturbridge_lpm,NA,NA,NA
 theislab,chemCPA,theislab/chemCPA,160,2,7,35,FALSE,https://github.com/theislab/chemCPA,NA,NA,NA
@@ -149,41 +132,26 @@ theislab,dca,theislab/dca,273,9,33,75,FALSE,https://github.com/theislab/dca,NA,N
 theislab,deconvATAC,theislab/deconvATAC,6,0,1,2,FALSE,https://github.com/theislab/deconvATAC,NA,NA,NA
 theislab,deepflow,theislab/deepflow,33,3,1,12,FALSE,https://github.com/theislab/deepflow,NA,NA,NA
 theislab,destiny,theislab/destiny,113,3,32,12,FALSE,https://github.com/theislab/destiny,NA,NA,NA
-theislab,diffxpy,theislab/diffxpy,205,0,108,21,FALSE,https://github.com/theislab/diffxpy,NA,NA,NA
+theislab,diffxpy,theislab/diffxpy,204,0,108,21,FALSE,https://github.com/theislab/diffxpy,NA,NA,NA
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
-theislab,donordata,theislab/donordata,1,0,0,0,FALSE,https://github.com/theislab/donordata,823c30aec1caa8f87d0d3dfd9fcd361b7ea34fe4,first commit,[![](https://github.com/theislab/donordata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/donordata/actions/runs/37544316373) [![](https://github.com/theislab/donordata/workflows/Test/badge.svg)](https://github.com/theislab/donordata/actions/runs/37544316356)
+theislab,donordata,theislab/donordata,2,0,0,0,FALSE,https://github.com/theislab/donordata,823c30aec1caa8f87d0d3dfd9fcd361b7ea34fe4,first commit,[![](https://github.com/theislab/donordata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/donordata/actions/runs/37544316373) [![](https://github.com/theislab/donordata/workflows/Test/badge.svg)](https://github.com/theislab/donordata/actions/runs/37544316356)
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,366,2,22,53,FALSE,https://github.com/theislab/ehrapy,76a9687c62b742037e3dba1cd256e4a9fbb20ee0,"update submodule to ehrdata 0.4.0 (#1089)
+theislab,ehrapy,theislab/ehrapy,366,2,10,53,FALSE,https://github.com/theislab/ehrapy,bb4015055d93a556b24356f58691e2a8c4a575f7,"Plot the 3D .X in pl.timeseries by default (#1121)
 
-* update submodule
-
-* update submodule
-
-* submodule update; check if ehrapy fine with it
-
-* update submodule|
-
-* add sparse to notebooks
-
-* ehrdata 0.4.0",[![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/29591943252)
-theislab,ehrapy,theislab/ehrapy,366,2,22,53,FALSE,https://github.com/theislab/ehrapy,e003c89878aea105c5aad873437d84b6e2b87303,"[pre-commit.ci] pre-commit autoupdate (#1123)
-
-updates:
-- [github.com/astral-sh/ruff-pre-commit: v0.16.8 → v0.16.9](https://github.com/astral-sh/ruff-pre-commit/compare/v0.16.8...v0.16.9)
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/36570760529) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/36570760487) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/36570760453) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/36570760387) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/36817813877)
+Closes #1119.",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/37771507118) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/37771507026) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/37771507027) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/37771507121) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/37771507218) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/37771507075)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,NA,NA,NA
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
-theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,15,1,12,7,FALSE,https://github.com/theislab/ehrdata,9bb56431fd3df52c245687ba8bd3820cf0aa5fd2,"[pre-commit.ci] pre-commit autoupdate (#309)
+theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,1,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
+theislab,ehrdata,theislab/ehrdata,15,1,10,7,FALSE,https://github.com/theislab/ehrdata,4a3e568674455a4bb3d01480437dcd1fb2e1b865,"Fix feature_type_overview for 3D data (#311)
 
-updates:
-- [github.com/astral-sh/ruff-pre-commit: v0.16.8 → v0.16.9](https://github.com/astral-sh/ruff-pre-commit/compare/v0.16.8...v0.16.9)
+* Count feature type overview categories across timepoints
 
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/36542131081) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/36542131104) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/36818898284)
+infer_feature_types already flattens 3D data across time to infer the types, but its tree output built a DataFrame from the 3D X directly and failed for longitudinal data, and it always read X even when the types were inferred from a layer. feature_type_overview now takes layer and shares the flattening with infer_feature_types.
+
+* Add changelog entry for #311",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/37771424893) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/37771424943) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/37771424988)
 theislab,embpy,theislab/embpy,22,0,11,2,FALSE,https://github.com/theislab/embpy,86f9110c41f2607e3b968552ecec8f987632aa81,"Merge pull request #44 from theislab/la2
 
 Region scoring functionality",[![](https://github.com/theislab/embpy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/embpy/actions/runs/34003865000) [![](https://github.com/theislab/embpy/workflows/Test/badge.svg)](https://github.com/theislab/embpy/actions/runs/36818401304)
@@ -198,14 +166,13 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/36818953515)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,c08337f02ee19cfd903aa89d8b8b4bb29035e652,[status] 2026-10-06 12:14:50 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/37618728205)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,b3740a04d91f07723d557b363d947cbe36d54c2b,[status] 2026-10-07 12:13:47 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/37774544389)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,16,2,5,1,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
 theislab,gut_lineage,theislab/gut_lineage,2,1,0,3,FALSE,https://github.com/theislab/gut_lineage,NA,NA,NA
 theislab,hadge-reproducibility,theislab/hadge-reproducibility,0,1,0,0,FALSE,https://github.com/theislab/hadge-reproducibility,NA,NA,NA
-theislab,huCIRA,theislab/huCIRA,36,1,5,3,FALSE,https://github.com/theislab/huCIRA,5e9b6207250d86a7a3292b635a5b062f8db53c27,Bump version from 0.1.2 to 0.1.3,[![](https://github.com/theislab/huCIRA/workflows/Check%20Build/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/25212554882)
-theislab,huCIRA,theislab/huCIRA,36,1,5,3,FALSE,https://github.com/theislab/huCIRA,eb0b5b2633312f881de568066672b4b16dbd13ab,correction,[![](https://github.com/theislab/huCIRA/workflows/Test/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/36818003584)
+theislab,huCIRA,theislab/huCIRA,36,1,5,3,FALSE,https://github.com/theislab/huCIRA,eb0b5b2633312f881de568066672b4b16dbd13ab,correction,[![](https://github.com/theislab/huCIRA/workflows/Check%20Build/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/27377769708) [![](https://github.com/theislab/huCIRA/workflows/Test/badge.svg)](https://github.com/theislab/huCIRA/actions/runs/36818003584)
 theislab,human-pancreas-cell-atlas,theislab/human-pancreas-cell-atlas,0,0,0,0,FALSE,https://github.com/theislab/human-pancreas-cell-atlas,NA,NA,NA
 theislab,icml_cbw_2022_clcvae,theislab/icml_cbw_2022_clcvae,0,2,0,0,FALSE,https://github.com/theislab/icml_cbw_2022_clcvae,NA,NA,NA
 theislab,idtrack,theislab/idtrack,11,0,3,1,FALSE,https://github.com/theislab/idtrack,d8514ab51a494842f4278e769c9538f103592c7a,experiments,[![](https://github.com/theislab/idtrack/workflows/Build%20idtrack%20Package/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21184289077) [![](https://github.com/theislab/idtrack/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21183972660) [![](https://github.com/theislab/idtrack/workflows/Run%20idtrack%20Tests/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21184289091) [![](https://github.com/theislab/idtrack/workflows/Dependency%20Compatibility/badge.svg)](https://github.com/theislab/idtrack/actions/runs/21184289085)
@@ -217,12 +184,12 @@ theislab,integraph,theislab/integraph,0,1,4,0,FALSE,https://github.com/theislab/
 theislab,interaction-tools,theislab/interaction-tools,3,2,0,0,FALSE,https://github.com/theislab/interaction-tools,NA,NA,NA
 theislab,interactive_plotting,theislab/interactive_plotting,22,2,12,6,FALSE,https://github.com/theislab/interactive_plotting,NA,NA,NA
 theislab,intercode,theislab/intercode,6,1,1,1,FALSE,https://github.com/theislab/intercode,NA,NA,NA
-theislab,interscale,theislab/interscale,12,1,10,1,FALSE,https://github.com/theislab/interscale,c98a307e4fa390d459a2dc4d801cdcfda4b6d3e1,"Merge pull request #68 from theislab/claude_masking
+theislab,interscale,theislab/interscale,12,1,11,1,FALSE,https://github.com/theislab/interscale,c98a307e4fa390d459a2dc4d801cdcfda4b6d3e1,"Merge pull request #68 from theislab/claude_masking
 
 Config update + masking",[![](https://github.com/theislab/interscale/workflows/Check%20Build/badge.svg)](https://github.com/theislab/interscale/actions/runs/34265879106) [![](https://github.com/theislab/interscale/workflows/Test/badge.svg)](https://github.com/theislab/interscale/actions/runs/36817838105)
 theislab,ipsc_ipd_analysis,theislab/ipsc_ipd_analysis,0,1,0,0,FALSE,https://github.com/theislab/ipsc_ipd_analysis,NA,NA,NA
 theislab,jump-cpg0016-segmentation,theislab/jump-cpg0016-segmentation,9,0,3,0,FALSE,https://github.com/theislab/jump-cpg0016-segmentation,NA,NA,NA
-theislab,kBET,theislab/kBET,179,6,13,24,FALSE,https://github.com/theislab/kBET,NA,NA,NA
+theislab,kBET,theislab/kBET,179,6,12,24,FALSE,https://github.com/theislab/kBET,NA,NA,NA
 theislab,kbranches,theislab/kbranches,6,5,0,0,FALSE,https://github.com/theislab/kbranches,NA,NA,NA
 theislab,lamin_dataloader,theislab/lamin_dataloader,1,1,1,3,FALSE,https://github.com/theislab/lamin_dataloader,7899d2a2a7aff582d1131a412612a29700b3b97e,Bump version to 0.2.1,[![](https://github.com/theislab/lamin_dataloader/workflows/Check%20Build/badge.svg)](https://github.com/theislab/lamin_dataloader/actions/runs/25552164943) [![](https://github.com/theislab/lamin_dataloader/workflows/Test/badge.svg)](https://github.com/theislab/lamin_dataloader/actions/runs/29392413548)
 theislab,mapqc,theislab/mapqc,12,0,2,1,FALSE,https://github.com/theislab/mapqc,80d75dd32540324c9c9bd1b4f14d5a1d9044b59b,"Merge pull request #15 from theislab/pre-commit-ci-update-config
@@ -231,35 +198,7 @@ theislab,mapqc,theislab/mapqc,12,0,2,1,FALSE,https://github.com/theislab/mapqc,8
 theislab,masterpraktikum_ssl_segmentation,theislab/masterpraktikum_ssl_segmentation,3,2,0,2,FALSE,https://github.com/theislab/masterpraktikum_ssl_segmentation,NA,NA,NA
 theislab,moscot,theislab/moscot,216,2,37,16,FALSE,https://github.com/theislab/moscot,440093ccbb8e70de209157d91da839c55b897821,"Merge pull request #846 from theislab/fix/sparsify-row-materializer
 
-fix(sparsify): materialize transport-matrix rows instead of pushing indicator columns",[![](https://github.com/theislab/moscot/workflows/Lint/badge.svg)](https://github.com/theislab/moscot/actions/runs/37248713709) [![](https://github.com/theislab/moscot/workflows/Test%20examples/badge.svg)](https://github.com/theislab/moscot/actions/runs/32869052731) [![](https://github.com/theislab/moscot/workflows/Test/badge.svg)](https://github.com/theislab/moscot/actions/runs/36818226607)
-theislab,moscot,theislab/moscot,216,2,37,16,FALSE,https://github.com/theislab/moscot,915643e7d639e94573809c87a21ac62f68fb9624,"Merge pull request #843 from theislab/feature/sparsify-batchsize-mass
-
-Memory-bounded sparsify + per-row mass mode",[![](https://github.com/theislab/moscot/workflows/Check%20Build/badge.svg)](https://github.com/theislab/moscot/actions/runs/27334789053)
-theislab,moscot,theislab/moscot,216,2,37,16,FALSE,https://github.com/theislab/moscot,bacec6c7a4bf61024f7b15ceded756855b08d4a8,"udpate ott-jax (#839)
-
-* udpate ott-jax
-
-* udpate ott-jax
-
-* fix get_solver
-
-* regenerate true data
-
-* Fix 'ott' documentation URL in conf.py
-
-Updated the URL for the 'ott' documentation.
-
-* Add PubMed URL pattern to references
-
-* Update nitpick_ignore_regex in conf.py
-
-Add typing references to nitpick ignore list in Sphinx config
-
-* adapt thresholds
-
----------
-
-Co-authored-by: Selman Özleyen <32667648+selmanozleyen@users.noreply.github.com>",[![](https://github.com/theislab/moscot/workflows/Deployment/badge.svg)](https://github.com/theislab/moscot/actions/runs/19926373687)
+fix(sparsify): materialize transport-matrix rows instead of pushing indicator columns",[![](https://github.com/theislab/moscot/workflows/Check%20Build/badge.svg)](https://github.com/theislab/moscot/actions/runs/32869052695) [![](https://github.com/theislab/moscot/workflows/Deployment/badge.svg)](https://github.com/theislab/moscot/actions/runs/32869274249) [![](https://github.com/theislab/moscot/workflows/Lint/badge.svg)](https://github.com/theislab/moscot/actions/runs/37248713709) [![](https://github.com/theislab/moscot/workflows/Test%20examples/badge.svg)](https://github.com/theislab/moscot/actions/runs/32869052731) [![](https://github.com/theislab/moscot/workflows/Test/badge.svg)](https://github.com/theislab/moscot/actions/runs/36818226607)
 theislab,moscot-framework_reproducibility,theislab/moscot-framework_reproducibility,26,1,1,8,FALSE,https://github.com/theislab/moscot-framework_reproducibility,NA,NA,NA
 theislab,moscot_benchmarks,theislab/moscot_benchmarks,8,1,2,2,FALSE,https://github.com/theislab/moscot_benchmarks,NA,NA,NA
 theislab,moscot_not,theislab/moscot_not,3,1,8,1,FALSE,https://github.com/theislab/moscot_not,NA,NA,NA
@@ -303,8 +242,8 @@ theislab,pseudodynamics,theislab/pseudodynamics,40,5,0,6,FALSE,https://github.co
 theislab,quicat,theislab/quicat,2,0,0,0,FALSE,https://github.com/theislab/quicat,NA,NA,NA
 theislab,quicat_reproducibility,theislab/quicat_reproducibility,0,1,0,0,FALSE,https://github.com/theislab/quicat_reproducibility,NA,NA,NA
 theislab,rapids-singlecell-reproducibility,theislab/rapids-singlecell-reproducibility,1,0,1,0,FALSE,https://github.com/theislab/rapids-singlecell-reproducibility,0c6aacf9f8be93349d8869a40a867565d34e3ce1,Diagnose equivalence failures,[![](https://github.com/theislab/rapids-singlecell-reproducibility/workflows/.github/workflows/gpu-equivalence.yml/badge.svg)](https://github.com/theislab/rapids-singlecell-reproducibility/actions/runs/30712552099)
-theislab,regvelo,theislab/regvelo,195,3,0,21,FALSE,https://github.com/theislab/regvelo,ae68f699b154b0559598e8f09e9ae4f30206975d,Create issue template,[![](https://github.com/theislab/regvelo/workflows/regvelo/badge.svg)](https://github.com/theislab/regvelo/actions/runs/35978886084)
-theislab,regvelo,theislab/regvelo,195,3,0,21,FALSE,https://github.com/theislab/regvelo,f1eb363533275ddf6f887bbfee3f001ab3b6a6d8,"Merge pull request #64 from theislab/feat/fix_screening_func
+theislab,regvelo,theislab/regvelo,195,3,0,22,FALSE,https://github.com/theislab/regvelo,ae68f699b154b0559598e8f09e9ae4f30206975d,Create issue template,[![](https://github.com/theislab/regvelo/workflows/regvelo/badge.svg)](https://github.com/theislab/regvelo/actions/runs/35978886084)
+theislab,regvelo,theislab/regvelo,195,3,0,22,FALSE,https://github.com/theislab/regvelo,f1eb363533275ddf6f887bbfee3f001ab3b6a6d8,"Merge pull request #64 from theislab/feat/fix_screening_func
 
 update TFscreening function",[![](https://github.com/theislab/regvelo/workflows/Release/badge.svg)](https://github.com/theislab/regvelo/actions/runs/20935159369)
 theislab,regvelo_reproducibility,theislab/regvelo_reproducibility,22,0,0,2,FALSE,https://github.com/theislab/regvelo_reproducibility,c3a696dcd44519fdfaa07b0fec26e4d327a0a683,"Fix DOI link in README.md
@@ -314,7 +253,7 @@ theislab,reproducability_AutoGeneS,theislab/reproducability_AutoGeneS,0,1,0,0,FA
 theislab,reproducibility_AutoGeneS,theislab/reproducibility_AutoGeneS,0,1,0,0,FALSE,https://github.com/theislab/reproducibility_AutoGeneS,NA,NA,NA
 theislab,sample-prediction-pipeline,theislab/sample-prediction-pipeline,4,0,0,0,FALSE,https://github.com/theislab/sample-prediction-pipeline,NA,NA,NA
 theislab,sc-best-practices-ce,theislab/sc-best-practices-ce,8,6,2,3,FALSE,https://github.com/theislab/sc-best-practices-ce,NA,NA,NA
-theislab,sc-pert,theislab/sc-pert,184,3,6,15,FALSE,https://github.com/theislab/sc-pert,NA,NA,NA
+theislab,sc-pert,theislab/sc-pert,185,3,6,15,FALSE,https://github.com/theislab/sc-pert,NA,NA,NA
 theislab,scAnalysisTutorial,theislab/scAnalysisTutorial,10,1,0,3,FALSE,https://github.com/theislab/scAnalysisTutorial,NA,NA,NA
 theislab,scArches-reproducibility,theislab/scArches-reproducibility,33,2,5,0,FALSE,https://github.com/theislab/scArches-reproducibility,NA,NA,NA
 theislab,scCODA,theislab/scCODA,203,11,11,27,FALSE,https://github.com/theislab/scCODA,NA,NA,NA
@@ -352,45 +291,1415 @@ theislab,scib,theislab/scib,432,11,44,78,FALSE,https://github.com/theislab/scib,
 Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scib/workflows/Deployment/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026834) [![](https://github.com/theislab/scib/workflows/Test/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026861)
 theislab,scib-pipeline,theislab/scib-pipeline,84,4,16,29,FALSE,https://github.com/theislab/scib-pipeline,NA,NA,NA
 theislab,scib-reproducibility,theislab/scib-reproducibility,75,4,4,19,FALSE,https://github.com/theislab/scib-reproducibility,NA,NA,NA
-theislab,sckitflow,theislab/sckitflow,7,0,31,1,FALSE,https://github.com/theislab/sckitflow,8fbd4e3667fe4c93b116ae1c4f883058dcc101bc,"Merge pull request #156 from theislab/refactor/remove-abstract-containers
+theislab,sckitflow,theislab/sckitflow,7,0,32,1,FALSE,https://github.com/theislab/sckitflow,b2a10d50fa69d5207e59120bea85fa7075d0537a,"Merge pull request #169 from selmanozleyen/fix/main-leftovers
 
-Refactor/remove abstract containers",[![](https://github.com/theislab/sckitflow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/30931636708)
-theislab,sckitflow,theislab/sckitflow,7,0,31,1,FALSE,https://github.com/theislab/sckitflow,b2a10d50fa69d5207e59120bea85fa7075d0537a,"Merge pull request #169 from selmanozleyen/fix/main-leftovers
-
-Main typing leftovers",[![](https://github.com/theislab/sckitflow/workflows/Lint/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36560729968) [![](https://github.com/theislab/sckitflow/workflows/Notebooks/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36818874427) [![](https://github.com/theislab/sckitflow/workflows/Test%20(slow)/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36819144624) [![](https://github.com/theislab/sckitflow/workflows/Test/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36818307994)
+Main typing leftovers",[![](https://github.com/theislab/sckitflow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36560729904) [![](https://github.com/theislab/sckitflow/workflows/Lint/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36560729968) [![](https://github.com/theislab/sckitflow/workflows/Notebooks/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36818874427) [![](https://github.com/theislab/sckitflow/workflows/Test%20(slow)/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36819144624) [![](https://github.com/theislab/sckitflow/workflows/Test/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/36818307994)
 theislab,scproto,theislab/scproto,4,2,0,1,FALSE,https://github.com/theislab/scproto,NA,NA,NA
 theislab,sctram,theislab/sctram,4,1,0,1,FALSE,https://github.com/theislab/sctram,NA,NA,NA
 theislab,scvelo,theislab/scvelo,512,11,83,117,FALSE,https://github.com/theislab/scvelo,9b6e94647654eca1c4a38b08a21f59df8a4ae6a6,Implement fix of get_sparse_from_igraph() theislab/scvelo#1241 (#1308),[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22367982926)
 theislab,scvelo,theislab/scvelo,512,11,83,117,FALSE,https://github.com/theislab/scvelo,f63c0e70596ced2f1bee8cf07e8ab66037cf86b2,Replace `adata.obsm_keys` calls (#1337),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707111) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707146)
 theislab,scvelo_notebooks,theislab/scvelo_notebooks,37,0,5,12,FALSE,https://github.com/theislab/scvelo_notebooks,NA,NA,NA
-theislab,sfaira,theislab/sfaira,136,6,167,11,FALSE,https://github.com/theislab/sfaira,NA,NA,NA
+theislab,sfaira,theislab/sfaira,135,6,167,11,FALSE,https://github.com/theislab/sfaira,NA,NA,NA
 theislab,sfaira-portal,theislab/sfaira-portal,0,2,2,0,FALSE,https://github.com/theislab/sfaira-portal,NA,NA,NA
 theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theislab/sfaira-site,NA,NA,NA
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1280,21,5,277,FALSE,https://github.com/theislab/single-cell-best-practices,3f12e60b41eb985e0c0a4caa5c6c2f66f942142f,"Collapse the doubled spacing between notebook cells (#510)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1280,21,3,277,FALSE,https://github.com/theislab/single-cell-best-practices,0622b1d53458d6d2c221674e59dd20c39434dc0d,"CCC chapter (#451)
 
-* Collapse the doubled spacing between notebook cells
+* update Approaches to 2026
 
-Every notebook cell is its own item of the MyST article grid, and grid items do not collapse margins, so the gap between two cells was one cell's bottom margin plus the next cell's top margin: 40px between a paragraph and code, against 20px between the same elements inside one cell.
-The theme's own `.article-grid > * { margin-top: 0 !important }` only reaches the cell wrapper and not its content, and stock notebook pages on mystmd.org show the same doubling.
+* Add figure style guide (#420)
 
-Dropping the bottom margin of whatever ends a cell leaves the next cell's top margin as the gap, which is what collapsing would give.
-A code cell without output still ends in an empty output container, so the code above that container counts as the end.
-Outputs whose input is removed (the quizzes) and h5/h6 headings have no top margin of their own and relied on the previous cell's, so they get one.
+* add figure style guide
 
-Measured in headless Chrome over all 43 notebook chapters: gaps between cells drop from 40 to 20px and above h2/h3 from 68/52 to 48/32px, and no gap inside a cell changes.
+* some refinements
 
-* Turn the raw HTML alerts in the lineage tracing chapter into admonitions
+* Update CONTRIBUTING.md
 
-The Bootstrap alert markup left over from the Sphinx build renders as unstyled text under MyST, in black that disappears in dark mode.
-Having no margin of its own, the first alert also ran into the paragraph above once cells stopped adding up their margins.
+---------
 
-* Tighten the space above section headings
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
 
-With cells no longer adding up their margins, the theme's prose spacing above headings (2em above an h2, 48px, and 1.6em above an h3, 32px) was the largest gap left on a page.
-They drop to 32px and 24px, still clearly more than the 20px between paragraphs; h4 keeps its 24px so it does not fall to paragraph spacing.",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37486738341) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37486738421) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37486738348) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37486738430) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37486738464)
+* Add netlify config
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Data structures and frameworks (#417)
+
+* first proofreading until '4.2. Storing unimodal data with AnnData' (including the first two paragraphs)
+
+* Proofreading and running code until 4.2.5. Unstructured metadata (exclusive). I had to update a short code snippet and also added some term to the glossary.
+
+* some changes
+
+* small improvements + updating a function to remove a warning message (AnnData part done)
+
+* worked through the code until muon (exclusive)
+
+* worked through the rest of the code, small improvments
+
+* first steps for SpatialData section
+
+* ignore warnings + some text and code
+
+* image element
+
+* until tables but with many env problems
+
+* env seems to work now
+
+* squidpy demo
+
+* short notes
+
+* create a data_structures_and_frameworks_advanced chapter + use lamindb
+
+* split into two chapters + add figures
+
+* cite libraries
+
+* notebook fundamental done
+
+* filter warnings
+
+* update env yml
+
+* rephrase installation instruction
+
+* current state of the advanced chapter after rerunning the script
+
+* done until muon + add two new glossary terms
+
+* run pre-commit
+
+* script to upload data for the advanced chapter
+
+* upload datasets
+
+* rerun dataset upload
+
+* incorporate lamin datasets
+
+* remaining changes
+
+* integrate datasets from lamindb
+
+* work in progress
+
+* test
+
+* run questions
+
+* add lamindb dropdown, remove unused citations and update yml
+
+* add key takeaways and final run with new env
+
+* add links and update key takeaways after testing
+
+* complete fundamentals chapter
+
+* fix pre-commit error
+
+* fix pre-commit error
+
+* update build environment
+
+* rerun data upload with new keys
+
+* advanced chapter wip (rerun, clean code and write SpatialData intro)
+
+* advanced chapter before testing env again
+
+* add key takeaways and questions, and finalize env
+
+* remove remaining warnings
+
+* reupload of fragments solved warnings
+
+* remove unused pngs
+
+* trigger PR-preview test
+
+* remove abstracts
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* polish
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* upgrade squidpy
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* force spatialdata
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* downgrade python
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Luis <ge34lah@mytum.de>
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* fix repeating sentence
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Update 11. Annotation (#412)
+
+* wip
+
+* up to the reference model thing
+
+* reference model feature table problem fixed, now batch column is missing
+
+* clean pip lamin
+
+* script to upload the reference model feature csv in lamin
+
+* minor changes in clustering - dropdown, lamin
+
+* wip
+
+* annotation chapter done
+
+* adding other artifacts to lamindb
+
+* with Luis' feedbacks
+
+* Lukas' feedbacks + pre-commit
+
+* A few minor text improvements
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Insert dropdowns for deployments (#424)
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* minor factual fix (#425)
+
+* Remove PR preview from GHA (#427)
+
+* Remove PR preview from GHA
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* fix preamble
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Update surface protein notebooks and key takeaways (#423)
+
+* Update surface protein notebooks and key takeaways
+
+* Minor fixes
+
+* Ran pre-commit
+
+* Renamed the surface protein conda environment to surface_protein.yml
+
+* Updated surface_protein.yml environment package versions
+
+* Setting a seed in order to make the workflow reproducible
+
+* Making the code prettier
+
+* Making the code prettier
+
+* Making the code prettier
+
+* Removed unused files
+
+* Removing irrelevant changes
+
+* add tags
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Add GPU acceleration chapter (#431)
+
+* Add RSC
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* pre-commit
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* run
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* pre-commit
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Fix citations
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Fix citations
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Fix lots of typos
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* improve citation in readme
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* ""adress issues""
+
+* ""final cleanup""
+
+* ""add back quiz""
+
+* add back quizz
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Intron7 <severin.dicks@icloud.com>
+
+* Wording & run of RSC
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Wording & run of RSC
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Memory management details for RSC (#432)
+
+* Memory management details for RSC
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* fix admonition syntax
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* polish
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Update DGE chapter (#430)
+
+* upload dataset to lamindb
+
+* work in progress
+
+* work in progress
+
+* work in progress 2
+
+* work in progress 3
+
+* work in progress 4
+
+* update env and final clean up
+
+* clean up 2
+
+* final clean up
+
+* final fixes
+
+* add lamindb dropdown
+
+* add DGE to glossary
+
+* update links from README.md
+
+* test
+
+* update links for the DGE term in glossary
+
+* add all terms from the glossary
+
+* use lowercase for package names
+
+* add pseudobulk to glossary and improve raw count check
+
+* fix typos
+
+* work in progress
+
+* add a design syntax
+
+* test updated links
+
+* final clean up
+
+* remove some pins
+
+* rerun DGE chapter and fix a link to glossary
+
+* add cell tag mc questions
+
+* typo
+
+* rerun flip_card()
+
+* Fix scran normalization: use raw counts for computeSumFactors (#428)
+
+The current notebook passes log-normalized data (adata_pp.X) to computeSumFactors
+as counts, which is inconsistent with scran's requirements.
+
+computeSumFactors expects raw counts, while adata_pp.X is only intended for
+coarse clustering. This change uses adata.layers[""counts""] as input for
+size factor estimation and adds a clarifying comment.
+
+Related to #186
+
+* Update link for Cell Ranger output annotations (#437)
+
+* Constrain wide DataFrame preview in fundamental data structures chapter (#440)
+
+Wrap the `adata.to_df(layer=""log_transformed"")` preview in `pd.option_context(""display.max_columns"", 10)` so pandas truncates middle columns with `...` instead of rendering the full ~2000-gene DataFrame past the right margin (#126). The existing stale wide-table output is kept so the chapter still shows something until the notebook is re-executed.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* Add intersphinx mapping and hyperlink API mentions (fixes #128) (#441)
+
+* Add intersphinx mapping and cross-link API mentions across the book
+
+Wires up `sphinx.ext.intersphinx` in `_config.yml` with mappings for ~35 packages that this book actually imports (anndata, scanpy, mudata, muon, squidpy, scirpy, pertpy, decoupler, liana, scvi, scvelo, cellrank, pandas, numpy, scipy, scikit-learn, …) and rewrites backticked API mentions in markdown cells as `{py:obj}` roles so they hyperlink to upstream API docs (#128). Code cells are untouched, instance-attribute mentions (`adata.obs`, `mdata.uns`) are left as plain backticks, and `nitpicky` stays off so any unresolved reference degrades gracefully to plain text.
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Use semantic intersphinx roles (func/class/mod/meth) instead of generic obj
+
+Replaces the catch-all `{py:obj}` role with the role matching each target's
+actual kind in its upstream `objects.inv` (`{py:func}`, `{py:class}`,
+`{py:mod}`, `{py:meth}`, `{py:data}`), so tooltips/screen-readers/styling
+reflect what the link points at. Call-signature and chained-call mentions
+(e.g. `sc.tl.leiden()`, `lamindb.Artifact.connect(""…"").get(""…"")`) now use
+MyST display-form syntax `{role}\`<display> <target>\`` so the call/chain
+keeps its monospace styling instead of bleeding into surrounding prose.
+Also picks up the upstream `decoupler.run_gsea` -> `decoupler.mt.gsea`
+rename and links scanpy's long-form module names (`scanpy.preprocessing`,
+`scanpy.tools`, `scanpy.plot`) to their canonical short-alias pages.
+
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* Fix silently dropped bibtex citations across the book (#136) (#442)
+
+sphinxcontrib-bibtex aborts parsing a .bib file the moment it
+encounters a key already registered from an earlier file, silently
+dropping every entry below the duplicate. The user-visible symptom on
+the deconvolution chapter was empty `[]` brackets for MuSiC, dtangle,
+and DWLS — those entries sit below `Schulte-Schrepping2020` in
+`bulk_deconvolution.bib`, the same key also lives in
+`conditions/differential_gene_expression.bib`, and DGE loads first.
+The same pattern was silently hiding entries in five other files.
+
+Resolved by adopting the chapter-prefix convention already used
+throughout the book consistently across every registered .bib file
+(`at:`, `pa:`, `raw:`, `qc:`, `norm:`, `clust:`, `intg:`, `lt:`, `pt:`,
+`de:`, `comp:`, `gspa:`, `pemo:`, `ccc:`, `grn:`, `bd:`, `atac:`,
+`sp:`, `air:`, `pi:`, `ai:`, `spat:`, `velo:`, `rsc:`, `dr:`, `fs:`,
+`anno:`, `adv:`, `scrna:`, `atacqc:`, `ol:`). Every previously
+unprefixed entry was renamed to carry its chapter prefix, every
+`{cite}`/`{cite:t}`/`{cite:p}` reference across notebooks and markdown
+was updated to match, and same-paper duplicates across chapter bibs
+were collapsed onto a single canonical entry.
+
+Also fixes three orphan cites whose entries lived only in the
+unregistered `jupyter-book/references.bib`: `osca` and `Amezquita2020`
+moved into `introduction/prior_art.bib` with the `pa:` prefix and the
+`prior_art.md` cites updated; `Sun2021` cite in
+`surface_protein/doublet_detection.ipynb` fixed to `sp:Sun2021`. Drops
+a stale `introduction/data_structures_and_frameworks_advanced.bib`
+entry from `_config.yml` that pointed at a non-existent file.
+
+A full `jupyter-book build .` after these changes reports zero
+""could not find bibtex key"", zero ""repeated bibliograhpy entry"", and
+zero ""duplicate label"" warnings. The bug-report paragraph now renders
+all four cites:
+
+  Examples of such tools are CIBERSORTx [Newman et al., 2019], MuSiC
+  [Wang et al., 2019], dtangle [Hunt et al., 2018] and DWLS
+  [Tsoucas et al., 2019].
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+* update Approaches to 2026
+
+* Resolve conflict
+
+* Solve merge conflict
+
+* js0107:improving text
+
+* correct typo
+
+* WIP: Lamin and Updating Liana + Decoupler
+
+* updating deps and improving text
+
+* conflicts
+
+* Update surface protein (#455)
+
+* update
+
+* Update the surface protein chapter with transcriptomics quality control and notes on CLR normalization
+
+* Implemented ruff format changes
+
+* install muon from the main branch, correctly annotate erythroid cells
+
+* implementing style changes from pre-commit
+
+* Update GSEA chapter (#459)
+
+* work in progress
+
+* work in progress 2
+
+* work in progress 3 (remove fry)
+
+* upload relevant datasets
+
+* upload the .umt and continue with the chapter until pseudobulk testing
+
+* upload umt
+
+* update dge chapter + env
+
+* restructure population score
+
+* updated existing code
+
+* work in progress pseudotime
+
+* all sections added
+
+* add lamindb dropdown
+
+* update changelog
+
+* add gs: prefix to all citations
+
+* add questions and key takeaways
+
+* add glossary terms
+
+* add abbreviations
+
+* filter or resolve all warnings
+
+* update to sc.pl.stacked_violin
+
+* add see also
+
+* change to {cite:p}
+
+* rerun with set_figure_params
+
+* small fixes
+
+* more fixes
+
+* update key takeaways
+
+* update questions
+
+* reduce figure size
+
+* final run
+
+* shorten the first two sentences
+
+* add GSEA as glossary item
+
+* final fixes
+
+* test
+
+* improve decoupler citation
+
+* fix heading hierarchy
+
+* Replace scarches with cellmapper in Annotation chapter (#457)
+
+* tiny gitignore
+
+* rewrite key takeaway
+
+* replace scarches with cellmapper
+
+* apply feedbacks
+
+* using pandas 2.3.3 for now
+
+* Improve quiz cards used in the chapters (#461)
+
+* move quiz script and add jinja
+
+* format better
+
+* rapid single cell chapter might have been dropped when migrating to jb v2
+
+* rerun the quiz cells in the notebooks
+
+* Fix url
+
+* update versions of annotation chapter
+
+* Fix annotation env (#464)
+
+* Fix annotation env
+
+* Fix version format for scvi-tools in annotation.yml
+
+* Reduce builds
+
+* Go prek (#465)
+
+* Update GitHub Actions to use latest versions (#466)
+
+* fix (#467)
+
+* Expand the whole table of contents in the sidebar (#468)
+
+The book theme opens only the section holding the current page and leaves
+the other fourteen collapsed, so a reader who does not already know which
+part a chapter lives in has to open the sections one by one. The Sphinx
+build of this book never asked that.
+
+The theme has no option for it, and the sections are Radix collapsibles
+that do not render their children while closed, so CSS cannot reveal them
+either. They are opened the way a reader would, from the theme's client
+entry bundle, and the sidebar is scrolled to the chapter being read, which
+in a list this long is otherwise below the fold.
+
+The rows are tightened to match: the theme sizes them for a mostly
+collapsed tree, which makes the full list far taller than it needs to be.
+
+The bundle patching is shared with the back button workaround rather than
+repeated.
+
+* Fix the release workflow and refresh the GitHub Actions (#470)
+
+* Fix the release workflow and refresh the GitHub Actions
+
+publish_book.yml had drifted away from build_book.yml: it pinned Python 3.13, installed with pip instead of uv, and pinned jupytext and beautifulsoup4 to versions CI never exercises.
+The release therefore ran a configuration no CI run had validated.
+It now matches build_book.yml exactly, so what CI proves on main is what gets deployed.
+
+The jupyter-cache step never did anything.
+Notebooks are not executed during the build (only jupyter-book, jupytext and beautifulsoup4 are installed), so jupyter-book/_build/.jupyter_cache is never created and every run ends in ""Path Validation Error: Path(s) specified in the action for caching do(es) not exist, hence no cache is being saved"".
+Its key also hashed notebook_scripts/**/*.py, a directory that does not exist, and fell back to refs/heads/master.
+Removed from both workflows.
+
+The pdfhtml job had been green while producing nothing: latexmk is not on the runner, so myst exported the TeX and then failed to render, and the artifact upload only warned that no file was found.
+Install a TeX distribution and set if-no-files-found to error, so a broken export fails the job instead of passing silently.
+
+Also drop the PREVIEW_BRANCH env left behind when the PR preview was removed in #427, drop the non-existent master branch from the labeler trigger, and bring checkout, setup-python, release-drafter and the labeler action up to their current major versions.
+The two jobs that gained an explicit permissions block have every scope they need declared, since unlisted scopes drop to none once a block exists.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Install imagemagick so the PDF keeps its figures
+
+With LaTeX alone the export still dropped seven figures, one .gif and six .svg, each reported as ""To convert image ... you must install imagemagick"" and then as a ""Cannot determine size of graphic"" LaTeX error.
+librsvg2-bin comes along because imagemagick delegates SVG rendering to rsvg-convert and its own MSVG renderer is much worse.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Stop the postbuild scripts narrating successful builds (#472)
+
+Each of these printed a line on every build reporting how many bundles it had patched and how many pages it had covered, which is noise in the log of a build that worked.
+The failure paths now raise SystemExit with the message they used to print, which keeps the exit code and the explanation while dropping the int returning dance the callers had to unwrap.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Redirect the pre v2 URLs of the book instead of 404ing them (#471)
+
+* Redirect the pre v2 URLs of the book instead of 404ing them
+
+The Sphinx era site served a chapter at /preprocessing_visualization/quality_control.html and Jupyter Book v2 serves it at /preprocessing-visualization/quality-control, and preamble.md, being the first toc entry, is now the site root rather than /preamble.html.
+Nothing had been published between 22 June and the release this morning, so that one deploy swapped the whole URL scheme at once and every link into the book, including the ones in the papers citing it, started 404ing.
+
+GitHub Pages has no server side redirects, so make build now writes a meta refresh stub at each of the 50 old paths.
+A generated 404 page catches what the table of contents does not cover, the chapters v2 dropped along with genindex.html and search.html, by rewriting the path the same way and falling back to the front page when the result is not a real route.
+
+Every URL the script emits is site root relative, so the same output works on www.sc-best-practices.org, on the Netlify deploy previews and in a local preview.
+netlify.toml installs what CI installs for the same reason.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Say nothing when the redirects are written
+
+A successful build has no use for a line about how many redirect files it produced, and the failure paths carry their explanation in the SystemExit they already raise.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Explain why the dimensionality reduction chapter does not scale genes (#473)
+
+Readers coming from tutorials that z-score genes before PCA have been asking why this chapter does not, and the chapter never said.
+The answer promised in #185 is now a dropdown next to the PCA section: what scaling changes, why we keep expression magnitude as a proxy for how informative a gene is, that the field has no consensus, and that centering is a separate matter that sc.pp.pca handles on its own.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Address the prose review points on the quality control chapter (#474)
+
+From the review in #248, the items that do not change any results.
+The mitochondrial section now says that matching a gene symbol prefix is one option among several, and says why ribosomal and hemoglobin genes are computed at all given that nothing downstream filters on them.
+The ambient RNA section opens by saying that the step is neither part of every analysis nor applicable outside droplet-based protocols, which is what made its presence in this chapter confusing.
+
+The clustering chapter is now linked at both points where the text refers to it, the metric that is counts is no longer called reads, and pct_counts_Mt is spelled the way the column actually is.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Fix the toy dataset download in the raw data processing chapter (#476)
+
+The umd.box.com/shared/static link now redirects to a share page and answers 400, so the wget in the chapter piped an error page into tar and the tutorial could not be started.
+The file itself is still there under the same shared name, and Box serves it from its download endpoint, which is what the chapter now points at.
+
+Verified by running the chapter's command verbatim: it fetches 54 MB and unpacks to toy_human_ref and toy_read_fastq, as the following lines expect.
+The URL is quoted since it carries query parameters, which the shell would otherwise split on.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Stop presenting an underflowed p-value as a p-value of zero (#477)
+
+The chapter introduced two genes as having corrected p-values of 0.0, which a p-value cannot be.
+Squidpy computes them analytically under a normality assumption, and for these genes the result is smaller than the smallest positive double, so the table shows the underflow rather than the value.
+
+The text now says so, and points at n_perms as the alternative, where the number of permutations bounds how small a reported p-value can get.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Explain the negative binomial in the scRNA-seq chapter (#478)
+
+The chapter stated that transcription is modelled with a negative binomial and that it captures overdispersion, without saying why a Poisson does not do.
+The dropdown gives the reason, the gamma mixture that produces the distribution, and a worked example of the spread a dispersion parameter has to absorb.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Hide noisy cell output and explain five core concepts (#479)
+
+Session info dumps, R console chatter, progress bars, training logs, download logs and deprecation warnings ran to hundreds of lines in places, pushing the content of a chapter off the screen.
+58 such cells across 21 notebooks are tagged hide-output, which puts the output behind a toggle rather than removing it.
+Cells whose noise wraps a real result are left alone, since the tag hides everything a cell emits, and plots are untouched throughout.
+One cell had spelled the tag hide_output, which jupyter-book does not recognise.
+
+Five chapters named a core concept and moved on, so each gains a dropdown: deviance in feature selection, why ADT counts are compositional, the mixture model behind bulk deconvolution, what unspliced counts contribute to RNA velocity, and what the neighborhood enrichment permutation test holds fixed.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Ship the sidebar expanded instead of expanding it after load (#482)
+
+Every section of the table of contents was opened by clicking its chevron from a script appended to the client bundle, which can only run once the page is up.
+A reader therefore got the collapsed sidebar the theme prerenders, watched it expand section by section, and saw it happen again on every navigation.
+
+The theme is patched before the build instead, in both the bundle that prerenders a page and the bundle that hydrates it, so a section starts open and the sidebar in the initial payload is the one the reader ends up with.
+The patch also drops the effect that reopens the current section and closes the rest whenever a navigation settles, so a section a reader collapses stays collapsed.
+
+The theme animates an open section from no height to its full height whenever the browser lays it out, page load included, which would play the very animation the prerendered sections avoid, so the sections of the table of contents change height without one.
+
+What is left of the old script is the part that scrolls the sidebar to the chapter being read, which the expanded tree still needs.
+
+Closes #481
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Point the liana intersphinx inventory at its new docs domain (#485)
+
+The liana docs moved from liana-py.readthedocs.io to liana.readthedocs.io, and the old domain redirects every path to the new homepage.
+Fetching objects.inv therefore returned HTML, which the MyST build tries to parse as JSON, so `jupyter book build --html` aborted before rendering a single page.
+
+Verified with a full local build on jupyter-book 2.1.6.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Expand the table of contents with book-theme 1.4 (#486)
+
+The build downloads the book-theme from the tip of its main branch, and 1.4.0 rewrote the effect that restores a section's open state after navigation.
+It now recomputes whether the section is current inline and also reruns when the pathname changes, so the pattern in expand_toc.py matched nothing and the script stopped the build before any page was rendered.
+
+The pattern now accepts any call in that effect and any extra dependencies, which matches both the 1.3 and the 1.4 bundles.
+Verified that it patches exactly one server and one client bundle in both, and that a full `make build` against a fresh 1.4.1 download succeeds with the sidebar prerendered open.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Link the Simplified Chinese translation from the landing page (#484)
+
+A community-maintained Simplified Chinese translation of the book now tracks the Jupyter Book v2 site, and Chinese-speaking readers who land on the English version had no way of finding it.
+A tip titled 中文版 directly under the book title links to it, so the Chinese characters catch the eye before any English prose.
+
+The full build could not be verified locally because an external intersphinx inventory returned HTML; the landing page was built on its own with jupyter-book 2.1.6 and renders the tip with the link.
+
+Closes #447
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Group the RNA chapters under one RNA header in the table of contents (#487)
+
+Every other modality has a single top-level header, while the RNA chapters were spread over six top-level groups from preprocessing to deconvolution, so the sidebar did not show that they belong to one modality.
+Those six groups now sit under one RNA header, keeping their own titles as subgroups.
+
+Chapter routes come from file paths, so no URL changes and the legacy redirects are unaffected.
+The introduction stays a top-level group, since most of its chapters are about the book and its data structures rather than RNA.
+
+Verified with a full `make build` and a screenshot of the sidebar.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Shrink the cover in the README (#488)
+
+The cover is a portrait A4 page, so rendered at the full width of the README it was about 1,170 pixels tall and pushed everything else below the fold.
+It is now 300 pixels wide and centered, which Markdown image syntax cannot express, hence the HTML tag.
+
+Checked with GitHub's Markdown renderer that the width and alignment survive sanitization.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Revise quality control and embeddings, and rerun preprocessing on current scverse (#489)
+
+* Revise quality control and embeddings, and rerun preprocessing on current scverse
+
+Quality control filtered both ends of every metric and computed MADs on the raw mitochondrial percentage, which is bounded and skewed.
+Only the end that marks low quality is filtered now, the mitochondrial fraction is logit-transformed first, and the thresholds are drawn into the distributions before any cell is removed.
+The chapter also says that ambient RNA correction and doublet detection run per sample, that the order of the two is unsettled according to the scDblFinder documentation, links the chapters it refers to, and no longer loads Seurat, which it never used and its environment does not provide.
+Not filtering high count depth keeps 15,771 instead of 14,814 cells.
+
+Dimensionality reduction claimed that UMAP preserves global structure better than t-SNE.
+A short section now explains what t-SNE and UMAP distances mean, citing Kobak & Linderman, Böhm et al. and Chari & Pachter, and compares both methods from informative and random initializations on this dataset.
+Neighbor preservation and distance correlation show that no two-dimensional embedding keeps the neighborhoods, and that a single random start rearranges clusters without changing either number much, so the text only claims the rearrangement.
+DecontX from #84 is not added because it is R-only.
+
+The shared environment moves to scanpy 1.12.4, Python 3.13, R 4.5.3 with Bioconductor 3.21, rpy2 3.6.8 and lamindb 2.10.0, adds ipykernel like the other chapter environments, and drops the lamindb extras that 2.10 no longer provides.
+All four chapters were rerun in order from an environment created from that file, each saving a new artifact version that the next one loads, and deprecated calls flagged by scanpy 1.12 and lamindb were updated.
+rpy2 3.6 prints R console output that 3.5 swallowed, so the R cells that showed no output before are tagged hide-output.
+No other chapter loads these artifacts; clustering starts from a separately built cellular_structure/s4d8_subset.h5ad.
+
+Closes #84
+Closes #248
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Compare embeddings with scanpy alone
+
+The comparison ran t-SNE from a random start through scikit-learn, found nearest neighbors with scikit-learn and correlated pairwise distances with scipy, none of which the rest of the chapter uses.
+It now computes the neighborhood graph of every embedding with sc.pp.neighbors on a separate AnnData, so the chapter's object stays as before, and reports which fraction of the neighbors in the 50 principal components each embedding keeps.
+scanpy does not expose the t-SNE initialization, so only UMAP is shown from a spectral and a random start.
+The distance correlation is dropped with it; the figure already shows how the initialization rearranges the clusters, while the neighbors stay the same.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Require both mitochondrial criteria instead of either
+
+The 8 % cutoff comes from Germain et al., who flag a cell only if its mitochondrial fraction is both a MAD outlier and above 8 %, while the chapter flagged cells meeting either.
+On this dataset the MAD threshold lies below 8 %, so with either the fixed cutoff never mattered, and with both it decides which cells are filtered.
+This keeps 16,040 instead of 15,771 cells, in line with the permissive filtering the chapter argues for, and the text notes that 8 % is not universal since mitochondrial content differs between cell types and tissues.
+
+All four preprocessing chapters were rerun so every chapter sees the new cells.
+This supersedes #475, whose one-sided filtering of the mitochondrial fraction is already part of this branch.
+
+Closes #170
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Filter depth in both directions and fold the embedding section into a dropdown
+
+Filtering count depth and the number of genes only from below let cells with up to 60,000 counts through, which moved the distributions far from the published ones.
+These metrics and the fraction of counts in the top 20 genes are filtered in both directions again, as #475 proposed, and only the mitochondrial fraction is filtered from above, which keeps 15,998 cells.
+
+The remaining large change in the outputs is scran.
+#428 switched computeSumFactors from log-normalized values to raw counts but never reran the chapter, so the published size factors lay between 0.23 and 1.6 and barely normalized count depth, and PC1 of the dimensionality reduction chapter was essentially count depth.
+With raw counts, the size factors follow count depth with a Spearman correlation of 0.996, and the scran-normalized distribution, the PCA and the embeddings change accordingly.
+Quality control, the shifted logarithm and the Pearson residuals, which do not depend on scran, look as before.
+
+The t-SNE and UMAP explanation now sits in a dropdown that embeds its code cells, which are removed from the main flow, and the neighbor graphs of the embeddings are computed on a separate AnnData so the chapter's object stays as before.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Say in which sense t-SNE and UMAP are equivalent
+
+The chapter called both methods close to equivalent with informative initializations, while its own table shows t-SNE keeping 0.25 and UMAP 0.11 of the nearest neighbors.
+Kobak & Linderman's equivalence concerns how the data is arranged, and Böhm et al. explain the lower neighbor preservation of UMAP with its stronger attraction, so the text now says both.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Move the QC threshold plot into a dropdown
+
+The plot that draws the MAD thresholds into each distribution took a block of matplotlib and seaborn code in the middle of the filtering section.
+It now sits in a dropdown that embeds the removed plotting cell, while the thresholds themselves are defined in the cell that computes the outlier flags, since the filtering depends on them.
+The four preprocessing chapters were rerun so their outputs follow the new cell order.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Point to batch-aware deviance in feature selection (#490)
+
+The chapter selects highly deviant genes on a single sample and never says what to do with several batches.
+scry's devianceFeatureSelection takes a batch argument that fits the null model within each batch, so genes that merely differ between batches are not ranked as deviant, and the chapter now mentions it where deviance is computed.
+
+Closes #221
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Link UMAP, t-SNE and four more glossary terms across the book (#491)
+
+UMAP, t-SNE, PyPI, sequencing depth, differential abundance analysis and high-dimensional data came up in many chapters without a glossary entry to point readers to.
+Each now has a short definition in the glossary, and every chapter that uses one of them links its first mention in the prose.
+Where a chapter says count depth, the link goes to sequencing depth, which the definition names as a synonym.
+
+Two mentions are left unlinked on purpose: the NVIDIA package index in the GPU chapter is not PyPI itself, and interoperability only mentions PyPI inside a URL.
+Figure captions and headings are not linked either.
+
+Closes #407
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Hide the remaining noisy cell output (#492)
+
+78 such cells across 30 notebooks are now tagged hide-output, which keeps the output behind a toggle rather than removing it.
+Cells whose logs wrap a result the text relies on, such as scib metrics after their progress lines, a threshold printed after R warnings or a table following a tool message, are left alone because the tag hides everything a cell emits, and plots are untouched.
+Printed objects the chapters show on purpose, such as Seurat objects, AnnData summaries and scvi-tools setup views, stay visible.
+The clustering and annotation chapters are left out because they are about to be rerun for the broken scran layer in their input, and their noisy cells are best tagged with that rerun.
+
+Closes #299
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Say which QC steps apply to plate-based protocols (#493)
+
+The quality control chapter is written for droplet-based data and a reader with Smart-seq2 data asked whether ambient RNA correction and doublet detection apply to them.
+Ambient RNA correction relies on empty droplets and doublets are much rarer when cells are sorted into separate wells, while filtering low quality cells applies regardless, and the doublet section now says so.
+
+Closes #273
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Rewrite the gene regulatory network chapter around decoupler and CollecTRI (#495)
+
+The chapter read the NeurIPS data from a local path, converted it to loom files, called pySCENIC through the shell after downloading its databases with wget, and ran in a Python 3.9 environment with numpy pinned for loompy; pySCENIC and arboreto have not been released since 2022 and 2021.
+It now loads sample site4-donor8 of the NeurIPS dataset and the CollecTRI network from lamindb and stays in Python and scverse tooling throughout.
+
+The chapter explains the three ways of obtaining a network, from expression alone, with chromatin accessibility, and from prior knowledge, and why benchmarks favour estimating TF activities from a prior-knowledge network over inferring one de novo (Pratapa et al., and the GRETA preprint by Badia-i-Mompel et al.).
+It then infers TF activities per cell with decoupler's univariate linear model, ranks the TFs that characterise each curated cell type, and plots the PAX5 and EBF1 regulons.
+The top TFs recover known regulators such as PAX5 and EBF1 in B cells, GATA1 and NFE2 in erythroid cells, HOXA9 and MECOM in HSCs and XBP1 in plasma cells, and the text points out the less specific hits.
+
+The environment moves to Python 3.13, scanpy 1.12.4 and decoupler 2.2.0 and is added to the environment CI, which did not build it before.
+The quiz keeps the theory cards and replaces the pySCENIC questions with questions on TF activity inference.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Connect to lamindb and track notebooks the same way in every chapter (#496)
+
+Chapters set up lamindb in three different ways: some asserted that the default instance was theislab/sc-best-practices, some connected explicitly, some did neither, and most called ln.track() without a uid.
+Without a uid, lamindb identifies a notebook by its file name, so the surface protein chapters quality_control, normalization, dimensionality_reduction and annotation were tracked as the RNA chapters of the same name and their runs were attached to the wrong transforms.
+
+Every chapter's setup cell now ends with ln.connect(""theislab/sc-best-practices"") followed by ln.track with the notebook's own uid, taken from its previous tracking output, and keeps its hide-output tag, so the code stays visible and only the lamindb messages are collapsed.
+The four surface protein chapters get new uids, so their next runs create their own transforms.
+Only the source of these setup cells changes; the notebooks were not rerun, since the setup output is collapsed and nothing else depends on it.
+
+The chapter template and the contributing guide now describe the same setup cell, and the guide installs plain lamindb, whose 2.x releases dropped the bionty, jupyter and zarr extras.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Cluster and annotate the preprocessed sample instead of a broken subset (#494)
+
+* Cluster and annotate the preprocessed sample instead of a broken subset
+
+Clustering started from cellular_structure/s4d8_subset.h5ad, which was built outside the repository by a notebook that was never saved.
+Its counts layer held already depth-normalized, non-integer values, and its scran layer divided those by size factors squeezed into 0.44 to 1.65, so the normalized depth correlated negatively with the cells' count depth.
+Annotation ran its marker genes and differential expression on that layer and handed the same fake counts to CellTypist and to the scArches mapping.
+
+Clustering now loads the output of the dimensionality reduction chapter, keeps the cells scDblFinder called singlets, drops the representations computed with the doublets and recomputes the principal components, so preprocessing, clustering and annotation form one chain in the book.
+
+Annotation needed several fixes on top.
+It stored .X as the counts layer, which with the new input would have replaced the raw counts with normalized values, and CellTypist normalized the counts layer in place, because assigning a layer to .X does not copy it, so the mapping received log-normalized values as counts.
+The reference features were read without their index, the batch the reference model expects was missing, and gene identifiers are called gene_ids in the preprocessing output.
+The notebook also hid every warning, because celltypist switches them off on import, and its scvi query training was not seeded.
+
+The Leiden clusters of the annotation chapter were checked against the curated NeurIPS labels of the same cells, CellTypist, the reference mapping and the chapter's own markers, which agree that cluster 11 holds naive CD20+ B cells, cluster 12 transitional B cells and cluster 1 NK cells, and the text and manual annotation now name those clusters.
+
+The clustering environment moves to scanpy 1.12.4 and adds ipywidgets, and both environments pin lamindb 2.10.0, since 2.9.2 was yanked.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Connect to lamindb explicitly in the clustering chapter
+
+The clustering chapter asserted the default lamindb instance instead of connecting to it, unlike the chapters that follow the book's current setup cell.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Rewrite the chromatin accessibility section around SnapATAC2 (#497)
+
+The section taught an outdated muon/Signac workflow on a subset whose
+fragments are not available, needed R for its GRN chapter, had no conda
+environment, and stopped after quality control.
+It now runs end to end in Python on the 10x PBMC 10k multiome data that
+the advanced data structures chapter already stores in lamindb.
+
+SnapATAC2 replaces muon and Signac because it was among the most
+accurate and the fastest pipelines in the published benchmark by Luo et
+al. (Genome Biology 2024), which also backs the choice of 500 bp tiles,
+about 200,000 features and spectral embedding over LSI.
+Quality control follows De Rop et al. (Nature Biotechnology 2024):
+thresholds on fragments and TSS enrichment chosen from their joint
+distribution, followed by Scrublet-style doublet removal.
+The removed nucleosome signal section held the wrong recommendation
+about `n` from #288.
+
+Two chapters are new: dimensionality reduction and clustering with
+gene-activity-based annotation, and peak calling per cell type with
+MACS3 followed by CIS-BP motif enrichment.
+The ATAC cluster labels were checked against CellTypist labels predicted
+from the paired RNA of the same cells, and every cluster agrees with 77
+to 100% of its cells.
+The motif enrichment recovers the known regulators of each cell type,
+from CEBP in CD14+ monocytes and T-box in NK cells to OCT2/OBF1 in B
+cells and E-box motifs in pDCs.
+The GRN chapter links regions to genes and TFs to regions with SnapATAC2
+and compares the result to CollecTRI; only 4 of 115 links are known,
+which the chapter presents as the expected state of the art per GRETA
+rather than hiding it.
+
+The introduction drops the framework comparison figures, which listed
+features that no longer hold, and cites the published versions of
+Martens et al., Miao and Kim, Signac and muon instead of preprints.
+muon_to_seurat.ipynb and resources/celltype_markers.ipynb are removed:
+interoperability covers the conversion, and the markers now live in the
+clustering chapter.
+
+scripts/chromatin_accessibility uploads the GENCODE v41 annotation and
+genome and the CIS-BP motifs that SnapATAC2 uses by default, so every
+chapter reads the same references from lamindb.
+The genome is stored uncompressed because pyfaidx has no block index for
+BGZF and motif scanning took over 30 minutes instead of 2.
+
+pychromVAR is mentioned but not used, since it is unpublished and has
+not been released since February 2023.
+
+Closes #286, closes #288, closes #304, closes #389.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Rewrite the adaptive immune receptor section around scirpy 0.25 (#498)
+
+The chapters ran on data behind personal cluster paths, used the scirpy
+API from before v0.13, called TCRMatch, ERGO-II, TESSA, CoNGA, mvTCR and
+Benisse through shell commands that nobody could reproduce, had no
+environment and still contained TODOs.
+They now run end to end in one environment on data stored in lamindb.
+
+The dataset is the Cambridge day-0 subset of Stephenson et al. 2021
+(46 donors, 104,492 cells) with raw counts and TCR contigs from
+E-MTAB-10026 and the IgBLAST re-annotated BCRs with germline alignments
+of the Clatworthy lab.
+CV0198 is excluded because 98% of their cells belong to a malignant B
+cell clone.
+scripts/air_repertoire builds the MuData and stores it together with a
+pinned VDJdb release (IggyTop data-2026.09.28.152145, alleles removed to
+match Cell Ranger gene names) and the CoV-AbDab release of 8 Feb 2024.
+
+Chapter content follows the published evidence gathered for this
+rewrite: Cell Ranger plus IgBLAST re-annotation for 10x data, TRUST4 and
+MiXCR for reconstruction from expression (Tian 2025, Andreani 2022),
+exact nucleotide TCR clonotypes and V/J/length-constrained Hamming
+clustering for BCRs (Gupta 2017, Balashova 2024), evenness instead of
+richness for diversity (Mika 2025), TCRdist for similarity (Hudson 2024,
+Nagano 2025), and no ML epitope prediction because unseen epitopes are
+close to random (IMMREP22/23, Drost 2025, Lu 2026).
+Joint embeddings are described but not run: none has an independent
+benchmark, and mvTCR pins scanpy 1.9 and scirpy 0.13.
+
+Results were checked against the transcriptome rather than asserted:
+69% of MAIT cells use TRAV1-2, 70% of terminal effector CD8+ T cells
+are clonally expanded, naive B cells are unmutated and plasma cells
+class-switched.
+The specificity chapter uses the same data to show the limits of
+database queries: cells matching MHC class I epitopes are mostly CD4+
+T cells, and SARS-CoV-2 matches are as frequent in healthy donors as in
+patients, whereas CMV matches are enriched in expanded clonotypes.
+
+CoV-AbDab is compared on CDR3 rather than on junctions constructed by
+adding anchor residues, which fixes #258.
+ir_query_annotate's suffix argument has been a no-op since scirpy 0.13,
+so the chapter uses inplace=False for the intermediate query.
+The last TODO elsewhere in the book, a stale comment in
+paired_integration, is removed as well.
+
+Closes #94, closes #195, closes #219, closes #249, closes #258,
+closes #395, closes #439.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Explain how to integrate tumor samples (#499)
+
+Malignant cells form patient-specific clusters that mostly reflect real
+biology, so treating each patient as a batch can erase exactly the signal
+cancer studies care about. The integration chapter had no guidance on this,
+as raised in #450 with reference to Tirosh's pitfalls review.
+
+Add a short admonition next to the UMI/full-length one recommending to
+separate malignant cells via CNV inference, integrate only non-malignant
+cells, and check results on malignant cells without batch correction.
+Cites Tirosh 2016 (Science), Gao 2021 (CopyKAT, Nat Biotechnol) and
+Tirosh 2026 (Neuro-Oncol Adv); DOIs verified via Crossref.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Show the new pertpy DGE plots in the differential expression chapter (#500)
+
+pertpy gained plot_disp_ests (DESeq2 plotDispEsts), plot_ma (plotMA/plotSmear)
+and a padj_threshold for plot_fold_change after this chapter was written,
+all motivated by it.
+The dispersion plot is the missing model QC step between fitting and testing,
+the MA plot complements the volcano plot by showing fold changes against
+expression strength, and padj_threshold replaces the manual filtering of the
+results table.
+The volcano call now uses log2fc_threshold, which also drops a deprecation
+warning that leaked a local path into the stored output.
+
+plot_ma first shipped in pertpy 1.2.0, so the env is bumped from 1.1.1.
+The chapter was re-executed; results of unchanged cells only differ in the
+last digits of the PyDESeq2 statistics.
+The dispersion trend is flat because PyDESeq2's parametric fit fails on the
+CD14+ monocyte pseudobulks and falls back to the mean dispersion, which the
+text now states.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Add a pull request template with a contribution checklist (#501)
+
+* Add a pull request template with a contribution checklist
+
+Contributors regularly miss repo-specific steps such as re-executing the
+chapter in its own environment, tracking data with lamindb, registering
+new environments in the build workflow, or adding DOIs to citations.
+A PR template surfaces these at the moment a PR is opened instead of in
+review, and is preferred over a bot comment as discussed in #373.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* improve
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Add GSEA figure (#463)
+
+* add gsea figure
+
+* final fixes
+
+* final figure
+
+* Match the sidebar code of the updated book theme when expanding the TOC
+
+The book theme now recomputes whether a section is open after each
+navigation and also reruns that effect when the path changes, so the
+pattern in expand_toc.py stopped matching and the build failed.
+The pattern now accepts both the old and the new form.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+* Point the liana reference at its new docs domain
+
+liana-py.readthedocs.io now redirects every path, objects.inv included,
+to the HTML home page of liana.readthedocs.io, so MyST tried to parse
+HTML as JSON and the build failed.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+---------
+
+Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Show dropdown content in the PDF (#502)
+
+myst-to-tex has no handler for details, card, grid or tab nodes, so every dropdown and everything inside it was dropped from the PDF.
+A MyST plugin now rewrites dropdowns into admonitions and unwraps cards and tabs, but only when building --pdf or --tex, so the HTML site keeps its collapsible dropdowns.
+The PDF job also inserts the key takeaways, environment and lamindb dropdowns first, which it previously skipped.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Group acknowledgements, glossary and changelog under Appendix (#503)
+
+The table of contents ended in three top-level sections that each held
+a single page of back matter, which made them look like chapters of the
+book.
+Grouping them under one Appendix section separates them from the
+content while keeping every page at its current URL, since routes
+derive from file paths and not from section titles.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Restore the reverted GRN rewrite and match environment files to chapters (#506)
+
+#496 was merged one minute after #495 from a branch that predated it,
+so its squash merge put back the pySCENIC version of the gene regulatory
+network chapter together with its Python 3.9 environment and removed the
+new environment from the CI matrix.
+The chapter shown on the site therefore again read data from a local
+path and showed an environment that no longer resolves.
+This restores the notebook, bibliography, environment and key takeaways
+of #495, builds the environment in CI again, and enables the lamindb
+dropdown for the chapter, which now loads its data from the instance.
+
+An audit of every chapter's imports against the environment its
+dropdown shows found one more gap: the cell-cell communication chapter
+imports session_info, which none of its dependencies pull in, so the
+package is now listed.
+The other imports that are not listed explicitly (spatialdata and
+spatialdata-plot via squidpy, NaiveDE via SpatialDE) are dependencies of
+listed packages.
+Every chapter in the table of contents now resolves to an environment
+file, apart from bulk deconvolution, which is being reworked separately.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Bring the contributing guide in line with the current build setup (#507)
+
+The guide still described the Sphinx-era layout with _toc.yml and
+_config.yml, linked an environment file on a development branch that no
+longer exists, told contributors to run plain `make` (which starts the
+preview server), named the wrong file for the dropdown blacklists, had
+a typo in the build workflow path, and documented pre-commit although CI
+runs prek.
+It also never said that chapters may share a section environment or
+that every environment file must be added to the environment CI, which
+is how the missing environments of #336 went unnoticed.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Discuss LLM and foundation model annotation in the annotation chapter (#508)
+
+Readers increasingly ask whether LLM-based annotation tools or single-cell
+foundation models should replace the approaches in this chapter (#354).
+Peer-reviewed benchmarks show LLMs label major cell types well from cluster
+markers, but agreement drops for subtypes, varies strongly between models and
+depends on how markers are selected, and the training data behind the labels
+cannot be verified.
+Independent evaluations found zero-shot foundation model embeddings
+(Kedzierska et al. 2025) and a fine-tuned foundation model (Boiarsky et al.
+2024) not better than simple baselines.
+The new subsection therefore frames both as an optional first pass and keeps
+reference-based and marker-based annotation as the recommendation, without
+endorsing any specific tool or LLM provider since no independent tool
+benchmarks exist yet.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Rewrite the perturbation modeling chapter around current screen analysis (#505)
+
+* Rewrite the perturbation modeling chapter around current screen analysis
+
+The chapter taught Augur on the Kang interferon data, scGen response
+prediction and Mixscape with the pertpy 1.0 API, none of which matches
+how perturbation screens are analysed today, and it did not use lamindb.
+It now follows the workflow of pooled CRISPR screens with pertpy 1.3 on
+two screens that scripts/conditions/perturbation_modeling_dataset.ipynb
+stores in lamindb: Papalexi 2021 (ECCITE-seq, PD-L1 regulators) and
+Replogle 2022 (K562 essential genes, capped at 50 cells per perturbation
+to keep memory low).
+
+The chapter assigns guides (matching the published calls for every
+cell), identifies perturbed cells with Mixscape and validates them with
+PD-L1 protein, tests differential expression on replicate pseudobulks
+with PyDESeq2, quantifies and tests perturbation effects with the
+E-distance and E-test, and clusters the 200 strongest perturbations,
+which recovers ribosomal, spliceosome, exosome, proteasome, Mediator,
+Integrator, PAF1 and tRNA-synthetase/ISR modules.
+Response prediction is covered in prose only: recent independent
+benchmarks (Ahlmann-Eltze 2025, Csendes 2025, Kernfeld 2025, Wei 2026,
+Vinas Torne 2026) show that deep and foundation models do not beat
+simple baselines, so running scGen as a best-practice example would
+mislead.
+
+Augur and multicellular programs (#160) were left out: both concern
+multi-sample condition data rather than screens.
+pertpy's nearest_perturbations fails when a neighbor graph already
+exists in obsp and Mixscape.plot_barplot overlaps its legends, so the
+chapter uses leiden clusters and a table instead.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Silence the PyDESeq2 residual degrees of freedom warning
+
+The pseudobulk design has three replicates per group, so PyDESeq2 warns
+that the dispersion prior rests on few degrees of freedom. The chapter
+already states this limitation in the text below the volcano plot.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Rewrite the multimodal integration chapters in Python with public data (#504)
+
+* Rewrite the multimodal integration chapters in Python with public data
+
+Both chapters loaded their data from personal cluster paths, ran WNN
+and bridge integration through R, scored methods with the deprecated
+scib package, used multigrate from a git branch, and could not be
+reproduced by readers.
+They now run end to end in one Python environment on the NeurIPS 2021
+bone marrow CITE-seq and Multiome data, which
+scripts/multimodal_integration uploads from GEO (GSE194122) to lamindb
+together with the GENCODE v41 GTF that GLUE needs.
+
+Method choices follow the independent benchmarks of Hu 2024, Fu 2025
+and Liu 2025 (Nature Methods): WNN via muon as the paired baseline,
+totalVI for CITE-seq, MultiVI for Multiome and mosaic data, GLUE for
+unpaired RNA and ATAC, and totalVI with scArches surgery for reference
+mapping.
+MOFA+ stays for its interpretable factors.
+Embeddings are scored with scib-metrics (BRAS instead of silhouette
+batch) against the unimodal embeddings, which makes the gain of each
+method visible.
+The advanced chapter holds out a modality or part of the data in every
+example, so GLUE's label transfer (82% lineage, 63% fine types),
+totalVI's protein imputation (median Spearman 0.37) and the incomplete
+dataset mixing of mosaic MultiVI are all checked against measurements.
+
+multigrate was dropped: 1.0.1 fails with anndata 0.13, and after
+pinning anndata 0.12 it did not mix the CITE-seq and Multiome cells at
+all in this setting, while MultiVI covers the same trimodal case.
+Seurat bridge integration, MIDAS and StabMap are mentioned with their
+benchmark results but not run, since bridge is R-only and MIDAS pins
+anndata < 0.13 and mudata < 0.4.
+pandas is pinned to 2.3 because scglue 0.4.1 writes into a read-only
+array under pandas 3 copy-on-write.
+
+The per-chapter environments are replaced by one section environment.
+
+Closes #208 items ""Multimodal paired"" and ""Multimodal advanced"".
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* Drop the pandas pin from the multimodal environment and silence warnings
+
+scglue 0.4.1 divides a read-only Series.to_numpy() result in place in
+estimate_balancing_weight, which fails under pandas 3 copy-on-write
+(reported as gao-lab/GLUE#140). Instead of pinning pandas < 3, the GLUE
+fit patches Series.to_numpy to return a copy for the duration of the
+call, which keeps the balancing step. Skipping balancing instead lowered
+label transfer from 82% to 76% (lineage) and from 63% to 58% (fine).
+
+The ADT matrix is converted to CSC before CLR, warnings are filtered
+before the imports as in the surface protein chapters, and the jax
+logger is set to ERROR to drop the CUDA jaxlib message. Both chapters
+were rerun under pandas 3.0.6; GLUE fine-level accuracy is now 64% and
+the median totalVI protein correlation 0.34.
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+
+* ccc
+
+* fix ruff style
+
+* removing nichenet and luiz comments
+
+* RLuiz: solving warnings
+
+* setting versions and checking libraries
+
+* fixing order and laminid
+
+* minor fix CCC
+
+* remove comments and fix caption
+
+* updated env CCC
+
+* update python version
+
+* prek
+
+* add lr to glossary
+
+* add cross reference
+
+* small changes to text
+
+* fixing headers and environment
+
+* remove warning
+
+---------
+
+Signed-off-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Gaia Tussardi <gaiatussardi@gmail.com>
+Co-authored-by: LuisHeinzlmeier <luis.heinzlmeier@tum.de>
+Co-authored-by: Lukas Heumos <lukas.heumos@posteo.net>
+Co-authored-by: Luis <ge34lah@mytum.de>
+Co-authored-by: seo <159482645+seohyonkim@users.noreply.github.com>
+Co-authored-by: ArchKudo <ArchKudo@users.noreply.github.com>
+Co-authored-by: Javier Marchena-Hurtado <54844846+javier-marchena-hurtado@users.noreply.github.com>
+Co-authored-by: Intron7 <severin.dicks@icloud.com>
+Co-authored-by: matthiaspeterhans <matthias.peterhans@hotmail.ch>
+Co-authored-by: Chloe <53854936+Chloe-Shen@users.noreply.github.com>
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+Co-authored-by: giuliacesaro <giuliacesaro807@yahoo.com>
+Co-authored-by: jsnagai <james.nagai@gmail.com>
+Co-authored-by: James Nagai <james.nagai@rwth-aachen.de>",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37757519901) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37757519858) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37757519871) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37757519872) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/37757519862)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,343,12,40,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,f13e210e60fb3a0b6fc1678916eaf630bb3ee34f,"adding scprint-2 (#90)
 
 * adding scprint-2 and scprint
@@ -420,7 +1729,7 @@ Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
 Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
 Co-authored-by: Artur Szalata <arturs6668@gmail.com>
 Co-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",[![](https://github.com/theislab/single-cell-transformer-papers/workflows/Document%20Generation/badge.svg)](https://github.com/theislab/single-cell-transformer-papers/actions/runs/31963310077)
-theislab,single-cell-tutorial,theislab/single-cell-tutorial,1598,48,22,491,FALSE,https://github.com/theislab/single-cell-tutorial,NA,NA,NA
+theislab,single-cell-tutorial,theislab/single-cell-tutorial,1597,48,22,491,FALSE,https://github.com/theislab/single-cell-tutorial,NA,NA,NA
 theislab,singlecell_proteomics,theislab/singlecell_proteomics,6,3,6,2,FALSE,https://github.com/theislab/singlecell_proteomics,NA,NA,NA
 theislab,spapros,theislab/spapros,51,2,19,10,FALSE,https://github.com/theislab/spapros,88f18b0291f4e98482a3022edc270ed9644c37d9,Merge pull request #409 from theislab/main_bump_python,[![](https://github.com/theislab/spapros/workflows/Build%20spapros%20Package/badge.svg)](https://github.com/theislab/spapros/actions/runs/19195785015) [![](https://github.com/theislab/spapros/workflows/Labeler/badge.svg)](https://github.com/theislab/spapros/actions/runs/19195752648) [![](https://github.com/theislab/spapros/workflows/Build%20Documentation/badge.svg)](https://github.com/theislab/spapros/actions/runs/19195785011) [![](https://github.com/theislab/spapros/workflows/Run%20spapros%20Tests/badge.svg)](https://github.com/theislab/spapros/actions/runs/19195785013) [![](https://github.com/theislab/spapros/workflows/cookietemple%20sync/badge.svg)](https://github.com/theislab/spapros/actions/runs/19317505304)
 theislab,spapros-pipeline,theislab/spapros-pipeline,6,0,0,0,FALSE,https://github.com/theislab/spapros-pipeline,NA,NA,NA
@@ -429,11 +1738,41 @@ theislab,spapros_reproducibility,theislab/spapros_reproducibility,3,0,0,1,FALSE,
 theislab,spatial_atlas_ssl,theislab/spatial_atlas_ssl,5,1,0,0,FALSE,https://github.com/theislab/spatial_atlas_ssl,NA,NA,NA
 theislab,spatial_pancreas,theislab/spatial_pancreas,0,1,0,0,FALSE,https://github.com/theislab/spatial_pancreas,NA,NA,NA
 theislab,spatial_scog_workshop_2022,theislab/spatial_scog_workshop_2022,54,7,0,26,FALSE,https://github.com/theislab/spatial_scog_workshop_2022,NA,NA,NA
-theislab,spatialdata-db-client,theislab/spatialdata-db-client,0,0,0,0,FALSE,https://github.com/theislab/spatialdata-db-client,ee343999e7dceb332ad87799af68cdc1b552ddc9,"ci: trigger website rebuild on catalog release (#11)
+theislab,spatialdata-db-client,theislab/spatialdata-db-client,0,0,1,0,FALSE,https://github.com/theislab/spatialdata-db-client,7bef3532b74f2d7c50abc88bb75420890ac9525d,"feat: reproducible cohort layer (SpatialDataCohort → freeze → split → build) (#12)
 
-On a published catalog release, ping a Cloudflare Pages deploy hook so the site's
-prebuild re-fetches the release and flips to the new data. No-ops until the
-CLOUDFLARE_DEPLOY_HOOK secret is set; workflow_dispatch for manual/same-day rebuilds.",[![](https://github.com/theislab/spatialdata-db-client/workflows/Test/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/37480192988)
+* docs: cohort-layer spec + implementation plan
+
+* refactor: rename Results -> SpatialDataCohort, move to cohort.py
+
+* feat(cohort): inspection (groupby/modalities/licenses/coverage/summary)
+
+* docs: C0 spike — lamin version pinning + zarr_url mutability findings
+
+* feat(objectmeta): metadata-only fetch + fingerprint (all-or-nothing)
+
+* fix(objectmeta): propagate root-attr read errors; add e2e provenance + order tests
+
+* feat(freeze): FrozenCohort + deterministic hash + write/load + cohort.freeze()
+
+* fix(cohort): slice keeps parent filter; document freeze filter semantics
+
+* feat(freeze): verify-on-read drift detection (CohortDriftError)
+
+* feat(concat): lazy per-cohort table concat -> AnnData
+
+* feat(split): deterministic group-safe SplitManifest + small-cohort guard
+
+* fix(split): validate by/ratios/mode; label-based group keys
+
+* feat(adapter): TaskAdapter protocol, two-tier check, build+provenance
+
+* test(adapter): pin verify-before-open ordering; document materialize
+
+* docs: query -> freeze -> split -> build cohort tutorial
+
+* fix: final-review wave — docs exclude, public re-exports, split signature, provenance
+
+* chore: keep internal planning docs out of version control",[![](https://github.com/theislab/spatialdata-db-client/workflows/Test/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/37712779090)
 theislab,spatialdata-db-feedback,theislab/spatialdata-db-feedback,0,0,0,0,FALSE,https://github.com/theislab/spatialdata-db-feedback,NA,NA,NA
 theislab,squidpy-ports,theislab/squidpy-ports,0,0,1,0,FALSE,https://github.com/theislab/squidpy-ports,e972121f1c5999bb6c03edd5d53512a2dac29822,"Make divergences a sibling page
 
@@ -441,7 +1780,7 @@ Two pages under STalign rather than one nested in the other: the notebooks, and 
 explanation of where the port departs from upstream. The section's ""two parts"" now
 names both.",[![](https://github.com/theislab/squidpy-ports/workflows/Check%20Build/badge.svg)](https://github.com/theislab/squidpy-ports/actions/runs/33413354132) [![](https://github.com/theislab/squidpy-ports/workflows/Docs/badge.svg)](https://github.com/theislab/squidpy-ports/actions/runs/33413354186) [![](https://github.com/theislab/squidpy-ports/workflows/Test/badge.svg)](https://github.com/theislab/squidpy-ports/actions/runs/36818555187)
 theislab,squidpy_reproducibility,theislab/squidpy_reproducibility,11,0,0,8,FALSE,https://github.com/theislab/squidpy_reproducibility,NA,NA,NA
-theislab,ssl_in_scg,theislab/ssl_in_scg,15,0,1,2,FALSE,https://github.com/theislab/ssl_in_scg,NA,NA,NA
+theislab,ssl_in_scg,theislab/ssl_in_scg,16,0,1,2,FALSE,https://github.com/theislab/ssl_in_scg,NA,NA,NA
 theislab,superexacttestpy,theislab/superexacttestpy,10,1,3,0,FALSE,https://github.com/theislab/superexacttestpy,NA,NA,NA
 theislab,svaeligr,theislab/svaeligr,4,2,0,0,FALSE,https://github.com/theislab/svaeligr,NA,NA,NA
 theislab,tardis,theislab/tardis,3,1,0,1,FALSE,https://github.com/theislab/tardis,NA,NA,NA
@@ -463,4 +1802,4 @@ theislab,txsim,theislab/txsim,5,2,41,2,FALSE,https://github.com/theislab/txsim,N
 theislab,unbalanced_monge_maps_single_cell,theislab/unbalanced_monge_maps_single_cell,1,0,0,0,FALSE,https://github.com/theislab/unbalanced_monge_maps_single_cell,NA,NA,NA
 theislab,vevo_Tahoe_100m_analysis,theislab/vevo_Tahoe_100m_analysis,42,2,4,4,FALSE,https://github.com/theislab/vevo_Tahoe_100m_analysis,NA,NA,NA
 theislab,zebrafish_bipolarity,theislab/zebrafish_bipolarity,1,2,0,1,FALSE,https://github.com/theislab/zebrafish_bipolarity,NA,NA,NA
-theislab,zellkonverter,theislab/zellkonverter,210,2,20,32,FALSE,https://github.com/theislab/zellkonverter,3cbe1b2dded4968de83339ea15f93a6e9516e2ac,Bioconductor 3.24 devel,[![](https://github.com/theislab/zellkonverter/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/theislab/zellkonverter/actions/runs/25388847889)
+theislab,zellkonverter,theislab/zellkonverter,209,2,20,32,FALSE,https://github.com/theislab/zellkonverter,3cbe1b2dded4968de83339ea15f93a6e9516e2ac,Bioconductor 3.24 devel,[![](https://github.com/theislab/zellkonverter/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/theislab/zellkonverter/actions/runs/25388847889)
