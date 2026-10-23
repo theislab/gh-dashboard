@@ -36,7 +36,7 @@ theislab,CellFlow2,theislab/CellFlow2,11,0,3,2,FALSE,https://github.com/theislab
 Feat/de val metrics",[![](https://github.com/theislab/CellFlow2/workflows/Check%20Build/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039841057) [![](https://github.com/theislab/CellFlow2/workflows/Lint/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840725) [![](https://github.com/theislab/CellFlow2/workflows/Test%20Slow%20Functions/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840835) [![](https://github.com/theislab/CellFlow2/workflows/Test/badge.svg)](https://github.com/theislab/CellFlow2/actions/runs/29039840951)
 theislab,CellHermes,theislab/CellHermes,33,0,1,7,FALSE,https://github.com/theislab/CellHermes,NA,NA,NA
 theislab,Chem-PerturBridge,theislab/Chem-PerturBridge,2,2,2,0,FALSE,https://github.com/theislab/Chem-PerturBridge,NA,NA,NA
-theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,1,0,1,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
+theislab,Chem-PerturBridge_analysis,theislab/Chem-PerturBridge_analysis,1,0,0,1,FALSE,https://github.com/theislab/Chem-PerturBridge_analysis,NA,NA,NA
 theislab,Covid_meta_analysis,theislab/Covid_meta_analysis,25,6,2,11,FALSE,https://github.com/theislab/Covid_meta_analysis,NA,NA,NA
 theislab,DRVI,theislab/DRVI,83,2,9,6,FALSE,https://github.com/theislab/DRVI,5b9ea08ab80ac8e952324d1307917167a95a1ad5,"Record the 0.2.8 release on main (#159)
 
@@ -64,7 +64,7 @@ theislab,IMPA,theislab/IMPA,29,0,2,7,FALSE,https://github.com/theislab/IMPA,NA,N
 theislab,InterScale_reproducibility,theislab/InterScale_reproducibility,0,0,0,0,FALSE,https://github.com/theislab/InterScale_reproducibility,ca172e57f7f875234262d88a923c09bd33119e2b,remove damond and melton notebook for merge,[![](https://github.com/theislab/InterScale_reproducibility/workflows/deploy-jupyter-book/badge.svg)](https://github.com/theislab/InterScale_reproducibility/actions/runs/22107897937) [![](https://github.com/theislab/InterScale_reproducibility/workflows/Lint/badge.svg)](https://github.com/theislab/InterScale_reproducibility/actions/runs/22107897919)
 theislab,InterpretableAutoencoders,theislab/InterpretableAutoencoders,5,2,0,0,FALSE,https://github.com/theislab/InterpretableAutoencoders,NA,NA,NA
 theislab,LODE,theislab/LODE,5,0,9,0,FALSE,https://github.com/theislab/LODE,NA,NA,NA
-theislab,LabCompass,theislab/LabCompass,25,0,16,3,FALSE,https://github.com/theislab/LabCompass,NA,NA,NA
+theislab,LabCompass,theislab/LabCompass,26,0,16,3,FALSE,https://github.com/theislab/LabCompass,NA,NA,NA
 theislab,LabCompass-reproducibility,theislab/LabCompass-reproducibility,1,0,0,0,FALSE,https://github.com/theislab/LabCompass-reproducibility,NA,NA,NA
 theislab,LineagePulse,theislab/LineagePulse,2,3,0,0,FALSE,https://github.com/theislab/LineagePulse,NA,NA,NA
 theislab,LungAgingAtlas,theislab/LungAgingAtlas,0,3,0,0,FALSE,https://github.com/theislab/LungAgingAtlas,NA,NA,NA
@@ -108,16 +108,16 @@ theislab,cellrank2_reproducibility,theislab/cellrank2_reproducibility,18,0,2,3,F
 theislab,cellrank_protocol,theislab/cellrank_protocol,3,1,0,0,FALSE,https://github.com/theislab/cellrank_protocol,NA,NA,NA
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,18,1,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,0,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,NA,NA,NA
+theislab,cellucid,theislab/cellucid,7,0,0,0,FALSE,https://github.com/theislab/cellucid,45156760adf3ecf2037bb1f74944edfebb70ce52,Fix,[![](https://github.com/theislab/cellucid/workflows/Web%20contracts/badge.svg)](https://github.com/theislab/cellucid/actions/runs/39895685843)
 theislab,cellucid,theislab/cellucid,7,0,0,0,FALSE,https://github.com/theislab/cellucid,6b24802d203e1260c6aec9050cb70ace9fee4a07,Fix,[![](https://github.com/theislab/cellucid/workflows/GL%20probe/badge.svg)](https://github.com/theislab/cellucid/actions/runs/39646038155)
-theislab,cellucid,theislab/cellucid,7,0,0,0,FALSE,https://github.com/theislab/cellucid,c437389ab2935091b75d5fb6866751062d9526f8,Fix,[![](https://github.com/theislab/cellucid/workflows/Web%20contracts/badge.svg)](https://github.com/theislab/cellucid/actions/runs/39779422790)
 theislab,cellucid-annotation,theislab/cellucid-annotation,0,0,0,0,FALSE,https://github.com/theislab/cellucid-annotation,607d9b3e66f89778b0689d64bf2905711d03bdc9,Fix,[![](https://github.com/theislab/cellucid-annotation/workflows/Validate%20Annotation%20Files/badge.svg)](https://github.com/theislab/cellucid-annotation/actions/runs/39760905754)
 theislab,cellucid-datasets,theislab/cellucid-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-datasets,9062e60bf62a5e78ec9647e950d263d2948b1ad6,Fix,[![](https://github.com/theislab/cellucid-datasets/workflows/Dataset%20contracts/badge.svg)](https://github.com/theislab/cellucid-datasets/actions/runs/39771440270)
 theislab,cellucid-demo-custom-datasets,theislab/cellucid-demo-custom-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-demo-custom-datasets,NA,NA,NA
 theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,3071809a2b92afd84947c01641d4d08b85eeab2c,Fix,[![](https://github.com/theislab/cellucid-python/workflows/Publish%20to%20PyPI/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39677685234)
-theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,99787e7afb02eaa69c2480b7a135e8881c80cf1c,Fix,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39776320447) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39776320434) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39776320427)
+theislab,cellucid-python,theislab/cellucid-python,3,0,0,0,FALSE,https://github.com/theislab/cellucid-python,b1b03c82b3570f96bdde9af87d062d8f9fa07645,Fix,[![](https://github.com/theislab/cellucid-python/workflows/Docs%20Check/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39797606488) [![](https://github.com/theislab/cellucid-python/workflows/Read%20the%20Docs%20Trigger/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39797611285) [![](https://github.com/theislab/cellucid-python/workflows/Python%20package/badge.svg)](https://github.com/theislab/cellucid-python/actions/runs/39797606590)
 theislab,cellucid-r,theislab/cellucid-r,0,0,0,0,FALSE,https://github.com/theislab/cellucid-r,23ad91113214eb64bfcf92996f86d0f5764c736c,Fix,[![](https://github.com/theislab/cellucid-r/workflows/R-CMD-check/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/39776325528) [![](https://github.com/theislab/cellucid-r/workflows/pkgdown/badge.svg)](https://github.com/theislab/cellucid-r/actions/runs/39776325484)
 theislab,chem-perturbridge_lpm,theislab/chem-perturbridge_lpm,1,0,0,0,FALSE,https://github.com/theislab/chem-perturbridge_lpm,NA,NA,NA
-theislab,chemCPA,theislab/chemCPA,162,2,7,34,FALSE,https://github.com/theislab/chemCPA,NA,NA,NA
+theislab,chemCPA,theislab/chemCPA,162,2,8,35,FALSE,https://github.com/theislab/chemCPA,NA,NA,NA
 theislab,chimera,theislab/chimera,1,0,0,0,FALSE,https://github.com/theislab/chimera,NA,NA,NA
 theislab,collideseq_reproducibility,theislab/collideseq_reproducibility,1,1,0,0,FALSE,https://github.com/theislab/collideseq_reproducibility,NA,NA,NA
 theislab,comparative_atlas,theislab/comparative_atlas,15,2,0,2,FALSE,https://github.com/theislab/comparative_atlas,NA,NA,NA
@@ -136,9 +136,8 @@ theislab,destiny,theislab/destiny,114,3,32,12,FALSE,https://github.com/theislab/
 theislab,diffxpy,theislab/diffxpy,204,0,108,21,FALSE,https://github.com/theislab/diffxpy,NA,NA,NA
 theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://github.com/theislab/diffxpy_tutorials,NA,NA,NA
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
-theislab,donordata,theislab/donordata,2,0,0,0,FALSE,https://github.com/theislab/donordata,ed6ebb36df0ed0b94ebb5e8102fc52cf2249e9ef,"Merge pull request #1 from theislab/fix/eh_review
-
-Ensure Series masks align with the frame index in filter_*",[![](https://github.com/theislab/donordata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/donordata/actions/runs/39028345043) [![](https://github.com/theislab/donordata/workflows/Test/badge.svg)](https://github.com/theislab/donordata/actions/runs/39028345020)
+theislab,donordata,theislab/donordata,2,0,0,0,FALSE,https://github.com/theislab/donordata,63c15a1ed1b8d1fc7d37b3c4b97642ed3909c0d1,"Merge branch 'main' of https://github.com/theislab/donordata
+merge",[![](https://github.com/theislab/donordata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/donordata/actions/runs/39810218796) [![](https://github.com/theislab/donordata/workflows/Test/badge.svg)](https://github.com/theislab/donordata/actions/runs/39810219064)
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
 theislab,ehrapy,theislab/ehrapy,369,2,7,54,FALSE,https://github.com/theislab/ehrapy,2f664edeb1e3901135123219463e6aa537a0ac12,"Bump release-drafter/release-drafter (#1207)
 
@@ -165,11 +164,22 @@ theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.c
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,15,1,10,7,FALSE,https://github.com/theislab/ehrdata,6ede6dc9a076b6ccff7ae49f3ba35dd90f57be5e,"Skip features without any value in infer_feature_types (#327)
+theislab,ehrdata,theislab/ehrdata,15,1,9,7,FALSE,https://github.com/theislab/ehrdata,0e099f21728037384c88a995152439423041b5df,"Support duckdb 2.0 (#333)
 
-infer_feature_types raised a ValueError as soon as one variable had only missing values, which made it, and every function that infers feature types on the fly through _check_feature_types, fail on data with all-missing variables, such as codes without events in a binned time window.
-Such a feature has no type to infer, so it is now skipped with one warning that names all of them, and its feature type stays missing, which feature_type_overview and _check_feature_types already accept.
-A later call infers the type again once the feature has values.",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/37931171883) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/37931171928) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/38685678468)
+* Support duckdb 2.0
+
+duckdb 2.0 blocks a connection while an execute() result is not fully
+fetched; fetchone() leaves it open. Use fetchall() and drop the duckdb<2 pin.
+
+Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>
+
+* Add changelog entry
+
+Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>
+
+---------
+
+Co-authored-by: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/39945231354) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/39945231204) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/39945231185)
 theislab,embpy,theislab/embpy,23,0,10,2,FALSE,https://github.com/theislab/embpy,716f5915619ecb9dbda51033c846fc7f4e91beca,"docs(readme): add the embpy logo at the top
 
 The black tagline logo from the design file, with its dark background
@@ -188,7 +198,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/38685741583)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,30180276e8512c7a30beaff1b8f54ea983dbf669,[status] 2026-10-21 12:14:08 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/39775621553)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,4ab1e4a80bf449f3b3a489090d5a6f3896572160,[status] 2026-10-22 12:38:31 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/39950729653)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,17,2,5,2,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -328,9 +338,9 @@ theislab,scib,theislab/scib,435,11,45,79,FALSE,https://github.com/theislab/scib,
 Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scib/workflows/Deployment/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026834) [![](https://github.com/theislab/scib/workflows/Test/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026861)
 theislab,scib-pipeline,theislab/scib-pipeline,85,4,16,29,FALSE,https://github.com/theislab/scib-pipeline,NA,NA,NA
 theislab,scib-reproducibility,theislab/scib-reproducibility,76,4,4,19,FALSE,https://github.com/theislab/scib-reproducibility,NA,NA,NA
-theislab,sckitflow,theislab/sckitflow,7,0,22,1,FALSE,https://github.com/theislab/sckitflow,017d3f3bfc7ff03cda6138bbf6400067bc4ea949,"Merge pull request #216 from theislab/fix/ot-on-device
+theislab,sckitflow,theislab/sckitflow,7,0,22,1,FALSE,https://github.com/theislab/sckitflow,4a5dd67ceb9d14237bcbca636fb88446fdcda27c,"Merge pull request #220 from theislab/feat/film-conditioning
 
-Keep OT matching on device",[![](https://github.com/theislab/sckitflow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39679268949) [![](https://github.com/theislab/sckitflow/workflows/Lint/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39679268671) [![](https://github.com/theislab/sckitflow/workflows/Notebooks/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39679268637) [![](https://github.com/theislab/sckitflow/workflows/Test%20(slow)/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39679268629) [![](https://github.com/theislab/sckitflow/workflows/Test/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39679268627)
+Adding FiLM conditioning as concatenation layer.",[![](https://github.com/theislab/sckitflow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39813702802) [![](https://github.com/theislab/sckitflow/workflows/Lint/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39813703599) [![](https://github.com/theislab/sckitflow/workflows/Notebooks/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39813702737) [![](https://github.com/theislab/sckitflow/workflows/Test%20(slow)/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39813702825) [![](https://github.com/theislab/sckitflow/workflows/Test/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/39813702449)
 theislab,scproto,theislab/scproto,4,2,0,1,FALSE,https://github.com/theislab/scproto,NA,NA,NA
 theislab,sctram,theislab/sctram,4,1,0,1,FALSE,https://github.com/theislab/sctram,NA,NA,NA
 theislab,scvelo,theislab/scvelo,513,11,83,117,FALSE,https://github.com/theislab/scvelo,9b6e94647654eca1c4a38b08a21f59df8a4ae6a6,Implement fix of get_sparse_from_igraph() theislab/scvelo#1241 (#1308),[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22367982926)
@@ -342,7 +352,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1288,21,4,279,FALSE,https://github.com/theislab/single-cell-best-practices,dd6eb86b30385cc3c5b5ddb2d8b63945b18dc1a5,"Split the introduction by modality (#515)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1289,21,4,279,FALSE,https://github.com/theislab/single-cell-best-practices,dd6eb86b30385cc3c5b5ddb2d8b63945b18dc1a5,"Split the introduction by modality (#515)
 
 * Split the introduction by modality
 
@@ -423,41 +433,11 @@ theislab,spatialdata-db-client,theislab/spatialdata-db-client,0,0,0,0,FALSE,http
 * feat(catalog): add sdata_repr catalog column
 
 * feat(catalog): add n_transcripts catalog column",[![](https://github.com/theislab/spatialdata-db-client/workflows/publish-catalog/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/39083261542)
-theislab,spatialdata-db-client,theislab/spatialdata-db-client,0,0,0,0,FALSE,https://github.com/theislab/spatialdata-db-client,03bef1ad52dd344a598d93df86f04b793056cae1,"Client documentation site (RTD) (#26)
+theislab,spatialdata-db-client,theislab/spatialdata-db-client,0,0,0,0,FALSE,https://github.com/theislab/spatialdata-db-client,88846e1f624d811e6c3900f9ac1a32f784a8ccb1,"feat(schema): study + condition catalog columns (#27)
 
-* Fix RTD config: install doc dependency group via uv sync
+* feat(schema): study + condition columns
 
-* docs: DB-branded book theme (tokens, logo, components)
-
-* docs: fix theme search duplicate, code token colours, light contrast
-
-* docs: live catalog stats as MyST substitutions
-
-* docs: assay and DB-stack intro pages
-
-* docs: fix review findings for intro pages
-
-* docs: guides (find & load, cohorts, ML, CLI & agents)
-
-* docs: fix guides review findings (gene index size, public API only, links)
-
-* docs: API, CLI, MCP and catalog-column reference
-
-* docs: generate CLI reference with Typer's docs generator; test MCP params
-
-* docs: quickstart landing, cite & license page, CITATION.cff; single SITE_URL
-
-* docs: fast Visium lung quickstart, cite page examples, test hygiene
-
-* ci: build docs with -W
-
-* docs: final-review fixes (CLI wording, offline -W build, scoped CSS, copybutton, links)
-
-* docs: credit Theis Lab in footer
-
-* Credit Theis Lab in CITATION.cff
-
-* test: install sphinx in the test group (test_docs_stats loads the docs extension)",[![](https://github.com/theislab/spatialdata-db-client/workflows/Test/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/39178570510)
+* test(schema): keep list columns object-typed in collections fixture",[![](https://github.com/theislab/spatialdata-db-client/workflows/Test/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/39845594975)
 theislab,spatialdata-db-feedback,theislab/spatialdata-db-feedback,0,0,0,0,FALSE,https://github.com/theislab/spatialdata-db-feedback,NA,NA,NA
 theislab,sprotmetrics,theislab/sprotmetrics,1,0,1,0,FALSE,https://github.com/theislab/sprotmetrics,bb8e962a7eaa4b7e09a09fc7598c124e7b21dce2,"Document how the metric reference and its figures are produced
 
