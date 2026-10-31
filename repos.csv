@@ -104,7 +104,7 @@ theislab,cellrank_protocol,theislab/cellrank_protocol,3,1,0,0,FALSE,https://gith
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,18,1,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,0,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,NA,NA,NA
 theislab,cellucid,theislab/cellucid,7,0,0,0,FALSE,https://github.com/theislab/cellucid,6b24802d203e1260c6aec9050cb70ace9fee4a07,Fix,[![](https://github.com/theislab/cellucid/workflows/GL%20probe/badge.svg)](https://github.com/theislab/cellucid/actions/runs/39646038155)
-theislab,cellucid,theislab/cellucid,7,0,0,0,FALSE,https://github.com/theislab/cellucid,c27a875b68bc47ed18029f21bcccf4f4b83d1f16,Update,[![](https://github.com/theislab/cellucid/workflows/R%20object%20drift/badge.svg)](https://github.com/theislab/cellucid/actions/runs/40661244457) [![](https://github.com/theislab/cellucid/workflows/Web%20contracts/badge.svg)](https://github.com/theislab/cellucid/actions/runs/40997364057)
+theislab,cellucid,theislab/cellucid,7,0,0,0,FALSE,https://github.com/theislab/cellucid,c27a875b68bc47ed18029f21bcccf4f4b83d1f16,Update,[![](https://github.com/theislab/cellucid/workflows/R%20object%20drift/badge.svg)](https://github.com/theislab/cellucid/actions/runs/40661244457) [![](https://github.com/theislab/cellucid/workflows/Web%20contracts/badge.svg)](https://github.com/theislab/cellucid/actions/runs/41164024454)
 theislab,cellucid-annotation,theislab/cellucid-annotation,0,0,0,0,FALSE,https://github.com/theislab/cellucid-annotation,e886a74289c0511189a49b0187658b1dea515a83,Update,[![](https://github.com/theislab/cellucid-annotation/workflows/Validate%20Annotation%20Files/badge.svg)](https://github.com/theislab/cellucid-annotation/actions/runs/40661475659)
 theislab,cellucid-datasets,theislab/cellucid-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-datasets,5f031c408bb11dcfbbf230efbe5b9ec93b084b82,Update,[![](https://github.com/theislab/cellucid-datasets/workflows/Dataset%20contracts/badge.svg)](https://github.com/theislab/cellucid-datasets/actions/runs/40667298740)
 theislab,cellucid-demo-custom-datasets,theislab/cellucid-demo-custom-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-demo-custom-datasets,NA,NA,NA
@@ -133,48 +133,89 @@ theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://git
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
 theislab,donordata,theislab/donordata,2,0,0,0,FALSE,https://github.com/theislab/donordata,8688bfce64af4b79f254745409c4105c0d8b1c4a,docs fixes,[![](https://github.com/theislab/donordata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/donordata/actions/runs/40026893485) [![](https://github.com/theislab/donordata/workflows/Test/badge.svg)](https://github.com/theislab/donordata/actions/runs/40026893507)
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,369,2,6,54,FALSE,https://github.com/theislab/ehrapy,de0271386b79f81ea2e0477a13d41618fe9b1c1f,"[pre-commit.ci] pre-commit autoupdate (#1208)
+theislab,ehrapy,theislab/ehrapy,369,2,5,54,FALSE,https://github.com/theislab/ehrapy,05bd67188570eff3fe7326d0e990c52f21aa883a,"Bump the actions-deps group across 1 directory with 3 updates (#1211)
 
-* [pre-commit.ci] pre-commit autoupdate
+Bumps the actions-deps group with 3 updates in the / directory: [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv), [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) and [release-drafter/release-drafter](https://github.com/release-drafter/release-drafter).
 
-updates:
-- [github.com/biomejs/pre-commit: v2.5.14 → v2.6.3](https://github.com/biomejs/pre-commit/compare/v2.5.14...v2.6.3)
-- [github.com/astral-sh/ruff-pre-commit: v0.16.9 → v0.17.2](https://github.com/astral-sh/ruff-pre-commit/compare/v0.16.9...v0.17.2)
-- [github.com/pre-commit/mirrors-mypy: v2.3.1 → v2.4.0](https://github.com/pre-commit/mirrors-mypy/compare/v2.3.1...v2.4.0)
-- [github.com/zizmorcore/zizmor-pre-commit: v1.30.1 → v1.31.1](https://github.com/zizmorcore/zizmor-pre-commit/compare/v1.30.1...v1.31.1)
 
-* [pre-commit.ci] auto fixes from pre-commit.com hooks
+Updates `astral-sh/setup-uv` from 10.2.0 to 10.3.2
+- [Release notes](https://github.com/astral-sh/setup-uv/releases)
+- [Commits](https://github.com/astral-sh/setup-uv/compare/c18668ad3cf93ea998bef934396af7bb5c839dc7...07a047e608db84b3d8c06cd9a7c7dcc9c355c18e)
 
-for more information, see https://pre-commit.ci
+Updates `pypa/gh-action-pypi-publish` from 1.14.2 to 1.14.3
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/dc37677b2e1c63e2034f94d8a5b11f265b73ba33...7245906fb61fa33a13554f9d5fb856fe61758086)
 
-* Parse markdown front matter with biome
+Updates `release-drafter/release-drafter` from 7.9.0 to 7.10.0
+- [Release notes](https://github.com/release-drafter/release-drafter/releases)
+- [Commits](https://github.com/release-drafter/release-drafter/compare/72967cdc98ddd3160f1fc3dff619de365e137dd0...978bb0b30c5ee8cdd332ced253758157150d43f0)
 
-biome 2.6 formats markdown, but without markdown.parser.frontmatter it
-reads front matter as a thematic break followed by a setext heading.
-pre-commit.ci therefore turned the front matter into a ""## ..."" heading
-(and flattened the nested YAML in ehrapy's docs/index.md), which breaks
-the docs build. Enable front matter parsing and restore the front matter.
+---
+updated-dependencies:
+- dependency-name: astral-sh/setup-uv
+  dependency-version: 10.3.2
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+  dependency-group: actions-deps
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-version: 1.14.3
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+  dependency-group: actions-deps
+- dependency-name: release-drafter/release-drafter
+  dependency-version: 7.10.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+  dependency-group: actions-deps
+...
 
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
-
----------
-
-Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
-Co-authored-by: eroell <eljas.roellin@ikmail.com>
-Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>
-Co-authored-by: Eljas Roellin <65244425+eroell@users.noreply.github.com>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/40906390582) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/40906390549) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/40906390684) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/40906390531) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/40906390792) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/40906390367)
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",[![](https://github.com/theislab/ehrapy/workflows/Labeler/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/41065822463) [![](https://github.com/theislab/ehrapy/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/41065822268) [![](https://github.com/theislab/ehrapy/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/41065822485) [![](https://github.com/theislab/ehrapy/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/41065822908) [![](https://github.com/theislab/ehrapy/workflows/GPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/41065822704) [![](https://github.com/theislab/ehrapy/workflows/CPU%20tests/badge.svg)](https://github.com/theislab/ehrapy/actions/runs/41065822601)
 theislab,ehrapy-cli,theislab/ehrapy-cli,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-cli,NA,NA,NA
 theislab,ehrapy-datasets,theislab/ehrapy-datasets,5,0,4,2,FALSE,https://github.com/theislab/ehrapy-datasets,NA,NA,NA
 theislab,ehrapy-reproducibility,theislab/ehrapy-reproducibility,5,0,1,0,FALSE,https://github.com/theislab/ehrapy-reproducibility,NA,NA,NA
 theislab,ehrapy-site,theislab/ehrapy-site,1,1,0,0,FALSE,https://github.com/theislab/ehrapy-site,NA,NA,NA
 theislab,ehrapy-tutorials,theislab/ehrapy-tutorials,9,1,0,2,FALSE,https://github.com/theislab/ehrapy-tutorials,NA,NA,NA
-theislab,ehrdata,theislab/ehrdata,15,1,7,7,FALSE,https://github.com/theislab/ehrdata,4e3d8567b5ff92d0f3071cd8e81aa5912b1ce488,"Add sparse.COO support to harmonize_missing_values and infer_feature_types (#306)
+theislab,ehrdata,theislab/ehrdata,15,1,5,7,FALSE,https://github.com/theislab/ehrdata,5873ff10caf6e175caf02f89dad5cc125742f4f2,"Bump the actions-deps group with 3 updates (#335)
 
-* for sprase.COO harmonize_missing_values assigns NaNs to 0s, infer_feature_types fixed to support sparse.COO, tests
+Bumps the actions-deps group with 3 updates: [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv), [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) and [actions/setup-python](https://github.com/actions/setup-python).
 
-* harmonize missing values singledispatched for scipy.sparse as well, harmonize_on_read catches the NotImplementedError, test adjusted
 
-* Skip features without any value in the sparse path of infer_feature_types",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/40652589354) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/40652589312) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/40652589451)
+Updates `astral-sh/setup-uv` from 10.2.0 to 10.3.1
+- [Release notes](https://github.com/astral-sh/setup-uv/releases)
+- [Commits](https://github.com/astral-sh/setup-uv/compare/c18668ad3cf93ea998bef934396af7bb5c839dc7...18d369b23da25a81e9458561248e1aafff6a70fa)
+
+Updates `pypa/gh-action-pypi-publish` from 1.14.2 to 1.14.3
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/dc37677b2e1c63e2034f94d8a5b11f265b73ba33...7245906fb61fa33a13554f9d5fb856fe61758086)
+
+Updates `actions/setup-python` from 7.0.0 to 7.1.0
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/5fda3b95a4ea91299a34e894583c3862153e4b97...6d4fd22b20465ccc0f7354476588e8df7c9ca0e0)
+
+---
+updated-dependencies:
+- dependency-name: astral-sh/setup-uv
+  dependency-version: 10.3.1
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+  dependency-group: actions-deps
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-version: 1.14.3
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+  dependency-group: actions-deps
+- dependency-name: actions/setup-python
+  dependency-version: 7.1.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+  dependency-group: actions-deps
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: eroell <eljas.roellin@ikmail.com>
+Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",[![](https://github.com/theislab/ehrdata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/41107444122) [![](https://github.com/theislab/ehrdata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/41107444309) [![](https://github.com/theislab/ehrdata/workflows/Test/badge.svg)](https://github.com/theislab/ehrdata/actions/runs/41107444218)
 theislab,embpy,theislab/embpy,23,0,10,2,FALSE,https://github.com/theislab/embpy,716f5915619ecb9dbda51033c846fc7f4e91beca,"docs(readme): add the embpy logo at the top
 
 The black tagline logo from the design file, with its dark background
@@ -193,7 +234,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,4,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/38685741583)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,a0afa803b617835b0dac6a5120c99d97a0b864cd,[status] 2026-10-29 12:11:01 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/41052628380)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,07317e5d10ba6f28590e345b241987ebbfd89f95,[status] 2026-10-30 12:13:36 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/41199359273)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,4,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,17,2,5,2,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -334,13 +375,13 @@ theislab,scib,theislab/scib,435,11,45,79,FALSE,https://github.com/theislab/scib,
 Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",[![](https://github.com/theislab/scib/workflows/Deployment/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026834) [![](https://github.com/theislab/scib/workflows/Test/badge.svg)](https://github.com/theislab/scib/actions/runs/25017026861)
 theislab,scib-pipeline,theislab/scib-pipeline,85,4,16,29,FALSE,https://github.com/theislab/scib-pipeline,NA,NA,NA
 theislab,scib-reproducibility,theislab/scib-reproducibility,76,4,4,19,FALSE,https://github.com/theislab/scib-reproducibility,NA,NA,NA
-theislab,sckitflow,theislab/sckitflow,8,0,22,1,FALSE,https://github.com/theislab/sckitflow,b46dd1f7b657ad8a11db6646c7b3103615f63e80,"Merge pull request #227 from theislab/refactor/probability_paths
+theislab,sckitflow,theislab/sckitflow,8,0,23,1,FALSE,https://github.com/theislab/sckitflow,b46dd1f7b657ad8a11db6646c7b3103615f63e80,"Merge pull request #227 from theislab/refactor/probability_paths
 
 Refactoring probability paths.",[![](https://github.com/theislab/sckitflow/workflows/Check%20Build/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/40598039476) [![](https://github.com/theislab/sckitflow/workflows/Lint/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/40598039517) [![](https://github.com/theislab/sckitflow/workflows/Notebooks/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/40598039453) [![](https://github.com/theislab/sckitflow/workflows/Test%20(slow)/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/40598039373) [![](https://github.com/theislab/sckitflow/workflows/Test/badge.svg)](https://github.com/theislab/sckitflow/actions/runs/40598039536)
 theislab,scproto,theislab/scproto,4,2,0,1,FALSE,https://github.com/theislab/scproto,NA,NA,NA
 theislab,sctram,theislab/sctram,4,1,0,1,FALSE,https://github.com/theislab/sctram,NA,NA,NA
-theislab,scvelo,theislab/scvelo,514,11,84,118,FALSE,https://github.com/theislab/scvelo,9b6e94647654eca1c4a38b08a21f59df8a4ae6a6,Implement fix of get_sparse_from_igraph() theislab/scvelo#1241 (#1308),[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22367982926)
-theislab,scvelo,theislab/scvelo,514,11,84,118,FALSE,https://github.com/theislab/scvelo,f63c0e70596ced2f1bee8cf07e8ab66037cf86b2,Replace `adata.obsm_keys` calls (#1337),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707111) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707146)
+theislab,scvelo,theislab/scvelo,514,12,84,118,FALSE,https://github.com/theislab/scvelo,9b6e94647654eca1c4a38b08a21f59df8a4ae6a6,Implement fix of get_sparse_from_igraph() theislab/scvelo#1241 (#1308),[![](https://github.com/theislab/scvelo/workflows/Release/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22367982926)
+theislab,scvelo,theislab/scvelo,514,12,84,118,FALSE,https://github.com/theislab/scvelo,f63c0e70596ced2f1bee8cf07e8ab66037cf86b2,Replace `adata.obsm_keys` calls (#1337),[![](https://github.com/theislab/scvelo/workflows/Check%20Build/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707111) [![](https://github.com/theislab/scvelo/workflows/CI/badge.svg)](https://github.com/theislab/scvelo/actions/runs/22405707146)
 theislab,scvelo_notebooks,theislab/scvelo_notebooks,37,0,5,12,FALSE,https://github.com/theislab/scvelo_notebooks,NA,NA,NA
 theislab,sfaira,theislab/sfaira,135,6,167,11,FALSE,https://github.com/theislab/sfaira,NA,NA,NA
 theislab,sfaira-portal,theislab/sfaira-portal,0,2,2,0,FALSE,https://github.com/theislab/sfaira-portal,NA,NA,NA
@@ -348,10 +389,11 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1294,21,4,279,FALSE,https://github.com/theislab/single-cell-best-practices,4999c3550f669044cf8f5d75e9292c7ca9f537fe,"Backfill the changelog and date the 0.2.0 release (#520)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1295,21,4,279,FALSE,https://github.com/theislab/single-cell-best-practices,8247f51909752c74fb2cd6d7d88ad2f67d1c11cd,"Fix small errors in the spatial data structures chapter (#521)
 
-Adds every user-facing PR merged since #459.
-Pure CI and tooling PRs (#416, #465, #466, #470, #472, #482, #486, #488, #468) are left out.",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/40881129961) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/40881129850) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/40881129872) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/40881129981) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/40881129871)
+* Fix small errors in the spatial data structures chapter
+
+* Add changelog entry",[![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20book/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/41119136183) [![](https://github.com/theislab/single-cell-best-practices/workflows/Build%20environments/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/41119136216) [![](https://github.com/theislab/single-cell-best-practices/workflows/Labeler/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/41119136160) [![](https://github.com/theislab/single-cell-best-practices/workflows/pre-commit/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/41119136189) [![](https://github.com/theislab/single-cell-best-practices/workflows/Release%20Drafter/badge.svg)](https://github.com/theislab/single-cell-best-practices/actions/runs/41119136235)
 theislab,single-cell-transformer-papers,theislab/single-cell-transformer-papers,342,12,40,41,FALSE,https://github.com/theislab/single-cell-transformer-papers,f13e210e60fb3a0b6fc1678916eaf630bb3ee34f,"adding scprint-2 (#90)
 
 * adding scprint-2 and scprint
@@ -407,7 +449,7 @@ theislab,spatialdata-db-client,theislab/spatialdata-db-client,1,0,2,0,FALSE,http
 * feat(adapter): TableAdapter for to_anndata (replaces transform), skip reasons in uns; tutorial uses OrthologAdapter
 
 * docs(visium-atlas): executed notebook outputs (4,008 sections, 10.6M spots, B300)",[![](https://github.com/theislab/spatialdata-db-client/workflows/publish-catalog/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/40147197179)
-theislab,spatialdata-db-client,theislab/spatialdata-db-client,1,0,2,0,FALSE,https://github.com/theislab/spatialdata-db-client,c6b1da49c1eb9b3dba3574e74752752a440f90a7,docs: pin install instructions to the alpha release v0.1.1 (#51),[![](https://github.com/theislab/spatialdata-db-client/workflows/Test/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/40943949865)
+theislab,spatialdata-db-client,theislab/spatialdata-db-client,1,0,2,0,FALSE,https://github.com/theislab/spatialdata-db-client,e09a6b547f71b42054ab38de9292d2896495bd99,"docs: license framing, reproducible references; Catalog.dataset accepts canonical_key (#52)",[![](https://github.com/theislab/spatialdata-db-client/workflows/Test/badge.svg)](https://github.com/theislab/spatialdata-db-client/actions/runs/41124170080)
 theislab,spatialdata-db-feedback,theislab/spatialdata-db-feedback,0,0,1,0,FALSE,https://github.com/theislab/spatialdata-db-feedback,NA,NA,NA
 theislab,sprotmetrics,theislab/sprotmetrics,2,0,1,0,FALSE,https://github.com/theislab/sprotmetrics,bb8e962a7eaa4b7e09a09fc7598c124e7b21dce2,"Document how the metric reference and its figures are produced
 
