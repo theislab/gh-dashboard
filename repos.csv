@@ -128,7 +128,7 @@ theislab,cellrank_protocol,theislab/cellrank_protocol,3,1,0,0,FALSE,https://gith
 theislab,cellrank_reproducibility,theislab/cellrank_reproducibility,19,1,1,8,FALSE,https://github.com/theislab/cellrank_reproducibility,NA,NA,NA
 theislab,cellrank_reproducibility_preprint,theislab/cellrank_reproducibility_preprint,3,0,0,0,FALSE,https://github.com/theislab/cellrank_reproducibility_preprint,NA,NA,NA
 theislab,cellucid,theislab/cellucid,9,0,0,0,FALSE,https://github.com/theislab/cellucid,6b24802d203e1260c6aec9050cb70ace9fee4a07,Fix,[![](https://github.com/theislab/cellucid/workflows/GL%20probe/badge.svg)](https://github.com/theislab/cellucid/actions/runs/39646038155)
-theislab,cellucid,theislab/cellucid,9,0,0,0,FALSE,https://github.com/theislab/cellucid,84d879979be7fa518da514101f4b049c3a30e99c,Fix,[![](https://github.com/theislab/cellucid/workflows/R%20object%20drift/badge.svg)](https://github.com/theislab/cellucid/actions/runs/43433988075) [![](https://github.com/theislab/cellucid/workflows/Web%20app%20tests/badge.svg)](https://github.com/theislab/cellucid/actions/runs/44667446510)
+theislab,cellucid,theislab/cellucid,9,0,0,0,FALSE,https://github.com/theislab/cellucid,84d879979be7fa518da514101f4b049c3a30e99c,Fix,[![](https://github.com/theislab/cellucid/workflows/R%20object%20drift/badge.svg)](https://github.com/theislab/cellucid/actions/runs/43433988075) [![](https://github.com/theislab/cellucid/workflows/Web%20app%20tests/badge.svg)](https://github.com/theislab/cellucid/actions/runs/44860834334)
 theislab,cellucid-annotation,theislab/cellucid-annotation,0,0,0,0,FALSE,https://github.com/theislab/cellucid-annotation,39456f89c16182dc9e55ec7da75d39252b9d2646,Fix,[![](https://github.com/theislab/cellucid-annotation/workflows/Template%20Tests/badge.svg)](https://github.com/theislab/cellucid-annotation/actions/runs/43434022669) [![](https://github.com/theislab/cellucid-annotation/workflows/Validate%20Annotation%20Files/badge.svg)](https://github.com/theislab/cellucid-annotation/actions/runs/43434022697)
 theislab,cellucid-datasets,theislab/cellucid-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-datasets,0e5d0b343fe3cdec554434897dfbb6eb4cb440a5,"Cellucid sample datasets: Cellucid-ready AnnData Zarr stores, their catalog, session presets and build scripts",[![](https://github.com/theislab/cellucid-datasets/workflows/Dataset%20contracts/badge.svg)](https://github.com/theislab/cellucid-datasets/actions/runs/43439691706)
 theislab,cellucid-demo-custom-datasets,theislab/cellucid-demo-custom-datasets,0,0,0,0,FALSE,https://github.com/theislab/cellucid-demo-custom-datasets,NA,NA,NA
@@ -160,7 +160,7 @@ theislab,diffxpy_tutorials,theislab/diffxpy_tutorials,11,6,4,2,FALSE,https://git
 theislab,disent,theislab/disent,6,1,0,0,FALSE,https://github.com/theislab/disent,NA,NA,NA
 theislab,donordata,theislab/donordata,3,0,0,1,FALSE,https://github.com/theislab/donordata,eefe8903f9f0170f16be14236a4b452e49db84b9,Formatting,[![](https://github.com/theislab/donordata/workflows/Check%20Build/badge.svg)](https://github.com/theislab/donordata/actions/runs/44645737047) [![](https://github.com/theislab/donordata/workflows/Run%20Notebooks/badge.svg)](https://github.com/theislab/donordata/actions/runs/44645737082) [![](https://github.com/theislab/donordata/workflows/Test/badge.svg)](https://github.com/theislab/donordata/actions/runs/44645737113)
 theislab,edgepy,theislab/edgepy,0,2,0,0,FALSE,https://github.com/theislab/edgepy,NA,NA,NA
-theislab,ehrapy,theislab/ehrapy,373,2,6,55,FALSE,https://github.com/theislab/ehrapy,2d725b6649fcef6749c80c364d0d027aba117cb3,"Fix `pp.pca` `mask_var` with scanpy 1.13 (#1221)
+theislab,ehrapy,theislab/ehrapy,374,2,6,55,FALSE,https://github.com/theislab/ehrapy,2d725b6649fcef6749c80c364d0d027aba117cb3,"Fix `pp.pca` `mask_var` with scanpy 1.13 (#1221)
 
 * Fix pca mask_var with scanpy 1.13
 
@@ -206,7 +206,7 @@ theislab,gastrulation_analysis,theislab/gastrulation_analysis,10,2,0,1,FALSE,htt
 theislab,geome,theislab/geome,17,1,8,5,FALSE,https://github.com/theislab/geome,698d36d1beaa83d62574e26b86a3dff0f175ddb9,"Merge pull request #70 from theislab/dependabot/github_actions/actions-deps-2514a98571
 
 Bump astral-sh/setup-uv from 9.0.0 to 10.0.1 in the actions-deps group",[![](https://github.com/theislab/geome/workflows/Check%20Build/badge.svg)](https://github.com/theislab/geome/actions/runs/32635909908) [![](https://github.com/theislab/geome/workflows/Test/badge.svg)](https://github.com/theislab/geome/actions/runs/43679825246)
-theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,05f38d26ae33ec07db05362edd4273679b56a87c,[status] 2026-11-18 12:10:17 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/44732524757)
+theislab,gh-dashboard,theislab/gh-dashboard,8,1,1,0,FALSE,https://github.com/theislab/gh-dashboard,65c4e1cd8be05fef393d74a439fb903e23ac0f5f,[status] 2026-11-20 12:10:42 UTC,[![](https://github.com/theislab/gh-dashboard/workflows/Render%20Status/badge.svg)](https://github.com/theislab/gh-dashboard/actions/runs/44901957179)
 theislab,graph_abstraction,theislab/graph_abstraction,27,2,0,10,FALSE,https://github.com/theislab/graph_abstraction,NA,NA,NA
 theislab,graphcompass,theislab/graphcompass,39,1,5,2,FALSE,https://github.com/theislab/graphcompass,NA,NA,NA
 theislab,greatpy,theislab/greatpy,17,2,5,2,FALSE,https://github.com/theislab/greatpy,NA,NA,NA
@@ -353,7 +353,7 @@ theislab,sfaira-site,theislab/sfaira-site,0,1,0,0,FALSE,https://github.com/theis
 theislab,sfaira_benchmarks,theislab/sfaira_benchmarks,0,1,0,0,FALSE,https://github.com/theislab/sfaira_benchmarks,NA,NA,NA
 theislab,sfaira_extension,theislab/sfaira_extension,0,1,1,0,FALSE,https://github.com/theislab/sfaira_extension,NA,NA,NA
 theislab,sfaira_tutorials,theislab/sfaira_tutorials,6,2,4,2,FALSE,https://github.com/theislab/sfaira_tutorials,NA,NA,NA
-theislab,single-cell-best-practices,theislab/single-cell-best-practices,1304,20,4,282,FALSE,https://github.com/theislab/single-cell-best-practices,b95e5f555b0d73f27ee09b0469d2a17eb0d27ced,"Upgrade jupyter-book to 2.1.7 for the v2 MyST book theme (#524)
+theislab,single-cell-best-practices,theislab/single-cell-best-practices,1305,20,4,282,FALSE,https://github.com/theislab/single-cell-best-practices,b95e5f555b0d73f27ee09b0469d2a17eb0d27ced,"Upgrade jupyter-book to 2.1.7 for the v2 MyST book theme (#524)
 
 * Upgrade jupyter-book to 2.1.7 for the v2 MyST book theme
 
